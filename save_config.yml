@@ -1,0 +1,10 @@
+---
+- name: Network Getting Started
+  connection: network_cli
+  gather_facts: false
+  hosts: IOS
+  tasks:
+
+    - name: save running config to startup
+      ios_config:
+        save_when: always

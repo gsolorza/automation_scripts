@@ -1,0 +1,6 @@
+class-map type waas match-any DNS
+ match tcp destination port 53 
+ class DNS
+  passthrough application Name-Services 
+ description ISP Black hole Detection - IPSLA DNS
+ description ISP Black hole Detection - IPSLA DNS

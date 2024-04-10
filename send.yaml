@@ -1,0 +1,13 @@
+---
+- name: Network Getting Started
+  connection: network_cli
+  gather_facts: false
+  hosts: IOS
+  tasks:
+    - name: Send a command
+      ios_command:
+        commands:
+          - command: configure terminal
+          - command: parameter-map type regex umbrella-local-domain-regex
+          - command: pattern .*pan.*
+

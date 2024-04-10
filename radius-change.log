@@ -1,0 +1,1788 @@
+
+PLAY [Network Getting Started] *************************************************
+
+TASK [Send a command] **********************************************************
+ok: [CP-Minnesota-RT1]
+ok: [CP-Tucson-RT1]
+ok: [CP-Rancho-RT1]
+ok: [CP-Atlanta-RT1]
+ok: [CP-Seattle-RT1]
+ok: [CP-Charlotte-RT1]
+ok: [EMP-Toronto-RT1]
+ok: [EMP-Dartmouth-RT1]
+ok: [EMP-Calgary-RT1]
+ok: [CP-Portland-RT1]
+ok: [EMP-Edmonton-RT1]
+ok: [EMP-Montreal-RT1]
+ok: [EMP-StJohn-RT1]
+ok: [EMP-London-RT1]
+ok: [EMP-Vancouver-RT1]
+ok: [EMP-Winnipeg-RT1]
+ok: [EP-Coppell-RT1]
+ok: [EP-SanDiego-RT1]
+ok: [FP-Clearwater-RT1]
+ok: [FP-FtLauderdale-RT1]
+ok: [FP-Jacksonville-RT1]
+ok: [FP-Memphis-RT1]
+ok: [FP-Montgomery-RT1]
+ok: [LP-Dallas-RT1]
+ok: [HS-Hingham-RT1]
+ok: [LP-Atlanta-RT1]
+ok: [LP-Austin-RT1]
+ok: [LP-Baltimore-RT1]
+ok: [LP-BatonRouge-RT1]
+ok: [LP-Boston-RT1]
+ok: [LP-Calgary-RT1]
+ok: [LP-Dayton-RT1]
+ok: [LP-Columbus-RT1]
+ok: [LP-Denver-RT1]
+ok: [LP-Detroit-RT1]
+fatal: [FP-Orlando-RT1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9"}, "changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+ok: [LP-Hartford-RT1]
+ok: [LP-Houston-RT1]
+ok: [LP-Indianapolis-RT1]
+ok: [LP-KansasCity-RT1]
+ok: [LP-LasVegas-RT1]
+ok: [LP-LosAngeles-RT1]
+ok: [LP-Louisville-RT1]
+ok: [LP-Madison-RT1]
+ok: [LP-Miami-RT1]
+ok: [LP-Minneapolis-RT1]
+ok: [LP-Moncton-RT1]
+ok: [LP-Montreal-RT1]
+fatal: [LP-GrandRapids-RT1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9"}, "changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+ok: [LP-Orlando-RT1]
+ok: [LP-NewYork-RT1]
+ok: [LP-Ottawa-RT1]
+ok: [LP-Philadelphia-RT1]
+ok: [LP-Phoenix-RT1]
+ok: [LP-Pittsburgh-RT1]
+ok: [LP-Portland-RT1]
+ok: [LP-QuebecCity-RT1]
+ok: [LP-Rochester-RT1]
+ok: [LP-SaltLakeCity-RT1]
+ok: [LP-SanAntonio-RT1]
+ok: [LP-Seattle-RT1]
+ok: [LP-Spokane-RT1]
+ok: [LP-St-Louis-RT1]
+ok: [LP-Stow-RT1]
+ok: [LP-Tampa-RT1]
+ok: [LP-Transportation-RT1]
+ok: [LP-Toronto-RT1]
+ok: [LP-Warwick-RT1]
+ok: [LP-Vancouver-RT1]
+ok: [LP-Chicago2-RT1]
+ok: [LP-Winnipeg-RT1]
+ok: [LVP-Bethlehem-RT1]
+ok: [MP-Shelton-RT1]
+ok: [PS-Apodaca-RT1]
+ok: [PS-Austell-RT1]
+ok: [PS-Brampton-RT1]
+ok: [PS-BrokenArrow-RT1]
+ok: [PS-Brighton-RT1]
+ok: [PS-BrooklynH-RT1]
+ok: [PS-BrooklynPark-RT1]
+ok: [PS-Bridgeton-RT1]
+ok: [PS-Cedar-RT1]
+ok: [PS-Calgary-RT1]
+ok: [PS-Celaya-RT1]
+ok: [PS-CharlotteSC-RT1]
+ok: [PS-Charlotte-RT1]
+ok: [PS-Chihuahua-RT1]
+ok: [PS-Columbia-RT1]
+ok: [PS-Copell-RT1]
+ok: [PS-Coquitlam-RT1]
+ok: [PS-Concepcion-RT1]
+ok: [PS-Dartmouth-RT1]
+ok: [PS-Denver-RT1]
+ok: [PS-Dorval-RT1]
+ok: [PS-Elkhart-RT1]
+ok: [PS-Edmonton-RT1]
+ok: [PS-Freedom-RT1]
+ok: [PS-Fresno-RT1]
+ok: [PS-Hicksville-RT1]
+ok: [PS-Indianapolis-RT1]
+ok: [PS-Irapuato-RT1]
+ok: [PS-Iztacalco-RT1]
+ok: [PS-Jessup-RT1]
+ok: [PS-Kalamazoo-RT1]
+ok: [PS-Knoxville-RT1]
+ok: [PS-Largo-RT1]
+ok: [PS-LasVegas-RT1]
+ok: [PS-MadisonHeights-RT1]
+ok: [PS-Manchester-RT1]
+ok: [PS-Menomonee-RT1]
+ok: [PS-London-RT1]
+ok: [PS-Maumee-RT1]
+ok: [PS-MexicoCity-RT1]
+ok: [PS-Miramar-RT1]
+ok: [PS-Naperville-RT1]
+ok: [PS-NewOrleans-RT1]
+ok: [PS-Naucalpan-RT1]
+ok: [PS-NorthCharleston-RT1]
+ok: [PS-NorthKingstown-RT1]
+ok: [PS-Orlando-RT1]
+ok: [PS-Phoenix-RT1]
+ok: [PS-Queretaro-RT1]
+ok: [PS-Richmond-RT1]
+ok: [PS-Riverside-RT1]
+ok: [PS-Rochester-RT1]
+ok: [PS-SaltLakeCity-RT1]
+ok: [PS-SanDiego-RT1]
+ok: [PS-SanFrancisco-RT1]
+ok: [PS-SantaFe-RT1]
+ok: [PS-Sharonville-RT1]
+ok: [PS-Seattle-RT1]
+ok: [PS-Santiago-RT1]
+ok: [PS-Stafford-RT1]
+ok: [PS-Syracuse-RT1]
+ok: [PS-Trevose-RT1]
+ok: [PS-Troje-RT1]
+ok: [PS-Tyngsboro-RT1]
+ok: [PS-Winchester-RT1]
+ok: [PS-Winnipeg-RT1]
+ok: [PP-Chesapeake-RT1]
+ok: [PP-Albuquerque-RT1]
+ok: [PS-Zapopan-RT1]
+ok: [PP-CityofInd-RT1]
+ok: [PP-Denver-RT1]
+ok: [PP-Phoenix-RT1]
+ok: [PP-Portland-RT1]
+ok: [PP-San-Jose-RT1]
+ok: [PP-Seattle-RT1]
+ok: [PP-Dallas-RT1]
+ok: [PP-Dayton-RT1]
+ok: [PS-Birmingham-RT1]
+ok: [PVC-Compton-RT1]
+ok: [PS-Raleigh-RT1]
+ok: [PS-RoundRock-RT1]
+ok: [PS-TippCity-RT1]
+ok: [USC-Memphis-RT1]
+ok: [PP-SanDiego-RT1]
+ok: [USC-Tukwila-RT1]
+ok: [PA-Quebec-RT1]
+ok: [PA-Montreal-RT1]
+ok: [TP-Kalamazoo-RT1]
+ok: [TP-GrandRapids-RT1]
+ok: [TP-FortWayne-RT1]
+ok: [TP-Knoxville-RT1]
+ok: [TP-Tampa-RT1]
+ok: [TP-PMC-RT1]
+ok: [TP-Pittsburgh-RT1]
+ok: [TP-RhodeIsland-RT1]
+ok: [TP-Cleveland-RT1]
+ok: [TP-Harrisburg-RT1]
+ok: [TP-Indianapolis-RT1]
+ok: [TP-Chicago-RT1]
+ok: [TP-NewYork-RT1]
+ok: [TP-Baltimore-RT1]
+ok: [TP-Detroit-RT1]
+ok: [TP-Bensalem-RT1]
+ok: [TP-EP-RT1]
+ok: [PS-Film-RT1]
+ok: [RP-Chicago-RT1]
+
+TASK [Display command output if any output] ************************************
+ok: [CP-Atlanta-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [CP-Minnesota-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [CP-Rancho-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [CP-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [CP-Tucson-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [CP-Portland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [CP-Charlotte-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EMP-Toronto-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EMP-Calgary-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EMP-Dartmouth-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EMP-London-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EMP-Edmonton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EMP-Montreal-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 172.21.10.219 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EMP-StJohn-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EMP-Vancouver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EP-SanDiego-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EP-Coppell-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [EMP-Winnipeg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [FP-Clearwater-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [FP-FtLauderdale-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [FP-Memphis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [HS-Hingham-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [FP-Jacksonville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [FP-Montgomery-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Dallas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Austin-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Baltimore-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Atlanta-RT1] => {
+    "output.stdout_lines": [
+        [
+            "collect routing next-hop address ipv4",
+            " address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-BatonRouge-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Boston-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Calgary-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Columbus-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Dayton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Denver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "collect routing next-hop address ipv4",
+            " address ipv4 172.20.10.219 auth-port 1812 acct-port 1813",
+            " address ipv4 172.21.10.219 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Detroit-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Hartford-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Houston-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Indianapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-KansasCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-LasVegas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-LosAngeles-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Louisville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Madison-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Miami-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 172.20.10.45 auth-port 1812 acct-port 1813",
+            " address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Minneapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Moncton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Montreal-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-NewYork-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Orlando-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Ottawa-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Philadelphia-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Phoenix-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Pittsburgh-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Portland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-QuebecCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Rochester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-SaltLakeCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-SanAntonio-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Spokane-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-St-Louis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Stow-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Tampa-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Toronto-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Transportation-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Vancouver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Warwick-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Winnipeg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LP-Chicago2-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [LVP-Bethlehem-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [MP-Shelton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Apodaca-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Austell-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Brampton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Bridgeton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Brighton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-BrokenArrow-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-BrooklynH-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-BrooklynPark-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Calgary-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Cedar-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Celaya-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Charlotte-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-CharlotteSC-RT1] => {
+    "output.stdout_lines": [
+        [
+            "collect routing next-hop address ipv4",
+            " address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Chihuahua-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Columbia-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Concepcion-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Copell-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Coquitlam-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Dartmouth-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Denver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Dorval-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Edmonton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Elkhart-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Freedom-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Fresno-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Hicksville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Indianapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Irapuato-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Iztacalco-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Jessup-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Kalamazoo-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Knoxville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Largo-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-LasVegas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-London-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Manchester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-MadisonHeights-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Maumee-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Menomonee-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-MexicoCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Miramar-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Naperville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Naucalpan-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-NewOrleans-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-NorthCharleston-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Orlando-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-NorthKingstown-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Phoenix-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Queretaro-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Richmond-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Riverside-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Rochester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-SaltLakeCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-SanDiego-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-SanFrancisco-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-SantaFe-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Santiago-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Sharonville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Stafford-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Trevose-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Syracuse-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Troje-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Tyngsboro-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Winchester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Winnipeg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Zapopan-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-Albuquerque-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-Chesapeake-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-CityofInd-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-Phoenix-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-Denver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-Portland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-San-Jose-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-Dayton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-Dallas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PVC-Compton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Birmingham-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Raleigh-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-TippCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-RoundRock-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PP-SanDiego-RT1] => {
+    "output.stdout_lines": [
+        [
+            "collect routing next-hop address ipv4",
+            " address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [USC-Memphis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [USC-Tukwila-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PA-Montreal-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PA-Quebec-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Kalamazoo-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-GrandRapids-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-FortWayne-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Tampa-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Knoxville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-PMC-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Pittsburgh-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-RhodeIsland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Cleveland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Harrisburg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Indianapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Chicago-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-NewYork-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Detroit-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Baltimore-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-Bensalem-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [TP-EP-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [PS-Film-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 172.20.10.219 auth-port 1812 acct-port 1813",
+            " address ipv4 172.21.10.219 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+ok: [RP-Chicago-RT1] => {
+    "output.stdout_lines": [
+        [
+            "address ipv4 10.88.0.2 auth-port 1812 acct-port 1813",
+            " address ipv4 10.92.0.2 auth-port 1812 acct-port 1813"
+        ]
+    ]
+}
+
+PLAY RECAP *********************************************************************
+CP-Atlanta-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Charlotte-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Minnesota-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Portland-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Rancho-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Tucson-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Calgary-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Dartmouth-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Edmonton-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-London-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Montreal-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-StJohn-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Toronto-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Vancouver-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Winnipeg-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EP-Coppell-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EP-SanDiego-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Clearwater-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-FtLauderdale-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Jacksonville-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Memphis-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Montgomery-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Orlando-RT1             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+HS-Hingham-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Atlanta-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Austin-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Baltimore-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-BatonRouge-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Boston-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Calgary-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Chicago2-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Columbus-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Dallas-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Dayton-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Denver-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Detroit-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-GrandRapids-RT1         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+LP-Hartford-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Houston-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Indianapolis-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-KansasCity-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-LasVegas-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-LosAngeles-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Louisville-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Madison-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Miami-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Minneapolis-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Moncton-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Montreal-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-NewYork-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Orlando-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Ottawa-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Philadelphia-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Phoenix-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Pittsburgh-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Portland-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-QuebecCity-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Rochester-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-SaltLakeCity-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-SanAntonio-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Spokane-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-St-Louis-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Stow-RT1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Tampa-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Toronto-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Transportation-RT1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Vancouver-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Warwick-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Winnipeg-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LVP-Bethlehem-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+MP-Shelton-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PA-Montreal-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PA-Quebec-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Albuquerque-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Chesapeake-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-CityofInd-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Dallas-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Dayton-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Denver-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Phoenix-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Portland-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-San-Jose-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-SanDiego-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Apodaca-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Austell-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Birmingham-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Brampton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Bridgeton-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Brighton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-BrokenArrow-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-BrooklynH-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-BrooklynPark-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Calgary-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Cedar-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Celaya-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Charlotte-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-CharlotteSC-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Chihuahua-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Columbia-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Concepcion-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Copell-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Coquitlam-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Dartmouth-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Denver-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Dorval-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Edmonton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Elkhart-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Film-RT1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Freedom-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Fresno-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Hicksville-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Indianapolis-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Irapuato-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Iztacalco-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Jessup-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Kalamazoo-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Knoxville-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Largo-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-LasVegas-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-London-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-MadisonHeights-RT1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Manchester-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Maumee-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Menomonee-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-MexicoCity-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Miramar-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Naperville-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Naucalpan-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-NewOrleans-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-NorthCharleston-RT1     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-NorthKingstown-RT1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Orlando-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Phoenix-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Queretaro-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Raleigh-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Richmond-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Riverside-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Rochester-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-RoundRock-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SaltLakeCity-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SanDiego-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SanFrancisco-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SantaFe-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Santiago-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Sharonville-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Stafford-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Syracuse-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-TippCity-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Trevose-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Troje-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Tyngsboro-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Winchester-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Winnipeg-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Zapopan-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PVC-Compton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+RP-Chicago-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Baltimore-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Bensalem-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Chicago-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Cleveland-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Detroit-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-EP-RT1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-FortWayne-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-GrandRapids-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Harrisburg-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Indianapolis-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Kalamazoo-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Knoxville-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-NewYork-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-PMC-RT1                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Pittsburgh-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-RhodeIsland-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Tampa-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+USC-Memphis-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+USC-Tukwila-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

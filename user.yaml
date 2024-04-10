@@ -1,0 +1,24 @@
+---
+- name: Network Getting Started
+  connection: network_cli
+  gather_facts: false
+  hosts: ROUTERS
+  tasks:
+    
+    # - name: Delete User
+    #   ios_user:
+    #     name: admin
+    #     state: absent
+    
+    - name: Add new user
+      ios_user:
+        name: napadmin
+        configured_password: RGrq2g@M
+        privilege: 15
+        password_type: secret
+        state: present
+
+    
+    - name: save running config to startup
+      ios_config:
+        save_when: always

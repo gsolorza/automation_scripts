@@ -1,0 +1,3471 @@
+
+PLAY [Network Getting Started] *************************************************
+
+TASK [Send a command] **********************************************************
+ok: [CP-Minnesota-RT1]
+ok: [CP-Tucson-RT1]
+ok: [CP-Atlanta-RT1]
+ok: [CP-Seattle-RT1]
+ok: [CP-Rancho-RT1]
+ok: [CP-Charlotte-RT1]
+ok: [EMP-Toronto-RT1]
+ok: [CP-Portland-RT1]
+ok: [EMP-Calgary-RT1]
+ok: [EMP-Dartmouth-RT1]
+ok: [EMP-London-RT1]
+ok: [EMP-Edmonton-RT1]
+ok: [EMP-Montreal-RT1]
+ok: [EMP-StJohn-RT1]
+fatal: [EP-SanDiego-RT1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9"}, "changed": false, "msg": "[Errno None] Unable to connect to port 22 on 10.253.8.163"}
+ok: [EMP-Vancouver-RT1]
+ok: [EMP-Winnipeg-RT1]
+ok: [EP-Coppell-RT1]
+ok: [FP-FtLauderdale-RT1]
+ok: [FP-Jacksonville-RT1]
+ok: [FP-Clearwater-RT1]
+ok: [FP-Montgomery-RT1]
+ok: [FP-Memphis-RT1]
+ok: [FP-Orlando-RT1]
+ok: [LP-Dallas-RT1]
+ok: [HS-Hingham-RT1]
+ok: [LP-Atlanta-RT1]
+ok: [LP-Austin-RT1]
+ok: [LP-Baltimore-RT1]
+ok: [LP-BatonRouge-RT1]
+ok: [LP-Boston-RT1]
+ok: [LP-Calgary-RT1]
+ok: [LP-Columbus-RT1]
+ok: [LP-Dayton-RT1]
+ok: [LP-Denver-RT1]
+ok: [LP-Detroit-RT1]
+ok: [LP-GrandRapids-RT1]
+ok: [LP-Hartford-RT1]
+ok: [LP-Houston-RT1]
+ok: [LP-Indianapolis-RT1]
+ok: [LP-KansasCity-RT1]
+ok: [LP-LasVegas-RT1]
+ok: [LP-LosAngeles-RT1]
+ok: [LP-Louisville-RT1]
+ok: [LP-Madison-RT1]
+ok: [LP-Miami-RT1]
+ok: [LP-Minneapolis-RT1]
+ok: [LP-Moncton-RT1]
+ok: [LP-Montreal-RT1]
+ok: [LP-Orlando-RT1]
+ok: [LP-NewYork-RT1]
+ok: [LP-Philadelphia-RT1]
+ok: [LP-Ottawa-RT1]
+ok: [LP-Pittsburgh-RT1]
+ok: [LP-Phoenix-RT1]
+ok: [LP-Portland-RT1]
+ok: [LP-Rochester-RT1]
+ok: [LP-QuebecCity-RT1]
+ok: [LP-SaltLakeCity-RT1]
+ok: [LP-SanAntonio-RT1]
+ok: [LP-Seattle-RT1]
+ok: [LP-St-Louis-RT1]
+ok: [LP-Spokane-RT1]
+ok: [LP-Tampa-RT1]
+ok: [LP-Stow-RT1]
+ok: [LP-Toronto-RT1]
+ok: [LP-Vancouver-RT1]
+ok: [LP-Warwick-RT1]
+ok: [LP-Winnipeg-RT1]
+ok: [LP-Chicago2-RT1]
+ok: [LVP-Bethlehem-RT1]
+ok: [MP-Shelton-RT1]
+ok: [PS-Apodaca-RT1]
+fatal: [LP-Transportation-RT1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9"}, "changed": false, "msg": "command timeout triggered, timeout value is 30 secs.\nSee the timeout setting options in the Network Debug and Troubleshooting Guide."}
+ok: [PS-Austell-RT1]
+ok: [PS-Brampton-RT1]
+ok: [PS-Bridgeton-RT1]
+ok: [PS-BrooklynH-RT1]
+ok: [PS-BrokenArrow-RT1]
+ok: [PS-Brighton-RT1]
+ok: [PS-BrooklynPark-RT1]
+ok: [PS-Calgary-RT1]
+ok: [PS-Cedar-RT1]
+ok: [PS-Charlotte-RT1]
+ok: [PS-Celaya-RT1]
+ok: [PS-CharlotteSC-RT1]
+ok: [PS-Chihuahua-RT1]
+ok: [PS-Columbia-RT1]
+ok: [PS-Copell-RT1]
+ok: [PS-Concepcion-RT1]
+ok: [PS-Coquitlam-RT1]
+ok: [PS-Dartmouth-RT1]
+ok: [PS-Denver-RT1]
+ok: [PS-Dorval-RT1]
+ok: [PS-Edmonton-RT1]
+ok: [PS-Elkhart-RT1]
+ok: [PS-Freedom-RT1]
+ok: [PS-Fresno-RT1]
+ok: [PS-Hicksville-RT1]
+ok: [PS-Indianapolis-RT1]
+ok: [PS-Irapuato-RT1]
+ok: [PS-Iztacalco-RT1]
+ok: [PS-Jessup-RT1]
+ok: [PS-Kalamazoo-RT1]
+ok: [PS-Knoxville-RT1]
+ok: [PS-Largo-RT1]
+ok: [PS-LasVegas-RT1]
+ok: [PS-London-RT1]
+ok: [PS-MadisonHeights-RT1]
+ok: [PS-Manchester-RT1]
+ok: [PS-Menomonee-RT1]
+ok: [PS-Maumee-RT1]
+ok: [PS-MexicoCity-RT1]
+ok: [PS-Miramar-RT1]
+ok: [PS-Naperville-RT1]
+ok: [PS-NewOrleans-RT1]
+ok: [PS-NorthCharleston-RT1]
+ok: [PS-NorthKingstown-RT1]
+ok: [PS-Naucalpan-RT1]
+ok: [PS-Orlando-RT1]
+ok: [PS-Phoenix-RT1]
+ok: [PS-Queretaro-RT1]
+ok: [PS-Richmond-RT1]
+ok: [PS-Rochester-RT1]
+ok: [PS-Riverside-RT1]
+ok: [PS-SaltLakeCity-RT1]
+ok: [PS-SanDiego-RT1]
+ok: [PS-SanFrancisco-RT1]
+ok: [PS-SantaFe-RT1]
+ok: [PS-Santiago-RT1]
+ok: [PS-Seattle-RT1]
+ok: [PS-Stafford-RT1]
+ok: [PS-Sharonville-RT1]
+ok: [PS-Syracuse-RT1]
+ok: [PS-Trevose-RT1]
+ok: [PS-Troje-RT1]
+ok: [PS-Tyngsboro-RT1]
+ok: [PS-Winchester-RT1]
+ok: [PS-Winnipeg-RT1]
+ok: [PS-Zapopan-RT1]
+ok: [PP-Albuquerque-RT1]
+ok: [PP-Chesapeake-RT1]
+ok: [PP-CityofInd-RT1]
+ok: [PP-Denver-RT1]
+ok: [PP-Phoenix-RT1]
+ok: [PP-Portland-RT1]
+ok: [PP-Seattle-RT1]
+ok: [PP-San-Jose-RT1]
+ok: [PP-Dallas-RT1]
+ok: [PP-Dayton-RT1]
+ok: [PS-Birmingham-RT1]
+ok: [PVC-Compton-RT1]
+ok: [PS-Raleigh-RT1]
+ok: [PS-RoundRock-RT1]
+ok: [PS-TippCity-RT1]
+ok: [PP-SanDiego-RT1]
+ok: [USC-Tukwila-RT1]
+ok: [USC-Memphis-RT1]
+ok: [PA-Quebec-RT1]
+ok: [PA-Montreal-RT1]
+ok: [TP-FortWayne-RT1]
+ok: [TP-GrandRapids-RT1]
+ok: [TP-Knoxville-RT1]
+ok: [TP-Tampa-RT1]
+ok: [TP-Kalamazoo-RT1]
+ok: [TP-PMC-RT1]
+ok: [TP-Pittsburgh-RT1]
+ok: [TP-RhodeIsland-RT1]
+ok: [TP-Cleveland-RT1]
+ok: [TP-Harrisburg-RT1]
+ok: [TP-Indianapolis-RT1]
+ok: [TP-Chicago-RT1]
+ok: [TP-NewYork-RT1]
+ok: [TP-Baltimore-RT1]
+ok: [TP-Detroit-RT1]
+ok: [TP-EP-RT1]
+ok: [PS-Film-RT1]
+ok: [TP-Bensalem-RT1]
+ok: [RP-Chicago-RT1]
+
+TASK [Display command output if any output] ************************************
+ok: [CP-Atlanta-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: CALSAK-Atlanta",
+            "    end   date: 13:25:07 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: CALSAK-Atlanta.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [CP-Minnesota-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: C-Minnesota",
+            "    end   date: 17:13:08 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [CP-Tucson-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: cp-tucson-rt1",
+            "    end   date: 22:44:14 UTC Oct 2 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [CP-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 15:12:00 UTC Mar 13 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: CP-Seattle-RT1",
+            "    end   date: 11:49:51 UTC Mar 15 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [CP-Rancho-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: CALSAK-Rancho",
+            "    end   date: 14:43:37 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 21:39:12 UTC Mar 16 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [CP-Portland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: cp-portland-rt1",
+            "    end   date: 12:47:03 UTC Sep 2 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: Calsak-Portland.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [CP-Charlotte-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: CP-Charlotte-RT1",
+            "    end   date: 18:41:23 UTC May 5 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 02:35:33 UTC Feb 8 2024",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-3447079425",
+            "    end   date: 00:00:00 UTC Jan 1 2030",
+            "  Associated Trustpoints: TP-self-signed-3447079425"
+        ]
+    ]
+}
+ok: [EMP-Toronto-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: EM-Toronto",
+            "    end   date: 17:27:31 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 14:19:46 UTC Jan 4 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [EMP-Calgary-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: EMP-Calgary",
+            "    end   date: 16:47:12 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: EMP-Calgary.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [EMP-Dartmouth-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: emp-dartmouth-rt1",
+            "    end   date: 14:17:53 UTC Sep 3 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: EMP-Dartmouth.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [EMP-Edmonton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: EMP-Edmonton",
+            "    end   date: 17:17:33 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [EMP-London-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: EMP-London",
+            "    end   date: 21:20:57 UTC Aug 9 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [EMP-Montreal-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: EMP-Montreal",
+            "    end   date: 10:40:00 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: EMP-Montreal.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [EMP-StJohn-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: EMP-StJohn",
+            "    end   date: 17:23:26 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: EMP-StJohn.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [EMP-Vancouver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: EMP-Vancouver",
+            "    end   date: 17:34:33 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: EMP-Vancouver.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [EMP-Winnipeg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: EMP-Winnipeg",
+            "    end   date: 23:29:40 UTC Jun 27 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IOS-Self-Signed-Certificate-2610216987",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: TP-self-signed-2610216987 ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [EP-Coppell-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: EP-Coppell",
+            "    end   date: 13:39:38 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [FP-Clearwater-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 13:33:22 UTC Mar 13 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: FARCO-Clearwater",
+            "    end   date: 17:40:19 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [FP-FtLauderdale-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: fp-ftlauderdale-rt1",
+            "    end   date: 21:46:57 UTC Jan 10 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [FP-Jacksonville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: FARCO-Jacksonville",
+            "    end   date: 12:42:31 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [FP-Memphis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: fp-memphis-rt1",
+            "    end   date: 02:24:06 UTC Dec 14 2023",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 02:35:33 UTC Feb 8 2024",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [FP-Montgomery-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: FARCO-Montgomery",
+            "    end   date: 17:47:13 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [FP-Orlando-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: FP-Orlando-RT1",
+            "    end   date: 12:48:45 UTC Aug 18 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 02:35:33 UTC Feb 8 2024",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [HS-Hingham-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4331/K9",
+            "    end   date: 15:00:31 UTC Apr 6 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: HS-Hingham",
+            "    end   date: 13:45:21 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Dallas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    Name: LP-Dallas-RT1",
+            "    end   date: 22:13:33 UTC May 19 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 02:35:33 UTC Feb 8 2024",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Atlanta-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 00:07:10 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: IP-Atlanta",
+            "    end   date: 13:22:04 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Austin-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: TP-Tampa-RT1",
+            "    end   date: 19:16:43 UTC Jul 26 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Baltimore-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Baltimore",
+            "    end   date: 17:54:09 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-BatonRouge-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: LP-BatonRouge-RT1",
+            "    end   date: 22:52:02 UTC Mar 12 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 02:35:33 UTC Feb 8 2024",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Boston-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Boston",
+            "    end   date: 17:56:11 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Calgary-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Calgary",
+            "    end   date: 04:49:27 UTC Aug 10 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Columbus-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 05:13:55 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: IP-Columbus",
+            "    end   date: 18:03:23 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Dayton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Dayton",
+            "    end   date: 11:06:04 UTC Aug 7 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IP-Dayton.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Denver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Denver",
+            "    end   date: 13:04:15 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 10:44:20 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Detroit-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 09:03:58 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: IP-Detroit",
+            "    end   date: 18:24:49 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-GrandRapids-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-GrandRapids",
+            "    end   date: 19:06:31 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Hartford-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Hartford",
+            "    end   date: 12:17:11 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Houston-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: lp-houston-rt1",
+            "    end   date: 22:53:18 UTC Oct 2 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Indianapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Indianapolis",
+            "    end   date: 08:57:57 UTC Aug 5 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-KansasCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: lp-kansascity-rt1",
+            "    end   date: 14:55:01 UTC Dec 20 2023",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-LosAngeles-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-LosAngeles",
+            "    end   date: 18:08:24 UTC Aug 6 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 16:37:10 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-LasVegas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: LP-LasVegas-RT1",
+            "    end   date: 13:10:19 UTC Apr 26 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Louisville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Louisville",
+            "    end   date: 11:35:49 UTC Aug 7 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Madison-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: IP-Madison",
+            "    end   date: 06:58:28 UTC Oct 26 2023",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Miami-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Miami",
+            "    end   date: 06:58:24 UTC Aug 13 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Minneapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 12:10:54 UTC Jan 4 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: IP-Minneapolis",
+            "    end   date: 02:53:34 UTC Aug 7 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Moncton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Moncton",
+            "    end   date: 15:34:38 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Montreal-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ps-sandiego-rt1",
+            "    end   date: 22:48:54 UTC Dec 15 2023",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IP-Montreal.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-NewYork-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 17:16:46 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: lp-newyork-rt1",
+            "    end   date: 22:36:43 UTC Mar 5 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Orlando-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Orlando",
+            "    end   date: 06:57:31 UTC Aug 13 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Philadelphia-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 23:48:46 UTC Apr 11 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    Name: IP-Philadelphia",
+            "    end   date: 00:22:27 UTC Jun 28 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Ottawa-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: LP-Ottawa-RT1",
+            "    end   date: 22:21:49 UTC Jul 18 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Phoenix-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Phoenix",
+            "    end   date: 15:06:28 UTC Aug 8 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IP-Phoenix.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Pittsburgh-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: LP-Pittsburgh-RT1",
+            "    end   date: 20:20:52 UTC Aug 21 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-412517997",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: TP-self-signed-412517997"
+        ]
+    ]
+}
+ok: [LP-Portland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: LP-Portland-RT1",
+            "    end   date: 15:54:23 UTC Apr 2 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-QuebecCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: LP-QuebecCity-RT1",
+            "    end   date: 22:25:00 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Rochester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Rochester",
+            "    end   date: 12:30:17 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IP-Rochester.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-SaltLakeCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-SaltLakeCity",
+            "    end   date: 13:04:33 UTC Aug 5 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IP-SaltLakeCity.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-SanAntonio-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-SanAntonio",
+            "    end   date: 14:19:40 UTC Aug 5 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Seattle",
+            "    end   date: 15:22:24 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IP-Seattle.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Spokane-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Spokane",
+            "    end   date: 18:51:10 UTC Aug 23 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-St-Louis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-StLouis",
+            "    end   date: 01:17:17 UTC Aug 6 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IP-St-Louis.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Stow-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Stow",
+            "    end   date: 12:51:16 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Toronto-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Toronto",
+            "    end   date: 01:55:08 UTC Aug 6 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 18:23:05 UTC Aug 29 2026",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Tampa-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Tampa",
+            "    end   date: 10:44:02 UTC Aug 5 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4331/K9",
+            "    end   date: 19:57:02 UTC Apr 10 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Vancouver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Vancouver",
+            "    end   date: 14:49:57 UTC Aug 9 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 23:18:28 UTC Mar 16 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Warwick-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Warwick",
+            "    end   date: 14:51:40 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IOS-Self-Signed-Certificate-2499626881",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: TP-self-signed-2499626881 ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Winnipeg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: IP-Winnipeg.NAP.local",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: device_self_signed ",
+            "    Name: IP-Winnipeg",
+            "    end   date: 12:59:22 UTC Oct 6 2023",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [LP-Chicago2-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: LP-Chicago2-RT1",
+            "    end   date: 01:32:01 UTC Aug 15 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4331/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-4276125256",
+            "    end   date: 00:00:00 UTC Jan 1 2030",
+            "  Associated Trustpoints: TP-self-signed-4276125256"
+        ]
+    ]
+}
+ok: [LVP-Bethlehem-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: lvp-bethlehem-rt1",
+            "    end   date: 01:47:08 UTC Oct 1 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4331/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [MP-Shelton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: MP-Shelton",
+            "    end   date: 00:36:39 UTC Aug 7 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 23:51:02 UTC Apr 11 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Apodaca-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Apodaca",
+            "    end   date: 07:51:01 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Austell-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 23:38:03 UTC Apr 11 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Austell",
+            "    end   date: 01:20:50 UTC Aug 7 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Brampton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Brampton",
+            "    end   date: 09:10:24 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4331/K9",
+            "    end   date: 06:15:11 UTC May 26 2026",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Bridgeton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PS-Bridgeton-RT1",
+            "    end   date: 00:37:30 UTC Jul 22 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-BrokenArrow-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-BrokenArrow",
+            "    end   date: 20:25:20 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Brighton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4331/K9",
+            "    end   date: 15:02:06 UTC Apr 6 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Brighton",
+            "    end   date: 20:12:17 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-BrooklynH-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 05:31:31 UTC Mar 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    Name: POLY-BrooklynH",
+            "    end   date: 07:26:11 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-BrooklynPark-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-BrooklynPark",
+            "    end   date: 21:14:09 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 05:25:15 UTC Sep 26 2026",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Calgary-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 22:49:18 UTC Apr 11 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    Name: POLY-Calgary",
+            "    end   date: 05:49:13 UTC Aug 10 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Cedar-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Cedar",
+            "    end   date: 21:22:32 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Celaya-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Celaya",
+            "    end   date: 15:04:20 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-1288258095",
+            "    end   date: 00:00:00 UTC Jan 1 2030",
+            "  Associated Trustpoints: TP-self-signed-1288258095"
+        ]
+    ]
+}
+ok: [PS-Charlotte-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Charlotte",
+            "    end   date: 06:06:41 UTC Aug 11 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: IOS-Self-Signed-Certificate-3902835376",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: TP-self-signed-3902835376"
+        ]
+    ]
+}
+ok: [PS-CharlotteSC-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4331/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    Name: POLY-CharlotteSC",
+            "    end   date: 16:51:26 UTC Aug 7 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-1174782943",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: TP-self-signed-1174782943"
+        ]
+    ]
+}
+ok: [PS-Chihuahua-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Chihuahua",
+            "    end   date: 21:34:13 UTC Jun 27 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Columbia-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Columbia",
+            "    end   date: 13:57:57 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Concepcion-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Concepcion",
+            "    end   date: 21:30:26 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Copell-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 15:56:38 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Copell",
+            "    end   date: 11:41:26 UTC Aug 9 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Coquitlam-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 16:50:25 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Coquitlam",
+            "    end   date: 04:09:59 UTC Aug 7 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Dartmouth-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Dartmouth",
+            "    end   date: 09:00:38 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Denver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Denver",
+            "    end   date: 15:29:56 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Dorval-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 16:50:18 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Dorval",
+            "    end   date: 22:01:00 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Edmonton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PS-Edmonton-RT1",
+            "    end   date: 16:49:21 UTC Aug 15 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 13:02:45 UTC Jun 20 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Elkhart-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Elkhart",
+            "    end   date: 21:40:04 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Freedom-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Freedom",
+            "    end   date: 21:51:27 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Fresno-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Fresno",
+            "    end   date: 08:49:17 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4331/K9",
+            "    end   date: 12:54:01 UTC Jun 16 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Hicksville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 13:07:46 UTC Jun 20 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Hicksville",
+            "    end   date: 07:38:40 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Indianapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Indianapolis",
+            "    end   date: 08:26:38 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Irapuato-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Irapuato",
+            "    end   date: 12:55:08 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-2434465469",
+            "    end   date: 00:00:00 UTC Jan 1 2030",
+            "  Associated Trustpoints: TP-self-signed-2434465469"
+        ]
+    ]
+}
+ok: [PS-Iztacalco-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Iztacalco",
+            "    end   date: 15:25:04 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Kalamazoo-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Kalamazoo",
+            "    end   date: 15:13:44 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Jessup-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Jessup",
+            "    end   date: 07:59:42 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 10:49:00 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Knoxville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Knoxville",
+            "    end   date: 23:45:41 UTC Aug 1 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-2157279284",
+            "    end   date: 00:00:00 UTC Jan 1 2030",
+            "  Associated Trustpoints: TP-self-signed-2157279284"
+        ]
+    ]
+}
+ok: [PS-Largo-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Largo",
+            "    end   date: 21:27:05 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-LasVegas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-LasVegas",
+            "    end   date: 23:56:14 UTC Jun 27 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 16:52:17 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-London-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 23:00:23 UTC Apr 11 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    Name: POLY-London",
+            "    end   date: 15:22:34 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-MadisonHeights-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-MadisonHeights",
+            "    end   date: 13:33:36 UTC Aug 8 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 17:36:33 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Manchester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Manchester",
+            "    end   date: 21:34:11 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Maumee-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Maumee",
+            "    end   date: 15:14:59 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Menomonee-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Menomonee",
+            "    end   date: 21:45:52 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Miramar-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Miramar",
+            "    end   date: 18:15:25 UTC Jun 18 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-MexicoCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 18:23:34 UTC Apr 13 2026",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-MexicoCity",
+            "    end   date: 14:38:31 UTC Aug 16 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Naperville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ps-naperville-rt1",
+            "    end   date: 12:50:32 UTC Oct 3 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4331/K9",
+            "    end   date: 06:53:13 UTC Mar 7 2026",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Naucalpan-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Naucalpan",
+            "    end   date: 21:49:48 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 14:17:54 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-NewOrleans-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-NewOrleans",
+            "    end   date: 21:46:03 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-NorthKingstown-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-NorthKingstown",
+            "    end   date: 00:50:37 UTC Aug 22 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-NorthCharleston-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-NorthCharleston",
+            "    end   date: 07:03:17 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Orlando-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Orlando",
+            "    end   date: 21:59:45 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 07:30:23 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Phoenix-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Phoenix",
+            "    end   date: 20:22:25 UTC Jul 10 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Queretaro-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: C1111-8P",
+            "    end   date: 15:58:26 EST Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 15:58:27 EST Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 15:58:28 EST Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Queretaro",
+            "    end   date: 07:44:51 EST Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:13:46 EST Jan 17 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 20:58:29 EST May 5 2021",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 14:48:47 EST May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-25751613",
+            "    end   date: 19:00:00 EST Dec 31 2029",
+            "  Associated Trustpoints: TP-self-signed-25751613"
+        ]
+    ]
+}
+ok: [PS-Riverside-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Riverside",
+            "    end   date: 07:42:06 UTC Aug 19 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Richmond-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 17:39:14 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Richmond",
+            "    end   date: 22:06:26 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Rochester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Rochester",
+            "    end   date: 14:19:43 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-SaltLakeCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-SaltLakeCity",
+            "    end   date: 13:12:47 UTC Sep 3 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-SanDiego-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ps-sandiego-rt1",
+            "    end   date: 19:47:37 UTC Jan 16 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-SantaFe-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 15:37:36 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: PS-SantaFe-RT1",
+            "    end   date: 23:48:46 UTC Feb 26 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 02:35:33 UTC Feb 8 2024",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-SanFrancisco-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-SanFrancisco",
+            "    end   date: 21:09:06 UTC Jul 29 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Santiago-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ps-santiago-rt1",
+            "    end   date: 22:51:47 UTC Oct 2 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4331/K9",
+            "    end   date: 14:51:03 UTC Apr 6 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 23:56:28 UTC Apr 11 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: POLY-Seattle",
+            "    end   date: 22:10:09 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Sharonville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Sharonville",
+            "    end   date: 16:14:56 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Syracuse-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Syracuse",
+            "    end   date: 14:08:58 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Stafford-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Stafford",
+            "    end   date: 22:17:37 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Trevose-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Trevose",
+            "    end   date: 16:32:24 UTC Jun 27 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 15:18:10 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Troje-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    Name: POLY-Troje",
+            "    end   date: 12:30:09 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-1316485723",
+            "    end   date: 00:00:00 UTC Jan 1 2030",
+            "  Associated Trustpoints: TP-self-signed-1316485723"
+        ]
+    ]
+}
+ok: [PS-Tyngsboro-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 08:49:15 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    Name: POLY-Tyngsboro",
+            "    end   date: 08:07:08 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Winchester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Winchester",
+            "    end   date: 08:19:55 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Winnipeg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Winnipeg",
+            "    end   date: 16:01:17 UTC Jul 10 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Zapopan-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: POLY-Zapopan",
+            "    end   date: 07:31:24 UTC Aug 19 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 23:57:08 UTC Apr 11 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-Albuquerque-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PORT-Albuquerque",
+            "    end   date: 11:14:41 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-Chesapeake-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PORT-Chesapeake",
+            "    end   date: 09:38:38 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-Denver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PORT-Denver",
+            "    end   date: 11:30:16 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-CityofInd-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 08:56:11 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: pp-cityofind-rt1",
+            "    end   date: 23:12:03 UTC Dec 15 2023",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-Phoenix-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PORT-Phoenix",
+            "    end   date: 12:26:50 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-Portland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PORT-Portland",
+            "    end   date: 11:00:50 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 06:47:21 UTC Jun 15 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-San-Jose-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PORT-San-Jose",
+            "    end   date: 13:13:53 UTC Aug 20 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 22:58:09 UTC Apr 11 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PP-Seattle",
+            "    end   date: 22:25:45 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-Dayton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PP-Dayton",
+            "    end   date: 22:28:49 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-Dallas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4321/K9",
+            "    end   date: 11:12:07 UTC Jan 4 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: PP-Dallas",
+            "    end   date: 22:22:38 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PVC-Compton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PVC-Compton",
+            "    end   date: 06:04:41 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4331/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-1128966089",
+            "    end   date: 00:00:00 UTC Jan 1 2020",
+            "  Associated Trustpoints: TP-self-signed-1128966089"
+        ]
+    ]
+}
+ok: [PS-Birmingham-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: Poly-Birmingham",
+            "    end   date: 14:28:52 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-Raleigh-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: Poly-Raleigh",
+            "    end   date: 22:00:23 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-RoundRock-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ps-roundrock-rt1",
+            "    end   date: 01:28:16 UTC Oct 1 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PS-TippCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: Poly-TippCity",
+            "    end   date: 09:27:31 UTC Aug 7 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 08:58:19 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PP-SanDiego-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: Port-SanDiego",
+            "    end   date: 11:52:22 UTC Aug 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [USC-Memphis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: USC-Memphis",
+            "    end   date: 23:42:15 UTC Aug 1 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 00:10:02 UTC Mar 17 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 03:21:45 UTC Jan 15 2022",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [USC-Tukwila-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: USC-Tukwila",
+            "    end   date: 08:29:20 UTC Aug 24 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 17:14:15 UTC Mar 7 2026",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 01:58:29 UTC May 6 2021",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [PA-Quebec-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4331/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: PA-Quebec-RT1",
+            "    end   date: 20:50:20 UTC Apr 2 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 02:35:33 UTC Feb 8 2024",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-2185798767",
+            "    end   date: 20:28:10 UTC Apr 19 2032",
+            "  Associated Trustpoints: TP-self-signed-2185798767"
+        ]
+    ]
+}
+ok: [PA-Montreal-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: PA-Montreal-RT1",
+            "    end   date: 16:27:35 UTC Mar 26 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4321/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 02:35:33 UTC Feb 8 2024",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-418887417",
+            "    end   date: 19:18:07 UTC Apr 19 2032",
+            "  Associated Trustpoints: TP-self-signed-418887417"
+        ]
+    ]
+}
+ok: [TP-Kalamazoo-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: TP-Kalamazoo-RT1",
+            "    end   date: 16:20:12 UTC Feb 29 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: ISR4331/K9",
+            "    end   date: 19:55:07 UTC Apr 18 2027",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool Trustpool ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    end   date: 02:35:33 UTC Feb 8 2024",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan"
+        ]
+    ]
+}
+ok: [TP-GrandRapids-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: ISR4331/K9",
+            "    end   date: 20:25:41 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI Trustpool ",
+            "    end   date: 20:25:42 UTC May 14 2029",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: TP-GrandRapids-RT1",
+            "    end   date: 22:30:34 UTC Jun 28 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [TP-FortWayne-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: TP-FortWayne-RT1",
+            "    end   date: 23:04:30 UTC Aug 21 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI"
+        ]
+    ]
+}
+ok: [TP-Knoxville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: TP-Knoxville-RT1",
+            "    end   date: 18:28:58 UTC Sep 25 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-3050812611",
+            "    end   date: 00:00:00 UTC Jan 1 2030",
+            "  Associated Trustpoints: TP-self-signed-3050812611 ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI"
+        ]
+    ]
+}
+ok: [TP-Tampa-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: TP-Tampa-RT1",
+            "    end   date: 19:16:43 UTC Jul 26 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [TP-PMC-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    Name: TP-PMC-RT1",
+            "    end   date: 19:52:05 UTC Jul 26 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [TP-Pittsburgh-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    Name: TP-Pittsburgh-RT1",
+            "    end   date: 00:00:37 UTC Jul 26 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+ok: [TP-Cleveland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: TP-Cleveland-RT1",
+            "    end   date: 14:36:42 UTC Jul 30 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-2697490837",
+            "    end   date: 14:18:58 UTC Apr 5 2032",
+            "  Associated Trustpoints: TP-self-signed-2697490837"
+        ]
+    ]
+}
+ok: [TP-RhodeIsland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: LP-RhodeIsland-RT1",
+            "    end   date: 14:21:34 UTC Jul 29 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-3123713951",
+            "    end   date: 14:18:33 UTC Apr 5 2032",
+            "  Associated Trustpoints: TP-self-signed-3123713951"
+        ]
+    ]
+}
+ok: [TP-Harrisburg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    Name: TP-Harrisburg-RT1",
+            "    end   date: 16:14:46 UTC Jul 31 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-2961136183",
+            "    end   date: 19:33:04 UTC Apr 3 2032",
+            "  Associated Trustpoints: TP-self-signed-2961136183"
+        ]
+    ]
+}
+ok: [TP-Indianapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: TP-Indianapolis-RT1",
+            "    end   date: 16:28:02 UTC Aug 13 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-405036623",
+            "    end   date: 19:48:25 UTC Apr 3 2032",
+            "  Associated Trustpoints: TP-self-signed-405036623"
+        ]
+    ]
+}
+ok: [TP-Chicago-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: TP-Chicago-RT1",
+            "    end   date: 11:50:17 UTC Aug 1 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-859750168",
+            "    end   date: 15:35:08 UTC Apr 5 2032",
+            "  Associated Trustpoints: TP-self-signed-859750168"
+        ]
+    ]
+}
+ok: [TP-NewYork-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: LP-NewYork-RT1",
+            "    end   date: 16:48:10 UTC Aug 4 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-2166863859",
+            "    end   date: 15:39:43 UTC Apr 5 2032",
+            "  Associated Trustpoints: TP-self-signed-2166863859"
+        ]
+    ]
+}
+ok: [TP-Baltimore-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    Name: TP-Baltimore-RT1",
+            "    end   date: 22:35:20 UTC Dec 27 2023",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-2214644960",
+            "    end   date: 14:20:20 UTC Apr 5 2032",
+            "  Associated Trustpoints: TP-self-signed-2214644960"
+        ]
+    ]
+}
+ok: [TP-Detroit-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 Trustpool ",
+            "    Name: TP-Detroit-RT1",
+            "    end   date: 17:51:51 UTC Aug 6 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-803369937",
+            "    end   date: 16:54:20 UTC Apr 5 2032",
+            "  Associated Trustpoints: TP-self-signed-803369937"
+        ]
+    ]
+}
+ok: [TP-Bensalem-RT1] => {
+    "output.stdout_lines": [
+        [
+            "Name: TP-NEP-RT1",
+            "    end   date: 11:56:25 UTC Aug 18 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-3629731883",
+            "    end   date: 16:03:04 UTC Apr 5 2032",
+            "  Associated Trustpoints: TP-self-signed-3629731883"
+        ]
+    ]
+}
+ok: [TP-EP-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    Name: TP-EP-RT1",
+            "    end   date: 15:41:19 UTC Aug 21 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    end   date: 19:48:47 UTC May 30 2038",
+            "  Associated Trustpoints: Trustpool SLA-TrustPoint ",
+            "    Name: IOS-Self-Signed-Certificate-1146907909",
+            "    end   date: 16:56:17 UTC Apr 5 2032",
+            "  Associated Trustpoints: TP-self-signed-1146907909"
+        ]
+    ]
+}
+ok: [PS-Film-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-8P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    Name: ps-film-rt1",
+            "    end   date: 18:11:23 UTC Sep 6 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel ",
+            "    Name: IOS-Self-Signed-Certificate-3805932986",
+            "    end   date: 00:00:00 UTC Jan 1 2030",
+            "  Associated Trustpoints: TP-self-signed-3805932986"
+        ]
+    ]
+}
+ok: [RP-Chicago-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:58:28 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI0 ",
+            "    Name: C1111-4P",
+            "    end   date: 20:58:26 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    end   date: 20:58:27 UTC Aug 9 2099",
+            "  Associated Trustpoints: CISCO_IDEVID_SUDI ",
+            "    Name: RP-Chicago-RT1",
+            "    end   date: 21:59:45 UTC Jan 19 2024",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 04:13:46 UTC Jan 18 2027",
+            "  Associated Trustpoints: sdn-network-infra-iwan ",
+            "    end   date: 23:43:14 UTC Sep 20 2027",
+            "  Associated Trustpoints: pnplabel"
+        ]
+    ]
+}
+
+PLAY RECAP *********************************************************************
+CP-Atlanta-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Charlotte-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Minnesota-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Portland-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Rancho-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Tucson-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Calgary-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Dartmouth-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Edmonton-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-London-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Montreal-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-StJohn-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Toronto-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Vancouver-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Winnipeg-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EP-Coppell-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EP-SanDiego-RT1            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+FP-Clearwater-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-FtLauderdale-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Jacksonville-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Memphis-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Montgomery-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Orlando-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+HS-Hingham-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Atlanta-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Austin-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Baltimore-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-BatonRouge-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Boston-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Calgary-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Chicago2-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Columbus-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Dallas-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Dayton-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Denver-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Detroit-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-GrandRapids-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Hartford-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Houston-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Indianapolis-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-KansasCity-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-LasVegas-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-LosAngeles-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Louisville-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Madison-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Miami-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Minneapolis-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Moncton-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Montreal-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-NewYork-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Orlando-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Ottawa-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Philadelphia-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Phoenix-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Pittsburgh-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Portland-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-QuebecCity-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Rochester-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-SaltLakeCity-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-SanAntonio-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Spokane-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-St-Louis-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Stow-RT1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Tampa-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Toronto-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Transportation-RT1      : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+LP-Vancouver-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Warwick-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Winnipeg-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LVP-Bethlehem-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+MP-Shelton-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PA-Montreal-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PA-Quebec-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Albuquerque-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Chesapeake-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-CityofInd-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Dallas-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Dayton-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Denver-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Phoenix-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Portland-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-San-Jose-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-SanDiego-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Apodaca-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Austell-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Birmingham-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Brampton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Bridgeton-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Brighton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-BrokenArrow-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-BrooklynH-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-BrooklynPark-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Calgary-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Cedar-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Celaya-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Charlotte-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-CharlotteSC-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Chihuahua-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Columbia-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Concepcion-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Copell-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Coquitlam-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Dartmouth-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Denver-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Dorval-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Edmonton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Elkhart-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Film-RT1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Freedom-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Fresno-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Hicksville-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Indianapolis-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Irapuato-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Iztacalco-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Jessup-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Kalamazoo-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Knoxville-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Largo-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-LasVegas-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-London-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-MadisonHeights-RT1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Manchester-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Maumee-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Menomonee-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-MexicoCity-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Miramar-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Naperville-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Naucalpan-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-NewOrleans-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-NorthCharleston-RT1     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-NorthKingstown-RT1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Orlando-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Phoenix-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Queretaro-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Raleigh-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Richmond-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Riverside-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Rochester-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-RoundRock-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SaltLakeCity-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SanDiego-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SanFrancisco-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SantaFe-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Santiago-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Sharonville-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Stafford-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Syracuse-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-TippCity-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Trevose-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Troje-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Tyngsboro-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Winchester-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Winnipeg-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Zapopan-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PVC-Compton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+RP-Chicago-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Baltimore-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Bensalem-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Chicago-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Cleveland-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Detroit-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-EP-RT1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-FortWayne-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-GrandRapids-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Harrisburg-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Indianapolis-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Kalamazoo-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Knoxville-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-NewYork-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-PMC-RT1                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Pittsburgh-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-RhodeIsland-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Tampa-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+USC-Memphis-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+USC-Tukwila-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

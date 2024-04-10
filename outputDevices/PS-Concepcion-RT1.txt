@@ -1,0 +1,21 @@
+ip access-list extended TRAFFIC-TO-DNS
+ remark Match traffic to Umbrella Servers
+ permit udp any host 208.67.220.220 eq domain
+ permit tcp any host 208.67.220.220 eq domain
+ permit udp any host 208.67.222.222 eq domain
+ permit tcp any host 208.67.222.222 eq domain
+ permit udp any host 172.20.10.40 eq domain
+ permit tcp any host 172.20.10.40 eq domain
+ permit udp any host 172.21.10.40 eq domain
+ permit tcp any host 172.21.10.40 eq domain
+ permit udp any host 172.20.10.41 eq domain
+ permit tcp any host 172.20.10.41 eq domain
+ permit udp any host 172.21.10.41 eq domain
+ permit tcp any host 172.21.10.41 eq domain
+ permit udp any host 10.88.0.20 eq domain
+ permit tcp any host 10.88.0.20 eq domain
+ permit udp any host 10.92.0.20 eq domain
+ permit tcp any host 10.92.0.20 eq domain
+ deny   tcp any any eq domain log
+ deny   udp any any eq domain log
+ permit ip any any

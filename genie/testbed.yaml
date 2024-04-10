@@ -1,0 +1,30 @@
+devices:
+  CP-Atlanta-RT1:
+    connections:
+      cli:
+        ip: 10.253.8.89
+        port: 22
+        protocol: ssh
+    credentials:
+      default:
+        password: WgU0znN(qhxf
+        username: lairdadmin
+      enable:
+        password: cisco
+    os: iosxe
+    type: iosxe
+
+  PA-Quebec-Main-SW1:
+    connections:
+      cli:
+        ip: 10.128.0.1
+        port: 22
+        protocol: ssh
+    credentials:
+      default:
+        password: WgU0znN(qhxf
+        username: lairdadmin
+      enable:
+        password: cisco
+    os: iosxe
+    type: iosxe

@@ -1,0 +1,16 @@
+
+{% for interface in interfaces %}
+    {% if interface.name and interface.description %}   
+        interface {{ interface.name }}
+        description {{ interface.description }}
+        ip address {{ interface.ip_address }}
+        shutdown
+        !
+    {% elif interface.name == "gigabitethernet0/1" %} 
+        interface {{ interface.name }}
+        description {{ interface.description }}
+        ip address {{ interface.ip_address }}
+        no shutdown
+        !
+    {% endif %} 
+{% endfor %}

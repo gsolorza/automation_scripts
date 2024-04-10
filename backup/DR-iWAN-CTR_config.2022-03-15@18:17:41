@@ -1,0 +1,416 @@
+Building configuration...
+
+Current configuration : 13601 bytes
+!
+! Last configuration change at 21:31:08 UTC Sun Mar 13 2022
+! NVRAM config last updated at 22:44:13 UTC Mon Mar 14 2022 by lairdadmin
+!
+version 16.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform console virtual
+!
+hostname DR-iWAN-CTR
+!
+boot-start-marker
+boot system bootflash:csr1000v-universalk9.16.06.02.SPA.bin
+boot-end-marker
+!
+!
+enable password 7 073826791E13172B5F03031402
+!
+aaa new-model
+!
+!
+aaa authentication login default local
+!
+!
+!
+!
+!
+aaa session-id common
+!
+!
+!
+!
+ip nbar attribute-map C9009_SC8026
+ attribute category other
+ attribute sub-category tunneling-protocols
+ip nbar attribute-map C9009_SC8022
+ attribute category other
+ attribute sub-category enterprise-rich-media-content
+ip nbar attribute-map C9015_SC8023
+ attribute sub-category file-transfer
+ attribute category backup-and-storage
+ip nbar attribute-map C9009_SC8008
+ attribute category other
+ attribute sub-category other
+ip nbar attribute-map C9013_SC8011
+ attribute sub-category authentication-services
+ attribute category business-and-productivity-tools
+ip nbar attribute-map C9009_SC8018
+ attribute category other
+ attribute sub-category enterprise-cloud-data-storage
+ip nbar attribute-map C9009_SC8012
+ attribute category other
+ attribute sub-category enterprise-transactional-apps
+ip nbar attribute-map C9013_SC8012_T08
+ attribute category business-and-productivity-tools
+ attribute sub-category enterprise-transactional-apps
+ attribute traffic-class transactional-data
+ip nbar attribute-map C9009_SC8028
+ attribute category other
+ attribute sub-category enterprise-voice-collaboration
+ip nbar attribute-map C9013_SC8012
+ attribute sub-category enterprise-transactional-apps
+ attribute category business-and-productivity-tools
+ip nbar attribute-map C9009_SC8013
+ attribute category other
+ attribute sub-category enterprise-media-conferencing
+ip nbar attribute-map C9013_SC8021_T03
+ attribute category business-and-productivity-tools
+ attribute traffic-class multimedia-streaming
+ attribute sub-category desktop-virtualization
+!
+ip nbar custom E1Web http url "http://e1web.nap.local:7777" id 5385 
+ip nbar custom E1WebPort transport tcp id 6875
+ port 7777 
+ direction any
+
+
+ip nbar custom PShapes-Pkgp327 transport tcp id 58029
+ port 1551 
+ direction any
+
+
+ip nbar custom PShapes11i transport tcp id 22430
+ port 8030 
+ direction any
+
+
+ip nbar custom Remote-Desktop transport tcp id 26219
+ port 3389 
+ direction any
+
+
+!
+ip nbar attribute-set gtp-user C9009_SC8026
+ip nbar attribute-set wifi-calling C9009_SC8026
+ip nbar attribute-set flash-video C9009_SC8022
+ip nbar attribute-set audio-over-http C9009_SC8022
+ip nbar attribute-set shockwave C9009_SC8022
+ip nbar attribute-set video-over-http C9009_SC8022
+ip nbar attribute-set microsoftds C9015_SC8023
+ip nbar attribute-set cifs C9015_SC8023
+ip nbar attribute-set tftp C9015_SC8023
+ip nbar attribute-set nfs C9015_SC8023
+ip nbar attribute-set gsiftp C9015_SC8023
+ip nbar attribute-set gridftp C9015_SC8023
+ip nbar attribute-set wikipedia C9009_SC8008
+ip nbar attribute-set gss-http C9013_SC8011
+ip nbar attribute-set amazon-web-services C9009_SC8018
+ip nbar attribute-set windows-azure C9009_SC8018
+ip nbar attribute-set spdy C9009_SC8012
+ip nbar attribute-set web-rtc-video C9009_SC8028
+ip nbar attribute-set google-services-media C9009_SC8028
+ip nbar attribute-set web-rtc-audio C9009_SC8028
+ip nbar attribute-set web-rtc C9009_SC8028
+ip nbar attribute-set google-services-video C9009_SC8028
+ip nbar attribute-set itunes-media C9009_SC8028
+ip nbar attribute-set https C9009_SC8012
+ip nbar attribute-set quic C9009_SC8012
+ip nbar attribute-set jabber C9013_SC8012
+ip nbar attribute-set ssl C9013_SC8012
+ip nbar attribute-set http C9013_SC8012
+ip nbar attribute-set ssl-local-net C9013_SC8012
+ip nbar attribute-set http-local-net C9013_SC8012
+ip nbar attribute-set google-services-audio C9009_SC8013
+ip nbar attribute-set E1Web C9013_SC8012_T08
+ip nbar attribute-set E1WebPort C9013_SC8012_T08
+ip nbar attribute-set PShapes11i C9013_SC8012_T08
+ip nbar attribute-set PShapes-Pkgp327 C9013_SC8012_T08
+ip nbar attribute-set Remote-Desktop C9013_SC8021_T03
+!
+ip name-server 172.20.10.41 172.21.10.40
+ip domain name NAP.local
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+! 
+! 
+! 
+! 
+!
+!
+multilink bundle-name authenticated
+!
+domain ONE
+ vrf default
+  master transit 1
+   source-interface Loopback47233
+   site-prefixes prefix-list DC-PREFIX
+   hub 10.253.4.3
+!
+!
+!
+!
+crypto pki trustpoint sdn-network-infra-iwan
+ enrollment url http://172.23.1.10:80/ejbca/publicweb/apply/scep/sdnscep
+ fqdn DR-iWAN-CTR.NAP.local
+ subject-name CN=CSR1000V_9MK7LDHV46W_sdn-network-infra-iwan
+ revocation-check none
+ rsakeypair sdn-network-infra-iwan
+ auto-enroll 80 regenerate
+!
+!
+crypto pki certificate chain sdn-network-infra-iwan
+ certificate 5BA359A5A1B929A1
+  3082037C 30820264 A0030201 0202085B A359A5A1 B929A130 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39303431 3334365A 170D3232 31313039 
+  31363233 33355A30 5C313430 32060355 04030C2B 43535231 30303056 5F394D4B 
+  374C4448 56343657 5F73646E 2D6E6574 776F726B 2D696E66 72612D69 77616E31 
+  24302206 092A8648 86F70D01 09021615 44522D69 57414E2D 4354522E 4E41502E 
+  6C6F6361 6C308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201 
+  0A028201 0100B330 4EC4416B CE290559 93F37B7C 6D233682 F30AB02C 9D2A0504 
+  D10682C7 CB201F0C 058BA302 F2775CC6 3F4D2CAF 768882A1 B982C76F E6562D26 
+  B0321112 DE6C8063 7FC412E0 0667CF47 8051CB8D 53BB7CE6 ED84BAB1 E8E0170E 
+  6011071B FB13CFE7 8E7EDC3E 44CE77A6 FEAC736F 0E3FD852 FFFD14CA 0F73647A 
+  85F17242 22C45F61 754C6F1B DAE0C646 0101403D 80EFBAC1 13A2248B F2F344B0 
+  F090CDE7 6EEFE1D0 C7AB6D9E 2246FFDE 65911591 CAD0FA34 918B9262 AAF3A17F 
+  B46CD0EA 7DEDBF9A FA7EBD21 D323BBEE 59DBB36E DF3A1D24 61B20CAC CE7C8E46 
+  E2316E3F 15FA6FB2 A7B46B26 77180AE5 2E04A601 324B0AF9 F5EFBE49 1908FD1F 
+  B278DAB0 37E70203 010001A3 7F307D30 1D060355 1D0E0416 0414D245 D022704D 
+  F0BA059A 670C3198 CBD57E2B F05F300C 0603551D 130101FF 04023000 301F0603 
+  551D2304 18301680 149BFB73 0D4603EC D8FCC891 F6E95BA4 F3EBF3A5 FB300E06 
+  03551D0F 0101FF04 04030205 E0301D06 03551D25 04163014 06082B06 01050507 
+  03020608 2B060105 05070304 300D0609 2A864886 F70D0101 0D050003 82010100 
+  216EF3CA 98ED51BC 89E7D45B 7C8FB15B 1EEFCADF BE89006B 57B6AA88 58B44C15 
+  A4842BEF FF66622B 061F5BD2 76D18CF9 68DDE6F9 9A68FD37 DB628A8E EEC06E28 
+  AB846763 C0AE5BA2 BB260DD1 A8E02D90 120B989C D49B65E5 D8C39AB9 72737186 
+  51969CDD DD695212 580E1781 4F382A23 8F5BFE39 E9D79C40 50A745FC 1EFD69B3 
+  5371913B ACB97F32 E65A4528 841EE83E 79BFE5A7 6101DF5A 2D21B925 8CBBA1F2 
+  A8D40E9A FA3F1D80 01BAEE15 3AD8EDA9 0FCC9482 00A6E5E0 86249FC2 4D9DB64C 
+  DB1B635B 722E53A0 BAAD4449 BBAFF155 9D9DB2F9 887CD4E5 8064BF94 8893C73A 
+  DB22CF3E F561A334 7041C783 A0ED8629 AEC23CB9 235989E8 69699BDF 7F696D63
+  	quit
+ certificate ca 1E5166B43300756F
+  30820323 3082020B A0030201 0202081E 5166B433 00756F30 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39303431 3334365A 170D3237 30313138 
+  30343133 34365A30 1F311D30 1B060355 04030C14 73646E2D 6E657477 6F726B2D 
+  696E6672 612D6361 30820122 300D0609 2A864886 F70D0101 01050003 82010F00 
+  3082010A 02820101 00ABCE5E 7E70CA54 D22275FF AC8E65C7 D753B989 339735EE 
+  06AA463D 0B9A2F25 0D701BCA 0FDAA947 2A5E0DD8 03F8DF0F 74CF0267 1B2BB29E 
+  9876D007 7CB7EBE1 CED74372 A666AA2F 392155BB 8DAAED4B A16DF600 29523716 
+  3A2D1602 E9DA77BD A89BE46D A685EC18 FE00A893 B4CD0409 F0723C17 7DDDF8D2 
+  32A906AE 47879ED6 7A511039 82BC21D3 C4B88B35 DC2D44A9 6C189D12 BDE7A285 
+  2F69FCDF FDF165B5 C46BFAF1 9B5A7160 459C9D1D 75C89150 03E607AC C60404AB 
+  DC6F3C63 5288233C 39116C32 F98EA05D 09C169EC 1C69F79B A56114DE D94A42C0 
+  65D95334 A9A17C2B 675178DD 13CBC094 24B5584F F519B6C2 71363218 79B13B1D 
+  946DCD77 1BA20ED4 DD020301 0001A363 3061301D 0603551D 0E041604 149BFB73 
+  0D4603EC D8FCC891 F6E95BA4 F3EBF3A5 FB300F06 03551D13 0101FF04 05300301 
+  01FF301F 0603551D 23041830 1680149B FB730D46 03ECD8FC C891F6E9 5BA4F3EB 
+  F3A5FB30 0E060355 1D0F0101 FF040403 02018630 0D06092A 864886F7 0D01010D 
+  05000382 010100A3 29F5F1CC C81F796D C6DFD558 43133CB7 183F3FE5 5F28BECE 
+  BC10B7CC 3FFE19B1 5A8B13B6 442A1FD8 4BF380A7 9AFAAFAC E5632DFF E7601197 
+  03CF97A8 232311FE DF7DD8D4 D417AA40 C4F1C7A8 A2F2CEBB D37783EA 386FA6DA 
+  9C1A09BB 8DDA0ED6 AD47032C EBEEF89A 4DB2FB80 C87A4401 2847EEE6 B4DA3CB7 
+  C5C2D0F2 90EC2A2A B17A8D53 D54172F2 D71BFE68 A10A97DB 6194CCCA 76980850 
+  7D6A665C A3F7A2F4 49E120B3 635CA67A 63365D6D 23676EF5 E2BC3449 040CAEEE 
+  63CDA1BC FA07D68B 2C425BD6 5162B572 5F8D5C05 DC70D275 44FEC7E0 F3F5CFBE 
+  08EC56D1 C1E8ACFF 34E60DD4 ABE080BD D0C75384 904C4D74 C9B72EF1 098C6065 
+  55FBC666 677A5D
+  	quit
+!
+crypto pki crl download schedule prepublish 2760
+crypto pki crl download schedule retries 15
+crypto pki crl download schedule retries interval 180
+crypto pki crl download trustpoint sdn-network-infra-iwan
+!
+!
+!
+!
+!
+!
+!
+!
+license udi pid CSR1000V sn 9MK7LDHV46W
+license accept end user agreement
+license boot level appx
+diagnostic bootup level minimal
+spanning-tree extend system-id
+archive
+ log config
+  logging enable
+  logging size 500
+  notify syslog contenttype plaintext
+  hidekeys
+!
+!
+!
+username netvoix privilege 15 secret 5 $1$xmnX$n7cE/T97nsVWAq0JreR5m/
+username lairdadmin privilege 15 password 7 073826791E13172B5F03031402
+username napadmin privilege 15 secret 5 $1$CfJF$2/bDoBDYTtpYXWiJBzJDU/
+!
+redundancy
+!
+!
+!
+!
+!
+!
+! 
+! 
+!
+!
+interface Loopback47233
+ ip address 10.253.4.6 255.255.255.255
+ ip pim sparse-mode
+!
+interface GigabitEthernet1
+ ip address 172.23.1.21 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+!
+router eigrp LAN-EIGRP
+ !
+ address-family ipv4 unicast autonomous-system 400
+  !
+  af-interface default
+   passive-interface
+  exit-af-interface
+  !
+  af-interface GigabitEthernet1
+   hello-interval 20
+   hold-time 60
+   no passive-interface
+  exit-af-interface
+  !
+  topology base
+  exit-af-topology
+  network 10.253.4.6 0.0.0.0
+  network 172.23.1.0 0.0.0.255
+  eigrp router-id 10.253.4.6
+ exit-address-family
+!
+!
+virtual-service csr_mgmt
+!
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+ip tftp blocksize 8192
+ip route 0.0.0.0 0.0.0.0 172.23.1.1
+ip pim register-source Loopback47233
+!
+ip ssh source-interface Loopback47233
+ip ssh version 2
+!
+!
+ip prefix-list DC-PREFIX seq 5 permit 172.22.2.0/30
+ip prefix-list DC-PREFIX seq 10 permit 172.23.1.0/24
+ip prefix-list DC-PREFIX seq 15 permit 172.17.2.0/24
+ip prefix-list DC-PREFIX seq 20 permit 172.22.1.16/30
+ip prefix-list DC-PREFIX seq 25 permit 172.22.2.8/29
+ip prefix-list DC-PREFIX seq 30 permit 172.23.52.0/23
+ip prefix-list DC-PREFIX seq 35 permit 172.22.2.32/30
+ip prefix-list DC-PREFIX seq 40 permit 172.22.2.36/30
+ip prefix-list DC-PREFIX seq 45 permit 172.22.2.16/30
+ip prefix-list DC-PREFIX seq 50 permit 172.22.2.44/30
+ip prefix-list DC-PREFIX seq 55 permit 172.23.50.0/23
+ip prefix-list DC-PREFIX seq 60 permit 172.20.0.0/16
+ip prefix-list DC-PREFIX seq 65 permit 10.254.99.0/24
+ip prefix-list DC-PREFIX seq 70 permit 172.17.1.0/24
+ip prefix-list DC-PREFIX seq 75 permit 10.254.98.0/24
+ip prefix-list DC-PREFIX seq 80 permit 172.21.0.0/16
+ip prefix-list DC-PREFIX seq 85 permit 172.22.2.40/30
+ip prefix-list DC-PREFIX seq 90 permit 172.22.1.0/30
+ip prefix-list DC-PREFIX seq 95 permit 172.22.1.8/29
+ip prefix-list DC-PREFIX seq 100 permit 10.197.0.0/16
+ip prefix-list DC-PREFIX seq 105 permit 10.79.0.0/16
+ip prefix-list DC-PREFIX seq 110 permit 10.77.0.0/16
+ip prefix-list DC-PREFIX seq 115 permit 10.252.0.0/16
+!
+ip access-list standard SNMP_ACL
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+no service-routing capabilities-manager
+logging host 172.23.1.15
+logging host 172.23.1.17
+logging host 172.23.1.16
+!
+!
+snmp-server community lppbisnmp-ro RO SNMP_ACL
+snmp-server community lppbisnmp-rw RW SNMP_ACL
+snmp-server trap-source Loopback47233
+snmp-server enable traps pki
+snmp-server host 172.23.1.15 lppbisnmp-ro 
+snmp-server host 172.23.1.16 lppbisnmp-ro 
+snmp-server host 172.23.1.17 lppbisnmp-ro 
+snmp-server host 172.23.1.15 lppbisnmp-rw 
+snmp ifmib ifindex persist
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+banner login ^C
+
+           *       This is a controlled access system with login        *
+           *  restricted to those with proper authorization. Authorized *
+           *  parties are limited to those functions which have been    *
+           *  assigned to perform work related duties. Any unauthorized *
+           *  access attempt will be investigated and prosecuted to the *
+           *  full extent of the law.                                   *
+           *  --------------------------------------------------------  *
+           *            YOUR IP ADDRESS HAS BEEN CAPTURED               *
+           *  --------------------------------------------------------  *
+           *    If you are not an authorized user, disconnect now.      *
+		   
+^C
+!
+line con 0
+ stopbits 1
+line vty 0 4
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+!
+ntp source Loopback47233
+ntp server 172.23.1.10
+ntp server 172.23.1.11
+wsma agent exec
+!
+wsma agent config
+!
+wsma agent filesys
+!
+wsma agent notify
+!
+!
+end

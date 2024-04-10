@@ -1,0 +1,909 @@
+Building configuration...
+
+  
+  
+Current configuration : 28357 bytes
+!
+! No configuration change since last restart
+!
+version 15.7
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname IP-Charlotte
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password 7 097B493C491F193C431D0C322D
+!
+aaa new-model
+!
+!
+aaa group server radius Microsoft-NPSs
+ server name MS-NPS1
+ server name MS-NPS2
+ ip radius source-interface Loopback47233
+!
+aaa authentication login LOGIN-AUTH-VTY group Microsoft-NPSs enable
+aaa authentication login LOGIN-AUTH-NONE none
+aaa authentication enable default enable
+aaa authentication dot1x default group Microsoft-NPSs
+aaa authorization exec default group Microsoft-NPSs local 
+aaa authorization network default group Microsoft-NPSs 
+aaa accounting update newinfo periodic 2880
+aaa accounting dot1x default start-stop group Microsoft-NPSs
+aaa accounting exec default start-stop group radius
+aaa accounting system default start-stop group Microsoft-NPSs
+!
+!
+!
+!
+!
+aaa server radius dynamic-author
+ client 172.20.10.42 server-key 7 151D1B35360701270C6463660B
+ client 172.21.10.41 server-key 7 1106093C253F210F207D7D6030
+!
+aaa session-id common
+!
+crypto pki trustpoint pnplabel
+ enrollment pkcs12
+ revocation-check none
+!
+crypto pki trustpoint sdn-network-infra-iwan
+ enrollment url http://173.252.189.173:80/ejbca/publicweb/apply/scep/sdnscep
+ fqdn IP-Charlotte
+ subject-name CN=C892FSP-K9_FJC2048L00C_sdn-network-infra-iwan
+ vrf IWAN-TRANSPORT-2
+ revocation-check none
+ rsakeypair sdn-network-infra-iwan
+ auto-enroll 80 regenerate
+!
+!
+!
+crypto pki certificate map CERT-MAP-IWAN-TRANSPORT-2 10
+ issuer-name eq cn = sdn-network-infra-ca
+ name co sdn-network-infra-iwan
+!
+crypto pki certificate map CERT-MAP-IWAN-TRANSPORT-1 10
+ issuer-name eq cn = sdn-network-infra-ca
+ name co sdn-network-infra-iwan
+!
+crypto pki certificate chain pnplabel
+ certificate ca 52832942281204213760974450453079480524
+  308203BD 308202A5 A0030201 02021352 83294228 12042137 60974450 45307948 
+  0524300D 06092A86 4886F70D 01010B05 00308188 312D302B 06035504 03132435 
+  62393133 3061662D 63363738 2D346662 642D6236 32332D61 33643035 31656234 
+  65373231 0B300906 03550406 13025553 31133011 06035504 08130A43 616C6966 
+  6F726E69 61311030 0E060355 04071307 53616E4A 6F736531 13301106 0355040B 
+  130A4150 4943454D 2D53444E 310E300C 06035504 0A130543 6973636F 301E170D 
+  32323031 31393230 32373239 5A170D32 37303131 38323032 3732395A 305D3114 
+  30120603 55040313 0B313732 2E32332E 312E3130 31133011 06035504 08130A43 
+  616C6966 6F726E69 61310B30 09060355 04061302 5553310E 300C0603 55040A13 
+  05436973 636F3113 30110603 55040B13 0A415049 43454D2D 53444E30 82012230 
+  0D06092A 864886F7 0D010101 05000382 010F0030 82010A02 82010100 B4D1EE42 
+  DA239B3D 93B13F23 395ECE4E C7E04E2F 0D311947 C904130A 0E972299 40C2475A 
+  16001ED8 AF3A66DE 151C269E 08761132 B46E396A 1222B82B 7D39096F 72FA911C 
+  A7CDF9C0 A379ED6F 0ED32C68 7F9AD9DD 5D267563 DAFD967A 31A22FFE A71AB1F7 
+  BC5DB520 AAF09EA0 4E3EBB8E 102F8B94 9AC6FD39 2A752988 97027CF3 CD0EE3A0 
+  35FE2E79 8197818B D103386F 4867E57B 02819B1B 0450E363 720159C3 3D86E6D3 
+  95FA0BF5 504B13B9 92F69D0D 761FEC87 6C5D94BA F3765100 527CA67F AB19EAC7 
+  057F42B6 FF96B422 7A8352E8 B4210A45 87290C12 BACBFF1C 0C0BEE6C E0252F67 
+  F70611DA 65A7F4D8 2946D4D5 4DDCF4FA 24163769 4A2CD107 30619A01 02030100 
+  01A34A30 48300906 03551D13 04023000 300B0603 551D0F04 04030205 A0301D06 
+  03551D25 04163014 06082B06 01050507 03010608 2B060105 05070302 300F0603 
+  551D1104 08300687 04AC1701 0A300D06 092A8648 86F70D01 010B0500 03820101 
+  0063BF45 2ED128FF 4E3D5729 A70D11D9 9340310F 7BE316F1 623E9C54 582DDB8D 
+  63884108 7C443CD7 6204E4EC D4A426C3 FF25FC75 EA9F7424 C4960386 186955CE 
+  CD795752 7D1369F6 43103890 5E3AA3F0 C0103F00 C5F65E94 FE2E0E6D CD9CE654 
+  3938FBB9 EBB17BD4 11AA8451 A393F19E 3F6087CA 0CDEB87D 168880AD BCD316D0 
+  351C2A73 ED33C897 E8F2C664 1808C921 BD668A34 A8242F88 2615ECDC D2C0A5BC 
+  41B34208 6FBFD432 AD16833C ACA8F91A 99EE7028 EB23BA67 45D6FD9C 29F851F4 
+  7A75A9D7 9067378C A659C416 9816E7A4 D4F80731 F2476A6A 02F60894 C3F074DF 
+  930F8170 C1BC2FFB 09F611BC D74D7A2C 6B0B8E70 0CE483EF 1DDEC8AE 1BF5E097 
+  D1
+  	quit
+crypto pki certificate chain sdn-network-infra-iwan
+ certificate 7018865F7C22DE30
+  30820375 3082025D A0030201 02020870 18865F7C 22DE3030 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303230 33303235 3330315A 170D3233 30323033 
+  30323533 30315A30 55311B30 1906092A 864886F7 0D010902 0C0C4950 2D436861 
+  726C6F74 74653136 30340603 5504030C 2D433839 32465350 2D4B395F 464A4332 
+  3034384C 3030435F 73646E2D 6E657477 6F726B2D 696E6672 612D6977 616E3082 
+  0122300D 06092A86 4886F70D 01010105 00038201 0F003082 010A0282 01010081 
+  60D968A8 AB089EF2 5E2F2229 32FE84FC D8FFCDB0 724B80B0 4EBB0133 F03EDAA8 
+  3A0F97B8 568BB411 E374178B 6AD6E0CB AA5670DD 34388B2F B5049721 1E844AFE 
+  8D52D158 4EEE97FD 5AC4317A 807B3CD8 66ED4A08 224D75B7 58B89B2E 0F1111E4 
+  03099510 F11AE8BA 7DFD2C86 026C1EDD 23E4732F 8D2392C2 3B5C9206 26E90F82 
+  738E8539 408545FA D41358F2 66A1296C E22F361F F66EF114 92CBAE9E 5BA98CCB 
+  0346866F 7630D6F4 1144C576 C62EE72C C24191D4 8762F477 BF9EC955 613ED36F 
+  7F282F4C EC9831DF FD9D34CC 1FF97367 43E9583D 5E3ECA13 AE453D5B 88DCD21E 
+  610A7B1B AC9305F0 ADBE9238 DA5A1F98 B9072E19 1C4952CD 6E95BDFC 1C787702 
+  03010001 A37F307D 301D0603 551D0E04 160414C2 DAA19E5E 21DBDF73 D4B661B7 
+  EAB09CC7 F89E2D30 0C060355 1D130101 FF040230 00301F06 03551D23 04183016 
+  80149BFB 730D4603 ECD8FCC8 91F6E95B A4F3EBF3 A5FB300E 0603551D 0F0101FF 
+  04040302 05E0301D 0603551D 25041630 1406082B 06010505 07030206 082B0601 
+  05050703 04300D06 092A8648 86F70D01 010D0500 03820101 008B6BC7 820A6B9C 
+  147BAA26 20BE7B22 5DF00F2E B5ACBD2E BA5767A7 460C9308 6B8EB149 A420E10D 
+  D431A7F7 0C077393 0225624C 9C5874E6 E35C3ADD CD34C7EE 94A7491B BF5D70E0 
+  327A9D2D 85EDF89B E742853B 301B21F0 71BDEF42 DC2E2C01 A41698B1 EC34FE30 
+  F012CCF2 B5E8F987 0116E47D 176B8253 1A8F9D84 ED49CD9A 52BB1610 FFC728B6 
+  6DE8636D 444C9ACE 7C5D0A45 F07F96BB EA6F74AA 8F1EB7F9 24881C0B 0C35E80A 
+  73371C0B 14113D1C A0E11DE4 697F73CF 66B8BA7D ADFCDD3A FFDF4360 DE5842CA 
+  195EB9BE C7FA0257 C3C0A1AE 2C3678CC 4CF58C9E 7052A711 0D90D727 83FC14EB 
+  7DAE7951 04B13CF7 37921978 356FF347 36148EEE 418A1952 BD
+  	quit
+ certificate ca 1E5166B43300756F
+  30820323 3082020B A0030201 0202081E 5166B433 00756F30 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39303431 3334365A 170D3237 30313138 
+  30343133 34365A30 1F311D30 1B060355 04030C14 73646E2D 6E657477 6F726B2D 
+  696E6672 612D6361 30820122 300D0609 2A864886 F70D0101 01050003 82010F00 
+  3082010A 02820101 00ABCE5E 7E70CA54 D22275FF AC8E65C7 D753B989 339735EE 
+  06AA463D 0B9A2F25 0D701BCA 0FDAA947 2A5E0DD8 03F8DF0F 74CF0267 1B2BB29E 
+  9876D007 7CB7EBE1 CED74372 A666AA2F 392155BB 8DAAED4B A16DF600 29523716 
+  3A2D1602 E9DA77BD A89BE46D A685EC18 FE00A893 B4CD0409 F0723C17 7DDDF8D2 
+  32A906AE 47879ED6 7A511039 82BC21D3 C4B88B35 DC2D44A9 6C189D12 BDE7A285 
+  2F69FCDF FDF165B5 C46BFAF1 9B5A7160 459C9D1D 75C89150 03E607AC C60404AB 
+  DC6F3C63 5288233C 39116C32 F98EA05D 09C169EC 1C69F79B A56114DE D94A42C0 
+  65D95334 A9A17C2B 675178DD 13CBC094 24B5584F F519B6C2 71363218 79B13B1D 
+  946DCD77 1BA20ED4 DD020301 0001A363 3061301D 0603551D 0E041604 149BFB73 
+  0D4603EC D8FCC891 F6E95BA4 F3EBF3A5 FB300F06 03551D13 0101FF04 05300301 
+  01FF301F 0603551D 23041830 1680149B FB730D46 03ECD8FC C891F6E9 5BA4F3EB 
+  F3A5FB30 0E060355 1D0F0101 FF040403 02018630 0D06092A 864886F7 0D01010D 
+  05000382 010100A3 29F5F1CC C81F796D C6DFD558 43133CB7 183F3FE5 5F28BECE 
+  BC10B7CC 3FFE19B1 5A8B13B6 442A1FD8 4BF380A7 9AFAAFAC E5632DFF E7601197 
+  03CF97A8 232311FE DF7DD8D4 D417AA40 C4F1C7A8 A2F2CEBB D37783EA 386FA6DA 
+  9C1A09BB 8DDA0ED6 AD47032C EBEEF89A 4DB2FB80 C87A4401 2847EEE6 B4DA3CB7 
+  C5C2D0F2 90EC2A2A B17A8D53 D54172F2 D71BFE68 A10A97DB 6194CCCA 76980850 
+  7D6A665C A3F7A2F4 49E120B3 635CA67A 63365D6D 23676EF5 E2BC3449 040CAEEE 
+  63CDA1BC FA07D68B 2C425BD6 5162B572 5F8D5C05 DC70D275 44FEC7E0 F3F5CFBE 
+  08EC56D1 C1E8ACFF 34E60DD4 ABE080BD D0C75384 904C4D74 C9B72EF1 098C6065 
+  55FBC666 677A5D
+  	quit
+crypto pki crl download schedule prepublish 2760
+crypto pki crl download schedule retries 15
+crypto pki crl download schedule retries interval 180
+crypto pki crl download trustpoint sdn-network-infra-iwan
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip nbar attribute-map C9013_SC8021_T03
+ attribute category business-and-productivity-tools
+ attribute sub-category desktop-virtualization
+ attribute traffic-class multimedia-streaming
+
+
+ip nbar attribute-map C9013_SC8012_T08
+ attribute traffic-class transactional-data
+ attribute sub-category enterprise-transactional-apps
+ attribute category business-and-productivity-tools
+
+
+!
+!
+!
+ip nbar custom PShapes11i transport tcp id 22430
+ port 8030 
+ direction any
+
+
+ip nbar custom PShapes-Pkgp327 transport tcp id 58029
+ port 1551 
+ direction any
+
+
+ip nbar custom E1Web http url "http://e1web.nap.local:7777" id 5385 
+ip nbar custom E1WebPort transport tcp id 6875
+ port 7777 
+ direction any
+
+
+ip nbar custom Remote-Desktop transport tcp id 26219
+ port 3389 
+ direction any
+
+
+!
+ip nbar attribute-set PShapes11i C9013_SC8012_T08
+ip nbar attribute-set PShapes-Pkgp327 C9013_SC8012_T08
+ip nbar attribute-set E1Web C9013_SC8012_T08
+ip nbar attribute-set E1WebPort C9013_SC8012_T08
+ip nbar attribute-set Remote-Desktop C9013_SC8021_T03
+!
+
+
+!
+ip vrf IWAN-TRANSPORT-1
+ rd 65511:101
+!
+ip vrf IWAN-TRANSPORT-2
+ rd 65511:102
+!
+ip dhcp excluded-address 192.168.41.1
+ip dhcp excluded-address 192.168.41.1 192.168.41.80
+ip dhcp excluded-address 192.168.41.201 192.168.41.254
+!
+ip dhcp pool Data
+ network 192.168.41.0 255.255.255.0
+ default-router 192.168.41.1 
+ domain-name NAP.local
+ dns-server 172.20.10.40 172.21.10.40 
+!
+!
+!
+ip domain name NAP.local
+ip name-server 172.20.10.41
+ip name-server 172.21.10.40
+ip multicast-routing 
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+multilink bundle-name authenticated
+!
+domain ONE
+ vrf default
+  border
+   source-interface Loopback47233
+   master local
+  master branch
+   source-interface Loopback47233
+   site-prefixes prefix-list SITE-PREFIXES
+   hub 10.253.4.3
+!
+!
+key chain WAN-KEY
+ key 1
+  key-string 7 0007421507545A545C
+!
+!
+!
+!
+!
+!
+performance monitor context IWAN-Context profile application-experience
+ exporter destination 172.23.1.15 source Loopback47233 transport udp port 9991 
+ traffic-monitor application-response-time class-replace Business-Critical-and-default-tcp-only
+ traffic-monitor media class-replace Business-Critical-and-default-udp-only
+ traffic-monitor url class-replace Http-class
+ traffic-monitor conversation-traffic-stats class-replace Scavenger
+!
+license udi pid C892FSP-K9 sn FJC2048L00C
+license accept end user agreement
+!
+!
+username netvoix privilege 15 secret 5 $1$6nxD$1sq589msWXChGoz6FOTK7/
+username lairdadmin privilege 15 password 7 097B493C491F193C431D0C322D
+username napadmin privilege 15 secret 5 $1$BFzF$ib./Sydx9EonTCI9tJpS8/
+!
+redundancy
+!
+crypto ikev2 proposal AES/CBC/256 
+ encryption aes-cbc-256
+ integrity sha512
+ group 14
+!
+crypto ikev2 policy IKEv2-Policy-1 
+ match fvrf any
+ proposal AES/CBC/256
+!
+!
+crypto ikev2 profile FVRF-IKEv2-IWAN-TRANSPORT-2
+ match fvrf IWAN-TRANSPORT-2
+ match certificate CERT-MAP-IWAN-TRANSPORT-2
+ authentication remote rsa-sig
+ authentication local rsa-sig
+ pki trustpoint sdn-network-infra-iwan
+!
+crypto ikev2 profile FVRF-IKEv2-IWAN-TRANSPORT-1
+ match fvrf IWAN-TRANSPORT-1
+ match certificate CERT-MAP-IWAN-TRANSPORT-1
+ authentication remote rsa-sig
+ authentication local rsa-sig
+ pki trustpoint sdn-network-infra-iwan
+!
+crypto ikev2 dpd 40 5 on-demand
+crypto ikev2 disconnect-revoked-peers
+!
+!
+track 73 ip sla 118 reachability
+!
+track 74 ip sla 119 reachability
+!
+track 100 list boolean or
+ object 73
+ object 74
+!
+!
+class-map match-any prm-iwan8#NET-CTRL-MGMT
+ match dscp cs2 
+ match dscp cs6 
+class-map match-any prm-iwan8#SCAVENGER
+ match dscp cs1 
+class-map match-any prm-iwan8#VOICE
+ match dscp ef 
+class-map match-any business-critical-and-default
+ match protocol attribute category inter-process-rpc
+ match protocol attribute category industrial-protocols
+ match protocol attribute category net-admin
+ match protocol attribute category voice-and-video
+ match protocol attribute category email
+ match protocol attribute category layer3-over-ip
+ match protocol attribute category backup-and-storage
+ match protocol attribute category epayement
+ match protocol attribute category anonymizers
+ match protocol attribute category browsing
+ match protocol attribute category software-updates
+ match protocol attribute category other
+ match protocol attribute category business-and-productivity-tools
+ match protocol attribute category trojan
+ match protocol attribute category file-sharing
+ match protocol attribute category database
+class-map match-any prm-biz-relevant-cats
+ match protocol attribute category file-sharing
+ match protocol attribute category browsing
+ match protocol attribute category email
+ match protocol attribute category net-admin
+ match protocol attribute category business-and-productivity-tools
+ match protocol attribute category database
+ match protocol attribute category voice-and-video
+class-map match-any prm-iwan8#CALL-SIGNALING
+ match dscp cs3 
+class-map match-any prm-biz-irrelevant-cats
+ match protocol attribute category instant-messaging
+ match protocol attribute category social-networking
+ match protocol attribute category consumer-file-sharing
+ match protocol attribute category consumer-messaging
+ match protocol attribute category consumer-internet
+ match protocol attribute category consumer-streaming
+ match protocol attribute category gaming
+class-map match-any Scavenger
+ match protocol attribute category social-networking
+ match protocol attribute category gaming
+ match protocol attribute category consumer-internet
+ match protocol attribute category consumer-messaging
+ match protocol attribute category consumer-streaming
+ match protocol attribute category consumer-file-sharing
+ match protocol attribute category instant-messaging
+class-map match-any prm-iwan8#STREAMING-VIDEO
+ match dscp af31 
+ match dscp af32 
+ match dscp af33 
+ match dscp cs5 
+class-map match-any Http-class
+ match protocol http
+class-map match-any prm-iwan8#INTERACTIVE-VIDEO
+ match dscp af41 
+ match dscp af42 
+ match dscp af43 
+ match dscp cs4 
+class-map match-any prm-iwan8#CRITICAL-DATA
+ match dscp af11 
+ match dscp af13 
+ match dscp af21 
+ match dscp af23 
+class-map match-all prm-nbar-12-cls#BROADCAST-VIDEO
+ match protocol attribute traffic-class broadcast-video
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#BULK-DATA
+ match protocol attribute traffic-class bulk-data
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#INTERACTIVE-VIDEO
+ match protocol attribute traffic-class real-time-interactive
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#NETWORK-CONTROL
+ match protocol attribute traffic-class network-control
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#MULTIMEDIA-CONFERENCING
+ match protocol attribute traffic-class multimedia-conferencing
+ match class-map prm-biz-relevant-cats
+class-map match-all Business-Critical-and-default-tcp-only
+ match class-map business-critical-and-default
+ match access-group name business-critical-and-default-tcp-only
+class-map match-all Business-Critical-and-default-udp-only
+ match class-map business-critical-and-default
+ match access-group name business-critical-and-default-udp-only
+class-map match-all prm-nbar-12-cls#VOICE
+ match protocol attribute traffic-class voip-telephony
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#SCAVENGER
+ match class-map prm-biz-irrelevant-cats
+class-map match-all prm-nbar-12-cls#SIGNALING
+ match protocol attribute traffic-class signaling
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#NETWORK-MANAGEMENT
+ match protocol attribute traffic-class ops-admin-mgmt
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#TRANSACTIONAL-DATA
+ match protocol attribute traffic-class transactional-data
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#MULTIMEDIA-STREAMING
+ match protocol attribute traffic-class multimedia-streaming
+ match class-map prm-biz-relevant-cats
+!
+policy-map prm-dscp#iwan-8-id0
+ class prm-iwan8#VOICE
+  priority level 1
+  police cir percent 10
+ class prm-iwan8#STREAMING-VIDEO
+  bandwidth remaining percent 10 
+  random-detect dscp-based
+ class prm-iwan8#CALL-SIGNALING
+  bandwidth remaining percent 4 
+ class prm-iwan8#NET-CTRL-MGMT
+  bandwidth remaining percent 5 
+ class prm-iwan8#INTERACTIVE-VIDEO
+  bandwidth remaining percent 30 
+  random-detect dscp-based
+ class prm-iwan8#CRITICAL-DATA
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+ class prm-iwan8#SCAVENGER
+  bandwidth remaining percent 1 
+ class class-default
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+policy-map prm-dscp#iwan-8-id0#shape#25.0
+ class class-default
+  shape average 25000000   
+   service-policy prm-dscp#iwan-8-id0
+policy-map prm-dscp#iwan-8-id1
+ class prm-iwan8#VOICE
+  priority level 1
+  police cir percent 10
+ class prm-iwan8#STREAMING-VIDEO
+  bandwidth remaining percent 10 
+  random-detect dscp-based
+ class prm-iwan8#CALL-SIGNALING
+  bandwidth remaining percent 4 
+ class prm-iwan8#NET-CTRL-MGMT
+  bandwidth remaining percent 5 
+ class prm-iwan8#INTERACTIVE-VIDEO
+  bandwidth remaining percent 30 
+  random-detect dscp-based
+ class prm-iwan8#CRITICAL-DATA
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+ class prm-iwan8#SCAVENGER
+  bandwidth remaining percent 1 
+ class class-default
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+policy-map prm-dscp#iwan-8-id1#shape#10.0
+ class class-default
+  shape average 10000000   
+   service-policy prm-dscp#iwan-8-id1
+policy-map prm-nbar-12-cls
+ class prm-nbar-12-cls#VOICE
+  set dscp ef
+ class prm-nbar-12-cls#BROADCAST-VIDEO
+  set dscp cs5
+ class prm-nbar-12-cls#INTERACTIVE-VIDEO
+  set dscp cs4
+ class prm-nbar-12-cls#MULTIMEDIA-CONFERENCING
+  set dscp af41
+ class prm-nbar-12-cls#MULTIMEDIA-STREAMING
+  set dscp af31
+ class prm-nbar-12-cls#SIGNALING
+  set dscp cs3
+ class prm-nbar-12-cls#NETWORK-CONTROL
+  set dscp cs6
+ class prm-nbar-12-cls#NETWORK-MANAGEMENT
+  set dscp cs2
+ class prm-nbar-12-cls#TRANSACTIONAL-DATA
+  set dscp af21
+ class prm-nbar-12-cls#BULK-DATA
+  set dscp af11
+ class prm-nbar-12-cls#SCAVENGER
+  set dscp cs1
+ class class-default
+!
+! 
+crypto isakmp keepalive 30 5
+!
+crypto ipsec security-association replay window-size 1024
+!
+crypto ipsec transform-set AES256/SHA/TRANSPORT esp-aes 256 esp-sha-hmac 
+ mode transport
+!
+crypto ipsec profile DMVPN-PROFILE-TRANSPORT-1
+ set transform-set AES256/SHA/TRANSPORT 
+ set ikev2-profile FVRF-IKEv2-IWAN-TRANSPORT-1
+!
+crypto ipsec profile DMVPN-PROFILE-TRANSPORT-2
+ set transform-set AES256/SHA/TRANSPORT 
+ set ikev2-profile FVRF-IKEv2-IWAN-TRANSPORT-2
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback47233
+ ip address 10.253.8.8 255.255.255.255
+ ip pim sparse-mode
+ hold-queue 1024 in
+ hold-queue 1024 out
+!
+interface Tunnel11
+ bandwidth 25000
+ ip address 10.253.2.9 255.255.254.0
+ no ip redirects
+ ip mtu 1400
+ ip pim dr-priority 0
+ ip pim nbma-mode
+ ip pim sparse-mode
+ ip nhrp authentication cisco123
+ ip nhrp network-id 101
+ ip nhrp nhs 10.253.2.1 nbma 173.252.189.171 multicast
+ ip nhrp nhs 10.253.2.127 nbma 173.95.8.22 multicast
+ ip tcp adjust-mss 1360
+ delay 1000
+ nhrp group prm-25Mbps
+ no nhrp route-watch
+ tunnel source GigabitEthernet8
+ tunnel mode gre multipoint
+ tunnel key 101
+ tunnel vrf IWAN-TRANSPORT-1
+ tunnel protection ipsec profile DMVPN-PROFILE-TRANSPORT-1
+!
+interface Tunnel13
+ bandwidth 10000
+ ip address 10.253.0.111 255.255.254.0
+ no ip redirects
+ ip mtu 1400
+ ip pim dr-priority 0
+ ip pim nbma-mode
+ ip pim sparse-mode
+ ip nhrp authentication cisco123
+ ip nhrp network-id 102
+ ip nhrp nhs 10.253.0.1 nbma 74.205.252.81 multicast
+ ip nhrp nhs 10.253.0.46 nbma 12.250.58.18 multicast
+ ip tcp adjust-mss 1360
+ delay 2000
+ nhrp group prm-10Mbps
+ no nhrp route-watch
+ tunnel source GigabitEthernet9
+ tunnel mode gre multipoint
+ tunnel key 102
+ tunnel vrf IWAN-TRANSPORT-2
+ tunnel protection ipsec profile DMVPN-PROFILE-TRANSPORT-2
+!
+interface GigabitEthernet0
+ switchport mode trunk
+ no ip address
+!
+interface GigabitEthernet1
+ no ip address
+!
+interface GigabitEthernet2
+ no ip address
+!
+interface GigabitEthernet3
+ no ip address
+!
+interface GigabitEthernet4
+ no ip address
+!
+interface GigabitEthernet5
+ no ip address
+!
+interface GigabitEthernet6
+ no ip address
+!
+interface GigabitEthernet7
+ no ip address
+!
+interface GigabitEthernet8
+ description Internet Connection ISP-A
+ bandwidth 25000
+ ip vrf forwarding IWAN-TRANSPORT-1
+ ip address 104.179.164.98 255.255.255.248
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ ip nat outside
+ ip virtual-reassembly in
+ ip policy route-map INET-INTERNAL
+ duplex auto
+ speed auto
+ no lldp transmit
+ no lldp receive
+ no cdp enable
+ service-policy output prm-dscp#iwan-8-id0#shape#25.0
+!
+interface GigabitEthernet9
+ description Internet Connection ISP-B
+ bandwidth 10000
+ ip vrf forwarding IWAN-TRANSPORT-2
+ ip address 104.179.164.97 255.255.255.248
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ ip nat outside
+ ip virtual-reassembly in
+ ip policy route-map INET-INTERNAL
+ duplex auto
+ speed auto
+ no lldp transmit
+ no lldp receive
+ no cdp enable
+ service-policy output prm-dscp#iwan-8-id1#shape#10.0
+!
+interface Vlan1
+ description Data
+ ip address 192.168.41.1 255.255.255.0
+ ip access-group TRAFFIC-TO-DNS in
+ ip pim sparse-mode
+ ip nat inside
+ ip virtual-reassembly in
+ performance monitor context IWAN-Context 
+ service-policy input prm-nbar-12-cls
+!
+!
+router eigrp IWAN-EIGRP
+ !
+ address-family ipv4 unicast autonomous-system 400
+  !
+  af-interface default
+   passive-interface
+  exit-af-interface
+  !
+  af-interface Tunnel11
+   authentication mode md5
+   authentication key-chain WAN-KEY
+   hello-interval 20
+   hold-time 60
+   no passive-interface
+   stub-site wan-interface
+  exit-af-interface
+  !
+  af-interface Tunnel13
+   authentication mode md5
+   authentication key-chain WAN-KEY
+   hello-interval 20
+   hold-time 60
+   no passive-interface
+   stub-site wan-interface
+  exit-af-interface
+  !
+  topology base
+   distribute-list route-map DMVPN1-BR-IN in Tunnel11
+   distribute-list route-map DMVPN2-BR-IN in Tunnel13
+  exit-af-topology
+  network 10.253.0.0 0.0.1.255
+  network 10.253.2.0 0.0.1.255
+  network 10.253.8.8 0.0.0.0
+  network 192.168.41.0
+  eigrp router-id 10.253.8.8
+  eigrp stub-site 1:5
+ exit-address-family
+!
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+!
+!
+ip pim autorp listener
+ip pim register-source Loopback47233
+no ip nat service sip tcp port 5060
+no ip nat service sip udp port 5060
+ip nat inside source route-map ISP-A interface GigabitEthernet8 overload
+ip nat inside source route-map ISP-B interface GigabitEthernet9 overload
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet9 104.179.164.102 5
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet8 173.95.56.81 10
+ip route vrf IWAN-TRANSPORT-1 0.0.0.0 0.0.0.0 173.95.56.81
+ip route vrf IWAN-TRANSPORT-2 0.0.0.0 0.0.0.0 104.179.164.102
+ip ssh source-interface Loopback47233
+!
+ip access-list standard ALL-EXCEPT-DEFAULT
+ deny   0.0.0.0
+ permit any
+ip access-list standard SNMP_ACL
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+ip access-list standard SSH_IN
+ permit 12.35.51.5
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+ permit 192.168.0.0 0.0.255.255
+ permit 172.26.0.0 0.0.255.255
+ permit 10.254.88.0 0.0.3.255
+ permit 10.254.92.0 0.0.3.254
+!
+ip access-list extended ACL-INET-PUBLIC
+ permit udp any any eq non500-isakmp
+ permit udp any any eq isakmp
+ permit esp any any
+ permit udp any any eq bootpc
+ permit icmp any any echo
+ permit icmp any any echo-reply
+ permit ip host 173.252.189.173 any
+ip access-list extended INTERNAL-NETS
+ permit ip any 192.168.41.0 0.0.0.255
+ip access-list extended NAT
+ permit ip 192.168.41.0 0.0.0.255 any
+ip access-list extended TRAFFIC-TO-DNS
+ remark Match traffic to Umbrella Servers
+ permit udp any host 208.67.220.220 eq domain
+ permit tcp any host 208.67.220.220 eq domain
+ permit udp any host 208.67.222.222 eq domain
+ permit tcp any host 208.67.222.222 eq domain
+ permit udp any host 172.20.10.40 eq domain
+ permit tcp any host 172.20.10.40 eq domain
+ permit udp any host 172.21.10.40 eq domain
+ permit tcp any host 172.21.10.40 eq domain
+ permit udp any host 172.20.10.41 eq domain
+ permit tcp any host 172.20.10.41 eq domain
+ permit udp any host 172.21.10.41 eq domain
+ permit tcp any host 172.21.10.41 eq domain
+ deny   tcp any any eq domain log
+ deny   udp any any eq domain log
+ permit ip any any
+ip access-list extended business-critical-and-default-tcp-only
+ permit tcp any any
+ip access-list extended business-critical-and-default-udp-only
+ permit udp any any
+!
+!
+ip prefix-list SITE-PREFIXES seq 5 permit 192.168.41.0/24
+ip radius source-interface Loopback47233 
+ip sla 118
+ dns d.root-servers.net name-server 199.7.91.13
+ vrf IWAN-TRANSPORT-1
+ threshold 1000
+ timeout 3000
+ frequency 15
+ip sla schedule 118 life forever start-time now
+ip sla 119
+ dns b.root-servers.net name-server 192.228.79.201
+ vrf IWAN-TRANSPORT-1
+ threshold 1000
+ timeout 3000
+ frequency 15
+ip sla schedule 119 life forever start-time now
+no service-routing capabilities-manager
+logging host 172.23.1.15
+ipv6 ioam timestamp
+!
+route-map ISP-B permit 10
+ match ip address NAT
+ match interface GigabitEthernet9
+!
+route-map ISP-A permit 10
+ match ip address NAT
+ match interface GigabitEthernet8
+!
+route-map INET-INTERNAL permit 10
+ description Return routing for Local Internet Access
+ match ip address INTERNAL-NETS
+ set global
+!
+route-map DMVPN2-BR-IN permit 5
+ match tag 201
+ set metric +4000000000
+!
+route-map DMVPN2-BR-IN permit 10
+ match ip address ALL-EXCEPT-DEFAULT
+!
+route-map DMVPN1-BR-IN permit 5
+ match tag 101
+ set metric +4000000000
+!
+route-map DMVPN1-BR-IN permit 10
+ match ip address ALL-EXCEPT-DEFAULT
+!
+snmp-server community lppbisnmp-ro RO SNMP_ACL
+snmp-server community lppbisnmp-rw RW SNMP_ACL
+snmp-server community lppbisnmp RO
+snmp-server ifindex persist
+snmp-server trap-source Loopback47233
+snmp-server host 172.23.1.15 lppbisnmp-ro 
+snmp-server host 172.23.1.15 lppbisnmp-rw 
+radius-server attribute 6 on-for-login-auth
+radius-server attribute 6 support-multiple
+radius-server attribute 8 include-in-access-req
+radius-server attribute 25 access-request include
+radius-server attribute 31 mac format ietf upper-case
+radius-server attribute 31 send nas-port-detail mac-only
+radius-server dead-criteria time 10 tries 3
+radius-server deadtime 15
+!
+radius server MS-NPS1
+ address ipv4 172.20.10.42 auth-port 1812 acct-port 1813
+ timeout 60
+ retransmit 10
+ key 7 10411920373A380828537C6F3C
+!
+radius server MS-NPS2
+ address ipv4 172.21.10.41 auth-port 1812 acct-port 1813
+ timeout 60
+ retransmit 10
+ key 7 09435E302B283D112F5B526E33
+!
+!
+!
+control-plane
+!
+!
+!
+mgcp behavior rsip-range tgcp-only
+mgcp behavior comedia-role none
+mgcp behavior comedia-check-media-src disable
+mgcp behavior comedia-sdp-force disable
+!
+mgcp profile default
+!
+!
+!
+!
+!
+!
+ vstack
+!
+line con 0
+ no modem enable
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ access-class SSH_IN in vrf-also
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+ login authentication LOGIN-AUTH-VTY
+ transport input ssh
+ transport output ssh
+line vty 5 15
+ access-class SSH_IN in vrf-also
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+ login authentication LOGIN-AUTH-VTY
+ transport input ssh
+ transport output ssh
+!
+scheduler allocate 20000 1000
+ntp source Loopback47233
+ntp server 172.23.1.10
+ntp server 172.23.1.11
+ntp server 173.252.189.173
+!
+!
+!
+!
+!
+!
+!
+!
+pnp profile IWAN-PNP-PROFILE
+ transport https ipv4 173.252.189.173 port 443
+end

@@ -1,0 +1,1877 @@
+EG-CHP-MX1
+2022-01-20T08:33:58.318048Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T08:33:40.998048Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-17T19:29:03.243000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-17T19:22:48.673001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-08T14:31:55.349096Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-08T14:26:08.909104Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-07T02:18:22.716001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-07T02:14:18.103102Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-06T19:16:57.425000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-06T19:13:05.387383Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T01:39:26.046020Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T01:39:08.634021Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-02T19:48:42.190077Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-02T19:48:22.670077Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-02T19:12:28.131529Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-02T19:12:10.867528Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-02T17:50:59.373044Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-02T17:50:41.921045Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-02T17:32:45.672015Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-02T17:32:22.696016Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-02T16:51:31.249016Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-02T16:51:06.045017Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-30T13:10:53.294001Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-30T13:10:53.290000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-30T04:51:00.768487Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-30T04:51:00.768477Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-30T02:46:09.030447Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-30T02:46:09.030436Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+WL-LAK-MX1
+2021-12-21T20:27:56.994000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-21T20:27:45.358000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+EG-WLG-MX1
+2022-01-17T13:12:17.241000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-17T13:12:14.229001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-16T20:46:46.551553Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T20:20:18.257792Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T12:55:27.332000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T12:55:24.240000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-03T12:47:02.866686Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T12:38:31.684000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T12:30:24.557001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T12:18:17.214000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T12:02:00.884001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T11:43:02.967000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T11:22:20.562000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+AT-CPL-MX1
+2022-01-17T14:21:30.675342Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-17T14:21:30.673850Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-17T14:21:30.673635Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T02:22:47.300940Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T02:22:47.299560Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T02:22:47.298186Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T02:04:57.437634Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T02:04:57.437479Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T02:04:57.437309Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-01T01:48:08.742480Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-01T01:48:08.741151Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-01T01:48:08.732831Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-27T14:05:20.957303Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-27T14:05:20.955962Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-27T14:05:20.954646Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-25T02:11:29.991579Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-25T02:11:29.991424Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-25T02:11:29.991255Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+MWS-CHA-MX1
+2022-01-15T01:27:47.934871Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:27:45.146965Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:27:38.039232Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:27:25.945734Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:27:24.925864Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:27:15.528495Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:27:06.050812Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:25:48.299191Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:25:38.337017Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:25:38.336854Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:25:38.336664Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:24:56.268750Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:24:50.319497Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:24:23.966934Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:23:54.152753Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:22:25.400110Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:22:09.134067Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:21:59.424962Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:21:53.997281Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:21:51.617331Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:21:44.380225Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:21:41.204910Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:20:59.780617Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:20:49.242027Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:20:49.240525Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:20:49.239017Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:20:11.758562Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:19:44.284914Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:19:32.237297Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:19:05.433672Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:18:57.577115Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:18:51.779742Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:18:46.864913Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:18:37.342355Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:18:37.084791Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:18:32.306986Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:17:41.923418Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:17:29.880783Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:17:29.879234Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:17:29.877713Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:16:54.117161Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:16:30.787725Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:16:25.460791Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:16:12.801445Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:16:03.475022Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:15:45.341078Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:15:16.685412Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:15:01.343795Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:15:00.979959Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:13:59.473861Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:13:48.456670Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:13:48.455120Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:13:48.453593Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:11:16.837850Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:11:06.198267Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:11:05.693636Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:10:56.233936Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:10:56.232362Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:10:56.227838Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:10:02.457010Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:10:02.455455Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:10:02.453929Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:08:48.514390Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:07:43.310838Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:07:40.225788Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:07:35.923958Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:07:27.037878Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-15T01:07:21.851238Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:07:19.770328Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:07:19.768785Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-15T01:07:07.206414Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:13:19.353739Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:12:04.305979Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:12:01.204869Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:11:54.212760Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:11:48.047835Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:11:38.068171Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:11:34.502486Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:11:08.562577Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:11:05.242016Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:10:55.681654Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:10:51.612174Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:10:41.003665Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:10:36.551076Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:10:24.201924Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:10:13.010015Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:10:07.301817Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:09:56.926620Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:09:02.412487Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:08:52.830868Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T12:08:52.829355Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:08:52.820308Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T12:07:37.624174Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:07:30.965249Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:07:20.558160Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:07:09.177721Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:06:56.002914Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:06:51.871597Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-14T12:06:43.348558Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:06:42.620167Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+####################################################################################################
+
+EG-TAL-MX1
+2022-01-20T14:35:15.978914Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-20T14:35:15.977500Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-20T14:30:09.681488Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-20T14:30:09.680155Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-20T14:25:49.359922Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-20T14:25:49.358584Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-20T08:09:30.744210Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-20T08:09:28.288985Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-20T08:08:15.492219Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-20T08:06:51.151993Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-20T08:06:05.937946Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-20T08:05:59.363785Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-19T16:44:00.953942Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'false'}
+2022-01-19T16:43:37.680844Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'true'}
+2022-01-19T16:43:03.616782Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-19T16:43:03.615516Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-19T15:46:02.147028Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'true'}
+2022-01-19T15:45:58.308032Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'false'}
+2022-01-19T15:33:06.853965Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'true'}
+2022-01-19T15:33:04.269603Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'false'}
+2022-01-19T15:30:39.517899Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'true'}
+2022-01-19T15:30:36.473407Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'false'}
+2022-01-19T15:26:35.064215Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'true'}
+2022-01-19T15:26:31.714478Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'false'}
+2022-01-19T15:23:48.125518Z - Ethernet port carrier change - {'device': 'port9', 'carrier': 'true'}
+2022-01-19T12:09:35.581487Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-19T12:09:35.580144Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-19T12:06:10.969284Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-19T12:06:10.967966Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T14:12:15.845293Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T14:10:07.691550Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T14:10:00.437762Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-18T14:09:16.153456Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T02:03:15.597870Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T02:03:13.119775Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-18T02:02:01.705677Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T02:00:35.843911Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-18T01:59:53.770710Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T01:59:42.830729Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-18T01:58:51.635045Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T01:58:39.355006Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-15T01:23:47.854788Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T01:23:47.853435Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:21:06.547452Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T01:21:06.546123Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T22:15:49.690315Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-14T22:15:49.688790Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T22:11:29.795918Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-14T22:11:29.794599Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T22:07:13.510828Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-14T22:07:13.509483Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-13T14:28:09.381871Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-13T14:28:09.380532Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-13T13:59:59.616136Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-13T13:59:14.240634Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-13T13:59:07.954366Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-13T13:58:29.605494Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-12T22:36:24.378653Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-12T22:36:24.377298Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T22:18:31.865926Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-08T22:18:31.864597Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T22:15:05.419507Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-08T22:15:05.418191Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T01:15:58.156676Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-08T01:15:58.155374Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T01:11:31.581914Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-08T01:11:31.580574Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T01:07:29.840977Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-08T01:07:29.839623Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T20:57:34.349749Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T20:57:31.316119Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-07T20:56:21.867621Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T20:54:53.986217Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-07T20:54:11.093050Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T20:54:00.921602Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-05T22:06:51.348035Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-05T22:06:51.346638Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-05T14:53:13.446587Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-05T14:53:13.445225Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T22:15:37.124005Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-03T22:15:37.122669Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T22:11:18.746987Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-03T22:11:18.745662Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T14:26:57.193490Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T14:26:50.159698Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-03T14:26:08.811239Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T14:23:43.157723Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-03T14:18:28.287144Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'false'}
+2022-01-03T14:17:56.831688Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-03T14:17:08.648780Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T14:16:46.888780Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-01T01:19:50.709283Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-01T01:19:50.707907Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-29T21:09:26.947463Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-29T21:09:24.478204Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2021-12-29T21:08:10.190713Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-29T21:06:45.734189Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2021-12-29T21:05:59.263246Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-29T21:05:52.721637Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2021-12-25T02:31:58.120944Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+####################################################################################################
+
+WZ-BAY-MX1
+2021-12-31T18:25:11.723834Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2021-12-31T18:21:13.039562Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'false'}
+2021-12-31T16:06:15.321743Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T16:06:01.211815Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2021-12-31T16:02:52.943166Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T16:02:46.605406Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2021-12-31T16:02:33.454927Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T16:02:24.621121Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+####################################################################################################
+
+EG-BUN-MX1
+2022-01-07T08:25:49.291007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T08:24:22.279009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T08:23:40.887010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T08:23:31.115010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-05T11:46:24.195000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-05T11:41:15.464000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+####################################################################################################
+
+AT-JAX-MX1
+2022-01-16T12:12:38.481003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T12:12:35.697004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T12:11:35.225004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T12:11:25.125005Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-16T12:09:37.889008Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T12:08:55.465018Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T12:08:46.029019Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T12:08:46.029009Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-11T08:30:20.337707Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T08:30:14.469707Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T08:29:13.717709Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T08:27:10.893712Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T08:26:33.373713Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T08:26:22.869713Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-31T06:06:21.555003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-31T06:06:15.775003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-31T06:05:12.703005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-31T06:03:14.291007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-29T14:03:10.582005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-29T14:03:02.798005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-29T14:02:00.742007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-29T14:00:01.950010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-29T13:59:19.990010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-29T13:59:01.154011Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-29T13:55:35.114016Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-29T13:55:32.198015Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-29T13:54:31.386018Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-29T13:52:38.170020Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-29T13:52:02.878021Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-29T13:51:50.814021Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+CG-AUX-MX1
+2022-01-20T03:28:50.976475Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T03:28:42.836476Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-20T03:28:19.166889Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T03:28:05.474890Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-20T03:27:16.678891Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T03:27:09.218892Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-20T03:26:41.538892Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T03:26:34.930892Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-20T03:26:30.590893Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-18T07:32:07.031002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T07:31:57.495002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-18T07:31:26.503002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T07:31:18.843003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-18T07:30:32.695003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T07:30:24.103003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T21:50:42.794161Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T21:50:34.898160Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T21:50:11.558161Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T21:49:57.946161Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T21:49:10.102163Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T21:49:02.350162Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T21:48:36.310163Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T21:48:28.498163Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T21:48:21.674164Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-07T17:30:44.957001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T17:30:37.761002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T17:30:13.582802Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T17:29:59.814801Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T17:29:27.174803Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-07T17:29:11.306802Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T17:29:03.458802Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T17:28:47.790803Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T17:28:40.366803Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T17:23:34.045001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T17:23:27.625000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T17:23:02.909490Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T17:22:48.533489Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T17:22:03.969491Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-07T17:21:59.865492Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T17:21:52.429491Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T17:21:33.897491Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T17:21:26.345491Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T16:59:21.666429Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T16:59:08.014430Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T16:58:19.578430Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T16:58:11.710431Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T16:57:42.722431Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T16:57:35.526432Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-07T16:57:25.498431Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-04T21:52:56.672000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T21:52:48.684001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T21:52:25.082927Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T21:52:10.714927Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T21:51:23.414928Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T21:51:15.262928Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T21:50:52.130929Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T21:50:44.306930Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T21:50:09.678930Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T21:50:06.674931Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T21:49:35.114932Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T21:49:32.202931Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T21:48:56.674932Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T21:48:53.898932Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T21:48:00.470933Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T21:47:52.622934Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T21:47:34.194935Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T21:47:27.954935Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T21:47:23.210935Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+AT-AUG-MX1
+2022-01-18T16:04:12.974000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T16:04:02.898000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T13:36:06.267002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T13:35:55.447001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T07:16:13.571002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T07:16:07.775002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T07:13:13.911006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T07:11:32.891009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T07:09:49.063011Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T07:08:08.439013Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T07:06:26.147017Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T07:04:43.475018Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-13T07:03:00.571022Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-13T07:01:18.299024Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-06T14:06:28.900001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-06T14:06:18.264000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T16:03:51.379000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T16:03:48.335001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T15:51:40.287000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T15:51:30.839000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:29:32.463366Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:27:49.187369Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:25:57.263371Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:24:15.287374Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:22:24.111376Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:20:43.039378Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:18:52.019381Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:17:10.379384Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:15:16.067385Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:13:35.715389Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:11:45.043390Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:10:02.711394Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:08:09.595396Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:06:27.163398Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:04:35.395401Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:02:53.935404Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:01:02.121406Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:59:20.769407Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:57:26.297410Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:55:45.365412Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:53:54.853415Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:52:11.917418Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:50:18.901421Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:48:36.413424Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:46:45.889425Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:45:03.025429Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:43:11.557430Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:41:30.117434Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:39:36.713435Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:37:54.717438Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:36:01.893744Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:34:20.249747Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:32:28.917749Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:30:46.585752Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:28:58.849755Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:27:17.921757Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:23:45.701762Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:22:04.049765Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-24T08:10:15.381001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T08:10:08.277002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-24T08:10:03.009001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T08:08:20.225004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-23T05:59:26.120001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-23T05:59:19.284001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-23T05:59:02.032001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-23T05:58:58.972002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+CG-WIN-MX1
+2022-01-11T17:34:29.240001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-11T17:33:26.973335Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T17:33:19.633336Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T17:33:02.625335Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T17:32:55.221335Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T17:32:22.461337Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T17:32:15.141336Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T17:31:39.229337Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T17:31:31.969337Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-23T02:20:01.406001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-23T02:19:53.398000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+PR-ELL-MX1
+2022-01-13T18:48:45.116000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-13T18:44:59.044565Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T14:48:45.614001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T14:45:24.439024Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T09:26:06.343000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-31T09:22:45.361721Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+PR-SUT-MX1
+2022-01-07T06:09:25.043000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-06T14:03:14.228001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T09:59:35.662002Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+PR-ROC-MX1
+2022-01-03T17:18:56.018002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T17:18:53.690002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T17:18:52.146003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T17:18:35.842004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T15:55:07.777003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T15:55:00.465003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T15:54:59.729002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T15:54:56.681003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T15:54:54.965003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T15:54:44.609004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+CG-SDA-MX1
+2022-01-15T12:33:38.281001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-15T12:33:31.533001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-15T12:33:19.933001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-15T12:31:36.653003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T07:46:15.541001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T07:46:05.669001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T07:45:47.389000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T07:44:05.121004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T16:59:28.185398Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T16:59:18.124371Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T16:59:07.387005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T16:55:02.472615Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-04T16:50:28.874911Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T16:50:22.442910Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-27T18:06:56.889000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-27T18:04:57.176001Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-27T18:04:10.526000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-27T18:04:01.542001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-27T18:03:33.718002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-27T18:01:53.266015Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-27T18:01:53.266005Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-27T18:01:52.862004Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2021-12-21T15:54:26.509001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-21T15:54:15.449001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-21T15:53:51.849001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-21T15:52:10.993004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+EEI-MOR-MX1
+2022-01-01T15:47:27.012001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-01T15:46:41.184003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-01T15:46:16.776002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-01T15:46:13.948003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+EG-KNO-MX1
+2022-01-06T15:47:41.028001Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-06T15:47:37.980001Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-06T15:46:10.938000Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-06T15:44:07.574001Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-06T15:43:37.210001Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-06T15:43:26.372000Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2021-12-21T19:43:36.055001Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-21T19:43:29.339000Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2021-12-21T19:42:16.623001Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-21T19:40:14.105000Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2021-12-21T19:39:34.960000Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-21T19:39:26.564001Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+####################################################################################################
+
+EG-WAL-MX1
+2022-01-13T01:17:27.802000Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-13T01:12:44.642000Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+####################################################################################################
+
+AT-ALD-MX1
+2022-01-14T08:44:51.105000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T08:43:09.429003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+AT-CHP-MX1
+2022-01-19T03:29:11.154000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+AT-GAR-MX1
+2022-01-03T12:51:05.042001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T12:47:08.205002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:47:05.317002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:46:42.417002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:46:34.613003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:46:19.849003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:46:11.705003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:46:11.473002Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-24T05:57:34.953001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T05:57:26.525002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-24T05:39:18.916004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T05:39:11.900005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-24T05:38:47.740005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T05:38:41.136006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-24T05:35:38.920010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T05:35:28.896009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-24T05:30:39.445002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T05:30:24.125001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+LMT-MIA-MX1
+2022-01-18T14:14:28.542752Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T14:14:28.541238Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T14:14:28.539700Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T14:14:28.538160Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T14:14:28.536601Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T14:10:51.581176Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T14:10:51.579616Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T14:10:51.578094Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T14:10:51.576529Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T14:10:51.574969Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T12:12:47.801012Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T12:12:47.799480Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T12:12:47.797979Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T12:12:47.796478Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T12:12:47.794950Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T12:09:28.935246Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T12:09:28.933731Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T12:09:28.932224Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T12:09:28.930720Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T12:09:28.929207Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T12:06:30.642443Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T12:06:30.640929Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T12:06:30.639434Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T12:06:30.637929Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T12:06:30.636399Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T22:19:43.965079Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-14T22:19:43.963583Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T22:19:43.962055Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T22:19:43.960556Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T22:19:43.959023Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-09T08:11:14.395409Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-09T08:11:09.745184Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-09T08:10:56.320470Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-09T08:09:17.897778Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-04T14:25:59.538662Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-04T14:25:59.537174Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T14:25:59.535670Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-04T14:25:59.534173Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-04T14:25:59.532664Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-04T14:22:21.017296Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-04T14:22:21.015769Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T14:22:21.014250Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-04T14:22:21.012711Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-04T14:22:21.011183Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-04T14:19:45.237831Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-04T14:19:45.236267Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T14:19:45.234736Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-04T14:19:45.233213Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-04T14:19:45.231246Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-04T14:13:24.633529Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-04T14:13:24.632036Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T14:13:24.630490Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-04T14:13:24.628968Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-04T14:13:24.627445Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-04T14:05:55.432549Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-04T14:05:55.431024Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T14:05:55.429491Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-04T14:05:55.427978Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-04T14:05:55.426450Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-04T12:13:57.203284Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-04T12:13:57.201740Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T12:13:57.200220Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-04T12:13:57.198714Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-04T12:13:57.197174Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-04T12:10:30.859905Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-04T12:10:30.858393Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T12:10:30.856873Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-04T12:10:30.855372Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-04T12:10:30.853847Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-04T12:04:42.123610Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-04T12:04:42.122119Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T12:04:42.120589Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-04T12:04:42.119083Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-04T12:04:42.117574Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T14:05:36.869487Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-28T14:05:36.867988Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T14:05:36.866410Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T14:05:36.864878Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-28T14:05:36.863354Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T12:15:00.139642Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-28T12:15:00.138092Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T12:15:00.136584Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T12:15:00.135044Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-28T12:15:00.133522Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T12:11:46.846514Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-28T12:11:46.845021Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T12:11:46.843504Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T12:11:46.842014Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-28T12:11:46.840497Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T12:09:10.607453Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-28T12:09:10.605917Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T12:09:10.604372Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T12:09:10.602864Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-28T12:09:10.601310Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T12:05:32.185898Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-28T12:05:32.184353Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T12:05:32.182835Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T12:05:32.181318Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-28T12:05:32.179778Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-25T01:14:11.826149Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+####################################################################################################
+
+AT-HRL-MX1
+2022-01-06T07:58:46.685003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-06T07:58:43.749002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-06T07:44:57.955779Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-06T07:44:51.107779Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-06T07:42:35.855781Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-06T07:42:33.039781Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-06T07:38:40.215786Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-06T07:38:33.071787Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+CG-WDN-MX1
+2022-01-19T15:00:15.864109Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-19T15:00:15.862323Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-19T14:56:44.098565Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-19T14:56:44.096736Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-19T14:53:57.645816Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-19T14:53:57.643980Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-19T14:50:35.075642Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-19T14:50:35.073826Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T02:21:57.931166Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T02:21:57.929321Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-06T19:57:39.929502Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-06T19:53:57.674088Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-01T02:09:33.397115Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-01T02:09:33.395278Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+AT-EPA-MX1
+2022-01-08T01:19:09.761002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:19:01.281002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-08T01:18:31.977003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:18:25.529002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-08T01:17:51.505003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:17:43.609004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-08T01:09:03.537002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:08:55.341001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-08T01:07:44.381004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:07:38.017004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+CG-ROC-MX1
+2022-01-20T06:16:15.978024Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T06:16:10.714025Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-20T06:14:43.190026Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T06:14:34.266026Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+MNS-LKM-MX1
+2022-01-15T02:23:46.871567Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T02:23:46.870249Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T12:06:38.078217Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-07T12:06:38.076844Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T12:09:14.909173Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T12:09:14.907782Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T12:05:53.600234Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T12:05:53.598848Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:09:26.234369Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:09:26.232997Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T12:08:14.260467Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T12:08:14.259118Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T12:03:27.454535Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T12:03:27.453202Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-22T22:08:58.745974Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-22T22:08:58.744627Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+CG-NMB-MX1
+2022-01-12T07:14:04.413239Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-12T07:13:51.701942Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-12T07:12:38.179786Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-12T07:11:09.595755Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-12T07:10:27.697648Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-12T07:10:18.851691Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2021-12-22T12:26:45.813776Z - Ethernet port carrier change - {'device': 'port12', 'carrier': 'true'}
+2021-12-22T12:26:45.812253Z - Ethernet port carrier change - {'device': 'port11', 'carrier': 'true'}
+2021-12-22T12:26:45.810695Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-22T12:26:45.809155Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-22T12:26:45.807622Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-22T12:23:26.252208Z - Ethernet port carrier change - {'device': 'port12', 'carrier': 'true'}
+2021-12-22T12:23:26.250682Z - Ethernet port carrier change - {'device': 'port11', 'carrier': 'true'}
+2021-12-22T12:23:26.249180Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-22T12:23:26.247658Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-22T12:23:26.246120Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-22T12:19:38.836896Z - Ethernet port carrier change - {'device': 'port12', 'carrier': 'true'}
+2021-12-22T12:19:38.835366Z - Ethernet port carrier change - {'device': 'port11', 'carrier': 'true'}
+2021-12-22T12:19:38.833868Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-22T12:19:38.832356Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-22T12:19:38.830796Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-22T12:16:48.819200Z - Ethernet port carrier change - {'device': 'port12', 'carrier': 'true'}
+2021-12-22T12:16:48.817692Z - Ethernet port carrier change - {'device': 'port11', 'carrier': 'true'}
+2021-12-22T12:16:48.816129Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-22T12:16:48.814584Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-22T12:16:48.813038Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+CG-UNI-MX1
+2022-01-17T15:27:42.597326Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-17T15:23:59.288881Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-05T14:23:53.336069Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-05T14:23:53.334238Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+AT-CHA-MX1
+2022-01-20T14:15:57.653002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T14:15:54.749002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T05:11:27.961003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T05:11:24.769002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-31T21:24:22.077002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-31T21:24:15.565001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+3PH-BLO-MX1
+2022-01-11T07:26:53.330004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T07:26:50.366004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T07:25:34.734005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T07:24:09.662009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-11T07:23:29.262008Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T07:23:19.470010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+EG-WLG2-MX1
+2022-01-16T20:45:24.089004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:45:08.645004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:44:57.705003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:44:50.481003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:43:41.361006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:43:34.741005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:19:02.838002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:18:40.650003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:18:36.210004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:18:28.946003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:17:07.650006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:16:34.154006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:15:27.402008Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:15:18.698009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:14:19.222009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:14:05.442009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:13:49.634011Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:13:42.414011Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:13:17.198012Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:12:43.518012Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T20:11:37.598014Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T20:11:27.830013Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:44:15.529002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:43:43.125004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:42:18.681005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:42:11.493005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:41:00.745007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:40:39.297008Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:37:00.665002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:36:27.509002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:35:15.345005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:34:57.553004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:33:43.677006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:33:09.957007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:32:03.189008Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:31:54.497009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:28:27.500001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:28:12.568002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:28:01.276002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:27:53.732002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:26:46.404005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:26:38.256005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:17:05.088644Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:16:31.336644Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:15:24.800646Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:15:15.872647Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:13:18.336648Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:12:56.136650Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:12:51.596649Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:12:44.512650Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:11:38.852652Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T12:11:29.144651Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T12:00:06.033001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:59:54.149002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:59:40.425003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:59:32.365003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:57:57.961004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:57:49.361005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:41:54.181003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:41:38.957003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:41:28.013003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:41:20.457003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:40:15.537004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:40:04.893004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:20:29.760003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:20:14.756002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:20:04.764003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:19:56.000004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T11:18:49.436005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T11:18:40.572005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+CG-LES-MX1
+2022-01-06T11:21:00.906001Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-06T11:19:04.032011Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+EG-ROX-MX1
+2022-01-03T15:38:46.048001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-03T15:35:42.387850Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+####################################################################################################
+
+PC-CST-MX1
+2022-01-15T01:34:38.102458Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-15T01:34:38.100625Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:34:38.098789Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:11:25.640503Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-15T01:11:25.638683Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:11:25.636893Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T22:21:08.584247Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T22:21:08.582459Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T22:21:08.580660Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T22:15:29.322911Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T22:15:29.321088Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T22:15:29.319250Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T22:10:35.700530Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T22:10:35.698739Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T22:10:35.696930Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T22:06:22.578392Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T22:06:22.576570Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T22:06:22.574768Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-12T22:18:51.064105Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-12T22:18:51.062297Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-12T22:18:51.060467Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-12T22:10:51.641473Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-12T22:10:51.639679Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-12T22:10:51.637892Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-12T22:06:40.689373Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-12T22:06:40.687549Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-12T22:06:40.685689Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-11T22:11:55.359694Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T22:11:55.357847Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-11T22:11:55.356019Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-11T22:06:48.349385Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-11T22:06:48.347608Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-11T22:06:48.345792Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T22:17:16.282665Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-10T22:17:16.280847Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T22:17:16.278986Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T22:13:03.885432Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-10T22:13:03.883603Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T22:13:03.881748Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T22:09:41.717884Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-10T22:09:41.716056Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T22:09:41.714263Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T15:55:59.212199Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T15:53:41.662611Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-10T15:52:47.517738Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-09T22:07:12.554388Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-09T22:07:12.552552Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-09T22:07:12.550697Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T01:19:13.465229Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:19:13.463447Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-08T01:19:13.461625Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T01:16:40.537457Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:16:40.535646Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-08T01:16:40.533799Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T01:12:23.189131Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:12:23.187299Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-08T01:12:23.185442Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T01:07:18.690006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:07:18.688199Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-08T01:07:18.686356Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T14:16:53.785550Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-03T14:14:36.709240Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T14:13:40.650235Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T17:50:44.344140Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T17:47:57.055126Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T17:47:00.910284Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T17:42:47.051270Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T17:40:29.486859Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T17:39:33.516859Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T16:34:44.128439Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T16:32:18.930535Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T16:31:11.217611Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T16:25:36.422072Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T16:23:18.169199Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T16:22:24.172887Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+EG-APX-MX1
+2022-01-19T15:59:48.582000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-19T15:59:41.250000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-19T15:59:02.011262Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-19T15:58:22.179264Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-19T15:58:14.635263Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-19T15:57:48.359265Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-16T21:26:09.211420Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T21:26:01.783420Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T21:24:41.872217Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T21:24:33.772217Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-16T18:41:07.712001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T18:38:09.398000Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-16T18:38:05.058001Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-16T18:37:33.250000Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-16T18:37:28.834001Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-16T18:37:17.750000Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-16T18:37:13.706001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-16T18:37:13.474000Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-03T18:39:32.540836Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T18:39:32.540826Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-22T10:01:56.297000Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-22T10:01:43.393001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+EX-COMCAST12-MR1
+2022-01-03T07:36:46.077626Z - Ethernet port carrier change - {'device': 'wired0', 'carrier': 'true'}
+2022-01-03T07:36:36.012449Z - Ethernet port carrier change - {'device': 'wired0', 'carrier': 'false'}
+2022-01-03T07:36:31.000164Z - Ethernet port carrier change - {'device': 'wired0', 'carrier': 'true'}
+2022-01-03T07:34:45.678318Z - Ethernet port carrier change - {'device': 'wired0', 'carrier': 'false'}
+####################################################################################################
+
+ECS-CHA-MX1
+2022-01-20T09:15:44.260364Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T09:15:41.353626Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-20T09:15:11.965627Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T09:15:07.361628Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-17T09:58:38.950001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-14T19:41:10.978002Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-09T18:46:40.769001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+AT-DUL-MX1
+2022-01-01T14:42:47.909449Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-01T14:41:09.648714Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+CG-FPR2
+2022-01-12T07:55:49.219002Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-12T07:55:46.447001Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-12T07:54:31.311003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-12T07:53:00.795006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-12T07:52:20.571007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-12T07:52:09.715007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+USG-RIC-MX1
+2021-12-31T15:19:01.076001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-31T15:18:59.548001Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T15:16:47.124001Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+####################################################################################################
+
+WZ-PHX-MX1
+2022-01-08T01:46:21.153170Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:46:21.151359Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-08T01:41:52.959177Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-08T01:41:52.957338Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-01T02:14:27.648122Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-01T02:14:27.646337Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+MNS-TAF-MX1
+2021-12-27T15:56:31.221940Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-27T15:56:24.885468Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-27T15:56:19.115628Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-27T15:56:10.325916Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-27T15:55:41.471247Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-27T15:55:32.029552Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+####################################################################################################
+
+CG-WOB-MX1
+2022-01-18T18:08:13.594162Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-18T18:08:07.958030Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-18T18:07:59.459722Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-18T18:06:18.785254Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-16T08:48:54.799535Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T08:48:49.495713Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-16T08:48:41.023781Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T08:47:00.070540Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+####################################################################################################
+
+MNS-SAC-MX1
+2022-01-15T02:27:04.343574Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-15T02:27:04.341779Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T02:27:04.339896Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T14:13:21.639604Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T14:13:21.637770Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T14:13:21.635970Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T14:04:20.535712Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T14:04:20.533895Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T14:04:20.531981Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T14:15:54.440839Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T14:15:54.439021Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-07T14:15:54.437206Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T12:08:15.029536Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T12:08:15.027704Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-07T12:08:15.025852Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T12:05:35.182691Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T12:05:35.180855Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-07T12:05:35.179022Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T14:17:29.124449Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-31T14:17:29.122531Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T14:17:29.120713Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T14:12:37.049274Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-31T14:12:37.047429Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T14:12:37.045622Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T12:09:00.388099Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-31T12:09:00.386271Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T12:09:00.384401Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T12:04:41.961240Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-31T12:04:41.959470Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T12:04:41.957638Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-28T19:32:05.401536Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-28T19:31:59.368457Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-28T19:31:05.747992Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:19:04.876784Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T14:19:04.874936Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:19:04.873138Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:16:16.392702Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T14:16:16.313787Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:16:16.311949Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:12:35.400774Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T14:12:35.399781Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:12:35.398765Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:04:21.569238Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T14:04:21.567430Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:04:21.565608Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T12:08:35.297806Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T12:08:35.295943Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T12:08:35.294056Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T12:05:48.220865Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T12:05:48.219072Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T12:05:48.217242Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+MNS-RAL-MX1
+2022-01-14T12:05:46.879153Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-14T12:05:46.877305Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-14T12:05:46.875482Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T12:05:46.800525Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T12:05:46.798640Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-14T12:05:46.796760Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T14:14:19.919322Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2021-12-31T14:14:19.917535Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-31T14:14:19.915752Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-31T14:14:19.913949Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T14:14:19.912194Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-31T14:14:19.910398Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:17:44.256058Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2021-12-24T14:17:44.254265Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-24T14:17:44.252456Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T14:17:44.250632Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:17:44.248823Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-24T14:17:44.246969Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-23T14:34:01.879986Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2021-12-23T14:34:01.878137Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-23T14:34:01.876274Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-23T14:34:01.874438Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-23T14:34:01.872606Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-23T14:34:01.870574Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-23T14:28:42.412935Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2021-12-23T14:28:42.410975Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-23T14:28:42.409034Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-23T14:28:42.407080Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-23T14:28:42.405133Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-23T14:28:42.403176Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-23T14:24:00.600409Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2021-12-23T14:24:00.598566Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-23T14:24:00.596704Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-23T14:24:00.594872Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-23T14:24:00.593017Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-23T14:24:00.591178Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+CG-OPK-MX1
+2022-01-09T07:28:23.510438Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-09T07:27:43.786439Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-09T07:27:40.970439Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-09T07:26:01.830442Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-09T01:44:33.914622Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-05T16:39:30.763745Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-05T16:00:14.257004Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-05T16:00:06.913003Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-05T15:58:42.649005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-05T15:57:14.525007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-05T15:56:31.297008Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-05T15:56:19.973010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-05T15:17:47.622000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-05T15:13:15.225001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-24T07:08:04.300199Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-24T07:07:10.624202Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T07:07:07.736202Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-24T07:05:42.328203Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+####################################################################################################
+
+CG-HGO-MX1
+2022-01-09T20:16:21.524454Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-09T20:16:13.381155Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-09T20:13:27.573457Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2022-01-09T20:13:27.356024Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+####################################################################################################
+
+CG-ERV-MX1
+2021-12-21T15:47:23.814941Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-21T15:47:23.813659Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-21T14:49:21.754153Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-21T14:49:19.953752Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-21T13:13:26.084851Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-21T13:13:23.396977Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+2021-12-21T13:11:32.275063Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2021-12-21T13:11:28.911570Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'false'}
+####################################################################################################
+
+MNS-CNC-MX1
+2022-01-10T21:26:28.706083Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:26:26.440541Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:26:25.769090Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:26:22.447230Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:26:22.011501Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:26:19.102077Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:26:18.226202Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:26:15.337712Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:26:14.463789Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:26:10.522803Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:26:10.305923Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:26:06.542479Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:25:27.931428Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:25:23.988847Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:25:23.772229Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:25:20.219705Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:25:19.345706Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:25:16.027868Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:25:13.408265Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:25:10.305609Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:25:09.421133Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:25:05.935247Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:25:05.719196Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:25:02.328061Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:25:00.529748Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:24:57.163018Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:24:52.512053Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:24:48.906522Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:21:41.460047Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:21:37.683253Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:20:45.332855Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:20:42.432557Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:20:41.337160Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:20:37.998505Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:19:55.723407Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:19:52.375835Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:19:51.498959Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:19:47.927547Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:19:46.398124Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:19:42.636702Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:19:27.629179Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:19:21.458441Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:19:20.370847Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:19:17.051331Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:19:12.675494Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:19:09.571787Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:19:08.696768Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:19:05.158293Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:19:01.873823Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:18:58.302506Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:18:52.784996Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:18:49.438694Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:17:35.510919Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:17:32.150171Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:17:19.863398Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:17:16.430301Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:16:19.368145Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:16:16.012335Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T21:15:27.979362Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T21:15:24.834156Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:57:24.306482Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:57:06.558001Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:56:43.150861Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:56:39.167186Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:56:37.643591Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:56:33.921621Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:56:33.488915Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:56:30.169354Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:55:59.927237Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:55:56.567128Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:55:44.651458Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:55:41.555850Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:55:40.676076Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:55:37.111079Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:55:36.015172Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:55:32.490684Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:55:32.272401Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:55:28.503091Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:52:17.754247Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:52:15.305769Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:52:14.433588Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:52:11.112521Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:52:10.455149Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:52:06.688191Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:52:06.031220Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:52:02.480489Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:51:57.874938Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:51:51.029232Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:47:57.478960Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:47:53.463797Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:47:48.788737Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:47:45.737037Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:47:45.303599Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:47:43.035625Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:47:41.941967Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:47:38.604758Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:47:37.948422Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:47:34.675966Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+2022-01-10T20:47:34.244380Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T20:47:30.933569Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'false'}
+####################################################################################################
+
+EG-ASH-MX1
+2022-01-20T15:22:46.347619Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-20T15:22:46.346123Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-20T15:22:46.344604Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T15:22:46.343115Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-20T15:22:46.341576Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-20T15:22:46.340060Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-20T14:19:56.078470Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-20T14:19:56.076930Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-20T14:19:56.075387Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T14:19:56.073854Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-20T14:19:56.072287Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-20T14:19:56.070703Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-20T14:14:53.824532Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-20T14:14:53.823024Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-20T14:14:53.821310Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T14:14:53.819763Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-20T14:14:53.818190Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-20T14:14:53.816637Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-19T12:04:54.994219Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-19T12:04:54.992590Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-19T12:04:54.990809Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-19T12:04:54.989300Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-19T12:04:54.987771Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-19T12:04:54.986254Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T22:19:48.974298Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-18T22:19:48.972701Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T22:19:48.971188Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T22:19:48.969674Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T22:19:48.968139Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T22:19:48.966593Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T22:16:10.767755Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-18T22:16:10.766246Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T22:16:10.764719Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T22:16:10.763184Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T22:16:10.761419Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T22:16:10.759896Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T22:13:28.770718Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-18T22:13:28.769207Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T22:13:28.767713Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T22:13:28.766216Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T22:13:28.764458Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T22:13:28.762945Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T22:10:32.790163Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-18T22:10:32.788655Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T22:10:32.787132Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T22:10:32.785619Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T22:10:32.784099Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T22:10:32.782550Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T22:06:25.841640Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-18T22:06:25.840117Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-18T22:06:25.838572Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T22:06:25.837054Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-18T22:06:25.835515Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-18T22:06:25.833956Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-17T22:23:48.182543Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-17T22:23:48.180938Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-17T22:23:48.179320Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-17T22:23:48.177705Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-17T22:23:48.176098Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-17T22:23:48.174472Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-17T22:15:47.577789Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-17T22:15:47.576255Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-17T22:15:47.574748Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-17T22:15:47.573249Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-17T22:15:47.571727Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-17T22:15:47.570203Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-17T22:11:41.599216Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-17T22:11:41.597695Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-17T22:11:41.596153Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-17T22:11:41.594615Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-17T22:11:41.592943Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-17T22:11:41.591413Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-17T22:06:52.425110Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-17T22:06:52.423587Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-17T22:06:52.422094Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-17T22:06:52.420571Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-17T22:06:52.419069Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-17T22:06:52.417546Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-16T22:15:55.443809Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-16T22:15:55.442311Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-16T22:15:55.440805Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T22:15:55.439268Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-16T22:15:55.437777Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-16T22:15:55.436275Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-16T22:11:34.398478Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-16T22:11:34.396981Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-16T22:11:34.395422Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T22:11:34.393811Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-16T22:11:34.392199Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-16T22:11:34.390682Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-16T22:06:48.451105Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-16T22:06:48.449564Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-16T22:06:48.447869Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-16T22:06:48.446342Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-16T22:06:48.444838Z - Ethernet port carrier change - {'device': 'port2', 'carrier': 'true'}
+2022-01-16T22:06:48.443322Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T22:15:12.616681Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-15T22:15:12.615124Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T22:15:12.613588Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-15T22:15:12.612019Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+####################################################################################################
+
+AT-BGT-MX1
+2022-01-18T10:26:12.268434Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T10:22:18.908620Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-17T18:24:20.614147Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-17T18:24:20.613125Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T11:53:27.625329Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-16T11:51:18.820017Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T11:51:13.089993Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-16T11:50:35.054090Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T11:50:29.512181Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-16T11:50:23.182971Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T11:50:22.034725Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-16T11:50:19.583550Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T11:50:18.166743Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-16T11:50:18.166558Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+####################################################################################################
+
+AT-DAL-MX1
+2022-01-15T02:35:22.413572Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T02:35:22.411761Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-15T02:35:22.409930Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T02:35:22.408122Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T02:30:30.750791Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T02:30:30.748975Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-15T02:30:30.747122Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T02:30:30.745279Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T02:26:12.140402Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T02:26:12.138592Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-15T02:26:12.136755Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T02:26:12.134927Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+USG-NSH-MX1
+2022-01-20T13:09:42.880109Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-20T13:09:42.878282Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-20T13:09:42.876473Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-20T13:06:13.885792Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-20T13:06:13.884001Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-20T13:06:13.882191Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T01:41:30.341680Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-15T01:41:30.339854Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T01:41:30.338006Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-13T14:16:28.034250Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-13T14:16:28.032401Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-13T14:16:28.030575Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-13T14:10:26.017343Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-13T14:10:26.015501Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-13T14:10:26.013632Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-13T13:11:10.526917Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-13T13:11:10.525096Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-13T13:11:10.523281Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-13T13:06:56.278126Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-13T13:06:56.276287Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-13T13:06:56.274435Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-11T22:07:41.946242Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-11T22:07:41.944452Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-11T22:07:41.942650Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T22:15:12.496473Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-10T22:15:12.494683Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T22:15:12.492847Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T22:10:56.732671Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-10T22:10:56.730827Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T22:10:56.729017Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T22:06:26.597455Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-10T22:06:26.595616Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T22:06:26.593800Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-09T22:13:54.037992Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-09T22:13:54.036215Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-09T22:13:54.034406Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-09T22:10:07.359184Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-09T22:10:07.357367Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-09T22:10:07.355509Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-06T13:18:25.030122Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-06T13:18:25.028299Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-06T13:18:25.026443Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-06T13:13:29.052813Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-06T13:13:29.050975Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-06T13:13:29.049114Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-06T13:09:53.260886Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-06T13:09:53.259008Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-06T13:09:53.257134Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-06T13:05:51.368803Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-06T13:05:51.366981Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-06T13:05:51.365170Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-05T22:12:47.759871Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-05T22:12:47.758027Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-05T22:12:47.756201Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-05T22:09:36.154546Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-05T22:09:36.152657Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-05T22:09:36.150811Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-05T22:06:24.544711Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-05T22:06:24.542829Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-05T22:06:24.540998Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T22:06:38.501445Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-03T22:06:38.499597Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-03T22:06:38.497749Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-02T22:05:59.593137Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-02T22:05:59.591337Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-02T22:05:59.589523Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-01T01:19:55.776031Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-01T01:19:55.774231Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-01T01:19:55.772413Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-01T01:14:03.171998Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-01T01:14:03.170144Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-01T01:14:03.168329Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-01T01:09:40.139710Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2022-01-01T01:09:40.138715Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-01T01:09:40.137695Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T22:19:26.661744Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2021-12-31T22:19:26.661209Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T22:19:26.660989Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T22:13:32.331173Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2021-12-31T22:13:32.329406Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T22:13:32.327604Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T22:10:01.491874Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2021-12-31T22:10:01.490075Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T22:10:01.488257Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T22:06:24.710396Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2021-12-31T22:06:24.708539Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T22:06:24.706660Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-30T22:10:43.548137Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2021-12-30T22:10:43.546335Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-30T22:10:43.544506Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-30T22:07:26.739686Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2021-12-30T22:07:26.737883Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-30T22:07:26.736079Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-30T13:13:52.242572Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2021-12-30T13:13:52.240756Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-30T13:13:52.238962Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-30T13:10:37.566561Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+2021-12-30T13:10:37.564666Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-30T13:10:37.562825Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-30T13:05:46.627841Z - Ethernet port carrier change - {'device': 'port10', 'carrier': 'true'}
+####################################################################################################
+
+USG-LUM-MX1
+2022-01-10T06:31:23.109338Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:31:15.323342Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:30:20.813878Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:30:13.690020Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:26:32.232846Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:26:22.324954Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:24:17.738317Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:24:15.027375Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:21:24.791930Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:21:10.141659Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:20:34.829803Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:20:24.696898Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:19:45.397901Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:19:31.816478Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:18:49.554724Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:18:44.100897Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:18:36.603605Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:18:33.870809Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:14:46.930672Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:14:40.088680Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:14:04.571788Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:13:50.114077Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-10T06:12:57.735909Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-10T06:12:50.052298Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-04T10:02:38.794883Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-04T10:02:31.960964Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-04T10:00:48.781011Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-04T10:00:43.423255Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-04T10:00:26.344266Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-04T10:00:19.304630Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-04T10:00:10.778094Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-04T10:00:03.658879Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-04T09:59:28.655817Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-04T09:59:13.213844Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-04T09:57:33.435357Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-04T09:57:20.741755Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-22T19:42:08.697144Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-22T19:42:01.204899Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+####################################################################################################
+
+AT-NBE-MX1
+2022-01-20T16:55:27.955018Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-20T16:55:15.479018Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-22T05:14:16.981007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-22T05:14:04.585007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2021-12-22T05:05:32.821008Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-22T05:05:20.421009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+WZ-LED-MX1
+2021-12-22T13:53:59.433238Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-22T13:52:21.956423Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2021-12-22T13:52:21.275196Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-22T13:50:20.276699Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+WZ-ASK-MX1
+2022-01-15T04:48:37.331077Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-15T04:48:22.880654Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T04:39:55.968244Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'false'}
+2022-01-15T04:39:55.296324Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'false'}
+2022-01-15T04:23:15.657052Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T04:23:03.582830Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-15T03:51:30.288896Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'false'}
+2022-01-15T03:51:30.288718Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'false'}
+2022-01-15T03:50:25.934114Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T03:50:14.003498Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-15T03:45:10.913983Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'false'}
+2022-01-15T03:45:10.913790Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'false'}
+2022-01-15T03:45:02.614181Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T03:44:51.911879Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-15T03:30:35.392024Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'false'}
+2022-01-15T03:30:35.391836Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'false'}
+2022-01-15T03:28:20.999020Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T03:28:10.313422Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-15T02:38:59.463393Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'false'}
+2022-01-15T02:38:59.463208Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'false'}
+2022-01-15T02:37:29.449860Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T02:37:17.464503Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-15T02:32:43.831537Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'false'}
+2022-01-15T02:32:36.304059Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-15T02:24:28.785847Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'false'}
+2022-01-15T02:24:28.785661Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'false'}
+2022-01-15T02:24:19.267978Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-15T02:24:12.760375Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-15T02:19:08.017277Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'false'}
+2022-01-15T02:19:08.016727Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'false'}
+####################################################################################################
+
+USG-NCR-MX1
+2022-01-19T08:25:41.801806Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-19T08:25:36.239532Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-19T08:24:25.392271Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-19T08:22:53.252794Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-19T08:22:10.243160Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-19T08:22:03.234097Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-31T17:55:37.119649Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T17:54:18.558253Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-31T17:54:16.183279Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-31T17:53:04.072468Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+KCI-MID-MX1
+2022-01-18T15:42:44.889828Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T15:42:41.605246Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+####################################################################################################
+
+MP-ASC-MX1
+2022-01-18T14:12:26.778336Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-18T14:12:23.764775Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-04T22:39:29.307238Z - Ethernet port carrier change - {'device': 'port5', 'carrier': 'true'}
+2022-01-04T22:39:28.003866Z - Ethernet port carrier change - {'device': 'port6', 'carrier': 'true'}
+2022-01-04T22:39:24.156265Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-04T22:37:30.757584Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+AT-KOP-MX1
+2022-01-18T06:24:02.285007Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T06:22:30.221009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-18T06:21:50.397011Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T06:21:40.137011Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T15:54:53.801006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T15:54:51.109005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T15:53:52.137006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T15:52:18.221009Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-03T15:51:39.509010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-03T15:51:28.429011Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+WZ-KCR-MX1
+2022-01-19T23:24:01.879281Z - Ethernet port carrier change - {'device': 'port7', 'carrier': 'true'}
+2022-01-19T23:19:00.627579Z - Ethernet port carrier change - {'device': 'port7', 'carrier': 'false'}
+2022-01-19T17:23:36.814327Z - Ethernet port carrier change - {'device': 'port7', 'carrier': 'true'}
+2022-01-19T17:19:50.751259Z - Ethernet port carrier change - {'device': 'port7', 'carrier': 'false'}
+2022-01-19T13:10:30.029526Z - Ethernet port carrier change - {'device': 'port7', 'carrier': 'true'}
+2022-01-19T13:06:26.117821Z - Ethernet port carrier change - {'device': 'port7', 'carrier': 'false'}
+2022-01-09T21:33:18.717391Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-09T21:33:16.121237Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-09T21:32:49.838685Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-09T21:32:41.842233Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2021-12-29T14:39:52.186244Z - Ethernet port carrier change - {'device': 'port7', 'carrier': 'true'}
+2021-12-29T14:35:38.641176Z - Ethernet port carrier change - {'device': 'port7', 'carrier': 'false'}
+####################################################################################################
+
+AT-GSO-MX1
+2021-12-21T18:20:27.181715Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+####################################################################################################
+
+3PH-CHI-MX1
+2022-01-17T12:10:50.973381Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-17T12:10:50.971514Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-17T12:06:40.146327Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-17T12:06:40.144464Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-15T02:04:28.634445Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-15T02:04:28.632637Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T12:09:11.732695Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T12:09:11.730863Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T12:05:56.024878Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T12:05:56.023060Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-12T09:19:28.374341Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-12T09:19:24.451591Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-12T09:19:16.085299Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-12T09:17:30.137063Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2022-01-10T14:28:29.741785Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T14:28:29.739993Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T14:23:12.646821Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T14:23:12.644999Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T14:17:23.148582Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T14:17:23.146783Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T14:10:03.317332Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T14:10:03.315555Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T14:07:08.915698Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T14:07:08.913847Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-10T12:07:30.684679Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-10T12:07:30.682845Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T12:10:30.724977Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-03T12:10:30.723093Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-03T12:06:28.764381Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-03T12:06:28.762475Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-29T08:48:10.409687Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-29T08:48:03.453716Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2021-12-29T08:47:46.611838Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-29T08:46:04.820059Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'false'}
+2021-12-27T12:18:03.847609Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-27T12:18:03.845772Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-27T12:12:40.370147Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-27T12:12:40.368313Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-27T12:08:34.697762Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-27T12:08:34.695923Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-27T12:04:44.505495Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-27T12:04:44.503602Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+MNS-COR-MX1
+2022-01-14T15:01:04.926726Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T15:01:04.924923Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T15:01:04.923098Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T14:55:48.189817Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T14:55:48.188016Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T14:55:48.186191Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T12:12:20.077033Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T12:12:20.075258Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T12:12:20.073467Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T12:09:25.192965Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T12:09:25.191124Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T12:09:25.189282Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-14T12:05:22.185729Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-14T12:05:22.183938Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-14T12:05:22.182084Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T14:54:32.262454Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T14:54:32.260612Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-07T14:54:32.258677Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T12:12:18.564390Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T12:12:18.562510Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-07T12:12:18.560704Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T12:09:27.872489Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T12:09:27.870646Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-07T12:09:27.868769Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2022-01-07T12:05:20.216991Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-07T12:05:20.215163Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2022-01-07T12:05:20.213357Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-31T14:47:08.733952Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-31T14:47:08.732175Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-31T14:47:08.730367Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:58:18.027589Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T14:58:18.025768Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:58:18.023936Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:55:02.663360Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T14:55:02.661586Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:55:02.659797Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:51:25.893214Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T14:51:25.891411Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:51:25.889600Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T14:48:27.894162Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T14:48:27.892350Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T14:48:27.890554Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T12:16:16.920690Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T12:16:16.918912Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T12:16:16.917124Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T12:12:43.097728Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T12:12:43.095917Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T12:12:43.094090Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T12:09:30.885370Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T12:09:30.883557Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T12:09:30.881715Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+2021-12-24T12:05:52.760298Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2021-12-24T12:05:52.758488Z - Ethernet port carrier change - {'device': 'port3', 'carrier': 'true'}
+2021-12-24T12:05:52.756648Z - Ethernet port carrier change - {'device': 'port1', 'carrier': 'true'}
+####################################################################################################
+
+3PH-ROL-MX1
+2022-01-18T10:25:53.095005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T10:25:46.875005Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-18T10:23:53.363008Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T10:22:21.671010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-18T10:21:42.135010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-18T10:21:32.563010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-06T07:23:51.495006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-06T07:23:44.031006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-06T07:22:44.059006Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-06T07:21:14.983010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+2022-01-06T07:20:35.059010Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'true'}
+2022-01-06T07:20:25.567011Z - Ethernet port carrier change - {'device': 'port4', 'carrier': 'false'}
+####################################################################################################
+
+MNS-POR-MX1
+2022-01-20T01:05:22.598345Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-20T01:05:06.270057Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-20T01:04:50.354942Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-20T00:55:36.047518Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-17T14:25:54.397511Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-17T14:25:39.676081Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-17T14:25:25.126164Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-17T13:31:47.070205Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-17T13:31:45.708069Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-17T13:31:30.937288Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-17T13:31:26.469712Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-17T13:31:11.471303Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-17T13:30:57.202080Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-17T13:30:49.614459Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-16T07:30:01.527210Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T07:29:50.773088Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-16T07:29:33.014743Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-16T07:29:24.791795Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-15T16:51:21.627953Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-15T16:51:05.192030Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-15T16:50:53.611778Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-15T16:50:44.054110Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-11T17:05:53.538723Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-11T17:05:39.066600Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-11T17:05:23.060625Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-11T17:05:17.923644Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-07T14:02:36.529097Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-07T14:02:20.072052Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-07T14:02:08.584908Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-07T14:01:58.831435Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-07T00:00:20.438200Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-07T00:00:05.780069Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-06T23:59:54.207283Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-06T23:59:44.685864Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-04T03:06:43.806932Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-04T03:06:33.059751Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-04T03:06:15.252502Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-04T03:06:07.667670Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-02T22:31:22.979294Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-02T22:31:13.169629Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2022-01-02T22:30:55.412921Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2022-01-02T22:30:47.483653Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-31T22:20:19.668476Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-31T22:20:03.960072Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-31T22:19:51.796719Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-31T22:19:43.114427Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-26T06:30:29.625634Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-26T06:30:13.863562Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-26T06:29:55.779901Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-26T06:29:49.202615Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-21T09:44:52.169821Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-21T09:44:41.321676Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+2021-12-21T09:44:23.466315Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-21T09:44:16.072850Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+####################################################################################################
+
+MNS-SAN-MX1
+2021-12-21T15:29:02.661000Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'true'}
+2021-12-21T15:25:06.748001Z - Ethernet port carrier change - {'device': 'port0', 'carrier': 'false'}
+####################################################################################################
+

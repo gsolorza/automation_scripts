@@ -1,0 +1,601 @@
+Building configuration...
+
+
+Current configuration : 32905 bytes
+!
+! Last configuration change at 15:42:21 UTC Sat Mar 12 2022 by lairdadmin
+! NVRAM config last updated at 15:42:14 UTC Sat Mar 12 2022 by lairdadmin
+!
+version 16.12
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+service call-home
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform hardware throughput level boost
+!
+hostname PORT-San-Jose
+!
+boot-start-marker
+boot system bootflash:isr4300-universalk9.16.12.05.SPA.bin
+boot-end-marker
+!
+!
+vrf definition Mgmt-intf
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+no logging console
+enable password 7 15250C395430250A60223D3A15
+!
+no aaa new-model
+ethernet lmi ce
+call-home
+ contact-email-addr support@netvoix.com
+ profile "CiscoTAC-1"
+  active
+  destination transport-method http
+  no destination transport-method email
+!
+ip vrf IWAN-TRANSPORT-1
+ rd 65511:101
+!
+ip vrf IWAN-TRANSPORT-2
+ rd 65511:102
+!
+ip multicast-routing distributed
+!
+!
+!
+ip nbar attribute-map C9013_SC8021_T03
+ attribute sub-category desktop-virtualization
+ attribute traffic-class multimedia-streaming
+ attribute category business-and-productivity-tools
+ip nbar attribute-map C9009_SC8028
+ attribute sub-category enterprise-voice-collaboration
+ attribute category other
+ip nbar attribute-map C9009_SC8018
+ attribute sub-category enterprise-cloud-data-storage
+ attribute category other
+ip nbar attribute-map C9009_SC8026
+ attribute category other
+ attribute sub-category tunneling-protocols
+ip nbar attribute-map C9009_SC8012
+ attribute category other
+ attribute sub-category enterprise-transactional-apps
+ip nbar attribute-map C9015_SC8023
+ attribute category backup-and-storage
+ attribute sub-category file-transfer
+ip nbar attribute-map C9013_SC8012
+ attribute category business-and-productivity-tools
+ attribute sub-category enterprise-transactional-apps
+ip nbar attribute-map C9009_SC8013
+ attribute sub-category enterprise-media-conferencing
+ attribute category other
+ip nbar attribute-map C9013_SC8012_T08
+ attribute sub-category enterprise-transactional-apps
+ attribute category business-and-productivity-tools
+ attribute traffic-class transactional-data
+ip nbar attribute-map C9009_SC8022
+ attribute sub-category enterprise-rich-media-content
+ attribute category other
+ip nbar attribute-map C9009_SC8008
+ attribute sub-category other
+ attribute category other
+ip nbar attribute-map C9013_SC8011
+ attribute category business-and-productivity-tools
+ attribute sub-category authentication-services
+!
+ip nbar custom PShapes11i transport tcp id 22430
+ port 8030 
+ direction any
+
+
+ip nbar custom PShapes-Pkgp327 transport tcp id 58029
+ port 1551 
+ direction any
+
+
+ip nbar custom E1Web http url "http://e1web.nap.local:7777" id 5385 
+ip nbar custom E1WebPort transport tcp id 6875
+ port 7777 
+ direction any
+
+
+ip nbar custom Remote-Desktop transport tcp id 26219
+ port 3389 
+ direction any
+
+
+!
+ip nbar attribute-set PShapes-Pkgp327 C9013_SC8012_T08
+ip nbar attribute-set PShapes11i C9013_SC8012_T08
+ip nbar attribute-set E1Web C9013_SC8012_T08
+ip nbar attribute-set E1WebPort C9013_SC8012_T08
+ip nbar attribute-set Remote-Desktop C9013_SC8021_T03
+ip nbar attribute-set web-rtc-video C9009_SC8028
+ip nbar attribute-set google-services-media C9009_SC8028
+ip nbar attribute-set web-rtc-audio C9009_SC8028
+ip nbar attribute-set web-rtc C9009_SC8028
+ip nbar attribute-set google-services-video C9009_SC8028
+ip nbar attribute-set itunes-media C9009_SC8028
+ip nbar attribute-set windows-azure C9009_SC8018
+ip nbar attribute-set amazon-web-services C9009_SC8018
+ip nbar attribute-set gtp-user C9009_SC8026
+ip nbar attribute-set wifi-calling C9009_SC8026
+ip nbar attribute-set spdy C9009_SC8012
+ip nbar attribute-set https C9009_SC8012
+ip nbar attribute-set quic C9009_SC8012
+ip nbar attribute-set gsiftp C9015_SC8023
+ip nbar attribute-set microsoftds C9015_SC8023
+ip nbar attribute-set cifs C9015_SC8023
+ip nbar attribute-set nfs C9015_SC8023
+ip nbar attribute-set tftp C9015_SC8023
+ip nbar attribute-set gridftp C9015_SC8023
+ip nbar attribute-set jabber C9013_SC8012
+ip nbar attribute-set ssl C9013_SC8012
+ip nbar attribute-set http C9013_SC8012
+ip nbar attribute-set ssl-local-net C9013_SC8012
+ip nbar attribute-set http-local-net C9013_SC8012
+ip nbar attribute-set google-services-audio C9009_SC8013
+ip nbar attribute-set shockwave C9009_SC8022
+ip nbar attribute-set flash-video C9009_SC8022
+ip nbar attribute-set audio-over-http C9009_SC8022
+ip nbar attribute-set video-over-http C9009_SC8022
+ip nbar attribute-set wikipedia C9009_SC8008
+ip nbar attribute-set gss-http C9013_SC8011
+!
+ip name-server 172.20.10.40 172.21.10.40
+ip name-server vrf IWAN-TRANSPORT-1 208.67.220.220
+ip domain name NAP.local
+ip dhcp excluded-address 192.168.185.1
+ip dhcp excluded-address 192.168.185.1 192.168.185.99
+ip dhcp excluded-address 192.168.185.201 192.168.185.254
+!
+ip dhcp pool Data
+ network 192.168.185.0 255.255.255.0
+ default-router 192.168.185.1 
+ domain-name NAP.local
+ dns-server 172.20.10.40 172.21.10.40 
+!
+!
+!
+login on-success log
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+! 
+! 
+! 
+! 
+!
+!
+parameter-map type regex umbrella-local-domain-regex
+ pattern nap.local
+ pattern .*nap.*
+ pattern wap.insideplastics.com
+ pattern calsakplasticsDV.com
+ pattern calsakplasticsPY.com
+ pattern emplasticPY.com
+ pattern emplasticDV.com
+!
+parameter-map type umbrella global
+ token 30323BAC2C46EB95B43AE3F6A20A6D470025EE20
+ local-domain umbrella-local-domain-regex
+ dnscrypt
+ udp-timeout 5
+!
+multilink bundle-name authenticated
+!
+!
+!
+domain ONE
+ vrf default
+  border
+   source-interface Loopback47233
+   shutdown
+   master local
+  master branch
+   source-interface Loopback47233
+   site-prefixes prefix-list SITE-PREFIXES
+   shutdown
+   hub 10.253.4.3
+!
+!
+!
+key chain WAN-KEY
+ key 1
+  key-string 7 0508571C22431F5B4A
+!
+!
+crypto pki trustpoint pnplabel
+ enrollment pkcs12
+ revocation-check none
+!
+crypto pki trustpoint sdn-network-infra-iwan
+ enrollment url http://173.252.189.173:80/ejbca/publicweb/apply/scep/sdnscep
+ fqdn PORT-San-Jose
+ subject-name CN=ISR4321/K9_FLM2129V110_sdn-network-infra-iwan
+ vrf IWAN-TRANSPORT-1
+ revocation-check crl
+ rsakeypair sdn-network-infra-iwan
+ auto-enroll 80 regenerate
+!
+crypto pki trustpoint SLA-TrustPoint
+ enrollment terminal
+ revocation-check crl
+!
+!
+!
+crypto pki certificate map CERT-MAP-IWAN-TRANSPORT-2 10
+ issuer-name eq cn = sdn-network-infra-ca
+ name co sdn-network-infra-iwan
+!
+crypto pki certificate map CERT-MAP-IWAN-TRANSPORT-1 10
+ issuer-name eq cn = sdn-network-infra-ca
+ name co sdn-network-infra-iwan
+!
+crypto pki certificate chain pnplabel
+ certificate ca 009388E31809E96741
+  308203FC 308202E4 A0030201 02020900 9388E318 09E96741 300D0609 2A864886 
+  F70D0101 0B050030 8188310B 30090603 55040613 02555331 13301106 03550408 
+  130A4361 6C69666F 726E6961 3110300E 06035504 07130753 616E4A6F 7365310E 
+  300C0603 55040A13 05436973 636F3113 30110603 55040B13 0A415049 43454D2D 
+  53444E31 2D302B06 03550403 13243562 39313330 61662D63 3637382D 34666264 
+  2D623632 332D6133 64303531 65623465 3732301E 170D3139 30353037 30313538 
+  32395A17 0D323130 35303630 31353832 395A3081 88310B30 09060355 04061302 
+  55533113 30110603 55040813 0A43616C 69666F72 6E696131 10300E06 03550407 
+  13075361 6E4A6F73 65310E30 0C060355 040A1305 43697363 6F311330 11060355 
+  040B130A 41504943 454D2D53 444E312D 302B0603 55040313 24356239 31333061 
+  662D6336 37382D34 6662642D 62363233 2D613364 30353165 62346537 32308201 
+  22300D06 092A8648 86F70D01 01010500 0382010F 00308201 0A028201 0100A5C9 
+  2A96AE2E 3A964F42 D7A3A9F8 9D57F0D8 822B56AC 5F8D707A 4C1603EC B8611C60 
+  320D15F4 D12A2AC6 773AFD3D 7CCD6CEB B05CEAA2 C2A9DFF5 F9B826BE B9EBD711 
+  DAAD647E 813A7FC1 8718DDE5 EA8536A4 20C8F0D9 CA52A3DA 45D52DF5 FC259A97 
+  19CDA4FC 027A9125 2B310F13 DEE95831 8DC443B6 636293FC BE683DF8 1DEA4B6F 
+  B6A9D1A9 ECD8A8ED 405D7792 58DE4FB0 F53D0389 90E1F291 6DF62A5B 56B14CED 
+  5489EA0D 5268E768 2ED64747 7D6306C3 AD7C117B 8D14E182 A3FB89B5 9D326BF2 
+  38D51CE5 99A9148B E3D70286 083C609A C0F8869E 4BC82456 776AB2A0 5FBC5F87 
+  D330D3F9 751E93DC 041273C1 B76A8FCD 77041550 D09E9A1F 5C67F553 5E110203 
+  010001A3 67306530 0B060355 1D0F0404 03020224 301D0603 551D2504 16301406 
+  082B0601 05050703 0106082B 06010505 07030230 37060355 1D110430 302E8704 
+  AC17010A 8704ADFC BDAD8704 0A1C713B 820C3137 322E3230 2E31302E 3431820C 
+  3137322E 32312E31 302E3431 300D0609 2A864886 F70D0101 0B050003 82010100 
+  4CA46E2A 528B66AF 96E7EF1E C75D3055 2057B3D6 D2574AC4 998E49DD 07BAD312 
+  6BB0CD14 33DEC15F F2E07A02 1966103D 8674A630 BAC40AB2 D686802E 4708643B 
+  168044FD 4EE4CD15 A8E24244 F7DA07B5 04CCF639 6A8561E3 CB73AF77 89FB584C 
+  52A5C0F0 CB38FD56 140924C7 D18C560E 47782040 18A67702 31A2BF59 4A3ED9CB 
+  BF0B200B C80FBD93 5782072A 03A227B3 FD7F0D8A 0D6B156F D96BA3FD 3A25BA3D 
+  B0C3CCA3 B2A32E39 CA9BD717 56D661D4 AB9FD9DF 7C9A6AB3 FABF82D8 EAEE767A 
+  347903A1 35F44016 679418A1 734C5FFC 5E371EFB 2C12A9F5 FBCD30A5 87975991 
+  C1542913 6815C493 A2479892 517AEBB4 EB800090 B4119E80 7E98BEAC AE2F1468
+  	quit
+crypto pki certificate chain sdn-network-infra-iwan
+ certificate 18C51D8D5E2AAC64
+  30820376 3082025E A0030201 02020818 C51D8D5E 2AAC6430 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39303431 3334365A 170D3233 30313133 
+  30393533 35325A30 56313630 34060355 04030C2D 49535234 3332312F 4B395F46 
+  4C4D3231 32395631 31305F73 646E2D6E 6574776F 726B2D69 6E667261 2D697761 
+  6E311C30 1A06092A 864886F7 0D010902 160D504F 52542D53 616E2D4A 6F736530 
+  82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02 82010100 
+  B27FF9C5 00AC8D3E 1A1826FF ED491850 14B11442 6413303B 8D684D93 9F053A85 
+  8DD7721D 0CBBF6F4 4BA882BE F10CBB4E 74EB1399 DA401635 ED1E6A27 933ACB7A 
+  C250967D 779C4B21 670AE80D F42A3A17 5A7FC468 5FE0990C B2E8AF09 8806A5CA 
+  848B6C85 5345AC9C CE5F47B7 0F01B916 8B028CF0 56FA4BB7 3FA24466 4AB560C3 
+  CF8EF985 5EF4B378 CDFE929E 190387EB B401C024 009452A7 7059444F 2A04687C 
+  4EF6AB8C 99F73F91 214E46E4 186D35A3 1DECDF67 EC9D7753 125C7BF6 F2DCD38A 
+  8BABFEB7 74ECF659 A3930743 B858E489 802E201D 9568B5D4 8A51B730 11DC8710 
+  21153506 2A59E5A5 5D79D232 F4355019 6A1B2BBC 398ABB5D 8E89A365 23F1E1CB 
+  02030100 01A37F30 7D301D06 03551D0E 04160414 7647FB53 2B39ACD0 EDE292EF 
+  9BD707DF 40BD0CA6 300C0603 551D1301 01FF0402 3000301F 0603551D 23041830 
+  1680149B FB730D46 03ECD8FC C891F6E9 5BA4F3EB F3A5FB30 0E060355 1D0F0101 
+  FF040403 0205E030 1D060355 1D250416 30140608 2B060105 05070302 06082B06 
+  01050507 0304300D 06092A86 4886F70D 01010D05 00038201 01003256 EC7D0179 
+  DD84240F 486A5BDB 2B9AB9B9 B4C66025 53F6D3B6 515FC90C EEA5C364 89BA3511 
+  CD038736 D4A6E31A EB0C5236 1A027528 7880EBB4 A47201E8 AD90651C DACFB720 
+  476256AE 038D633C 4379146A 17C9C4EB 82A27F1C 8C3DF597 4DE5289A BA5DCD28 
+  B2AB6F4E ABAC517C 81C4D7FC B3B3041E 31BE2ED4 75DC04D0 BABAD845 2C9C7C95 
+  7C3AF26D 600EA039 6BE531ED 318FE9D6 62D39E71 1CCE9172 3FD107D6 AEE61047 
+  C08F1A07 72B3C751 B7AC4C97 8007C501 CE4354D1 429E10EF 3222E5CD 171AD77D 
+  C49393C4 14D3B2F5 95C77CE8 98973016 03F3C32F A49ABABE E598EEAC 3DEFA2E2 
+  EE2907F1 A89CA626 679539EC 4DEBC3FE 68AC8DA2 EEA4328A 574F
+  	quit
+ certificate ca 1E5166B43300756F
+  30820323 3082020B A0030201 0202081E 5166B433 00756F30 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39303431 3334365A 170D3237 30313138 
+  30343133 34365A30 1F311D30 1B060355 04030C14 73646E2D 6E657477 6F726B2D 
+  696E6672 612D6361 30820122 300D0609 2A864886 F70D0101 01050003 82010F00 
+  3082010A 02820101 00ABCE5E 7E70CA54 D22275FF AC8E65C7 D753B989 339735EE 
+  06AA463D 0B9A2F25 0D701BCA 0FDAA947 2A5E0DD8 03F8DF0F 74CF0267 1B2BB29E 
+  9876D007 7CB7EBE1 CED74372 A666AA2F 392155BB 8DAAED4B A16DF600 29523716 
+  3A2D1602 E9DA77BD A89BE46D A685EC18 FE00A893 B4CD0409 F0723C17 7DDDF8D2 
+  32A906AE 47879ED6 7A511039 82BC21D3 C4B88B35 DC2D44A9 6C189D12 BDE7A285 
+  2F69FCDF FDF165B5 C46BFAF1 9B5A7160 459C9D1D 75C89150 03E607AC C60404AB 
+  DC6F3C63 5288233C 39116C32 F98EA05D 09C169EC 1C69F79B A56114DE D94A42C0 
+  65D95334 A9A17C2B 675178DD 13CBC094 24B5584F F519B6C2 71363218 79B13B1D 
+  946DCD77 1BA20ED4 DD020301 0001A363 3061301D 0603551D 0E041604 149BFB73 
+  0D4603EC D8FCC891 F6E95BA4 F3EBF3A5 FB300F06 03551D13 0101FF04 05300301 
+  01FF301F 0603551D 23041830 1680149B FB730D46 03ECD8FC C891F6E9 5BA4F3EB 
+  F3A5FB30 0E060355 1D0F0101 FF040403 02018630 0D06092A 864886F7 0D01010D 
+  05000382 010100A3 29F5F1CC C81F796D C6DFD558 43133CB7 183F3FE5 5F28BECE 
+  BC10B7CC 3FFE19B1 5A8B13B6 442A1FD8 4BF380A7 9AFAAFAC E5632DFF E7601197 
+  03CF97A8 232311FE DF7DD8D4 D417AA40 C4F1C7A8 A2F2CEBB D37783EA 386FA6DA 
+  9C1A09BB 8DDA0ED6 AD47032C EBEEF89A 4DB2FB80 C87A4401 2847EEE6 B4DA3CB7 
+  C5C2D0F2 90EC2A2A B17A8D53 D54172F2 D71BFE68 A10A97DB 6194CCCA 76980850 
+  7D6A665C A3F7A2F4 49E120B3 635CA67A 63365D6D 23676EF5 E2BC3449 040CAEEE 
+  63CDA1BC FA07D68B 2C425BD6 5162B572 5F8D5C05 DC70D275 44FEC7E0 F3F5CFBE 
+  08EC56D1 C1E8ACFF 34E60DD4 ABE080BD D0C75384 904C4D74 C9B72EF1 098C6065 
+  55FBC666 677A5D
+  	quit
+crypto pki certificate chain SLA-TrustPoint
+ certificate ca 01
+  30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030 
+  32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363 
+  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934 
+  3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305 
+  43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720 
+  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 
+  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D 
+  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520 
+  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE 
+  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC 
+  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188 
+  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7 
+  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191 
+  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44 
+  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201 
+  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85 
+  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500 
+  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905 
+  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B 
+  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8 
+  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C 
+  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B 
+  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678 
+  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB 
+  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0 
+  D697DF7F 28
+  	quit
+!
+crypto pki certificate pool
+ cabundle nvram:ios.p7b
+ cabundle nvram:Trustpool15.cer
+!
+crypto pki crl download schedule prepublish 2760
+crypto pki crl download schedule retries 15
+crypto pki crl download schedule retries interval 180
+crypto pki crl download trustpoint sdn-network-infra-iwan
+!
+!
+performance monitor context IWAN-Context profile application-experience
+ exporter destination 172.23.1.15 source Loopback47233 transport udp port 9991 
+ traffic-monitor application-response-time class-replace Business-Critical-and-default-tcp-only
+ traffic-monitor media class-replace Business-Critical-and-default-udp-only
+ traffic-monitor url class-replace Http-class
+ traffic-monitor conversation-traffic-stats class-replace Scavenger
+!
+no license feature hseck9
+license udi pid ISR4321/K9 sn FDO21150L3B
+license accept end user agreement
+license boot suite FoundationSuiteK9
+memory free low-watermark processor 67076
+!
+diagnostic bootup level minimal
+!
+spanning-tree extend system-id
+!
+username netvoix privilege 15 secret 9 $14$6nxD$kFIYYd4nq9ocR.$I8xnYYAoj5Tj2w4rIv2o2EK.uA4QINTbbJIFdY6iXR6
+username lairdadmin privilege 15 password 7 113E1E30470805224C3B233C2E
+!
+redundancy
+ mode none
+!
+crypto ikev2 proposal AES/CBC/256 
+ encryption aes-cbc-256
+ integrity sha512
+ group 14
+!
+crypto ikev2 policy IKEv2-Policy-1 
+ match fvrf any
+ proposal AES/CBC/256
+!
+!
+crypto ikev2 profile FVRF-IKEv2-IWAN-TRANSPORT-2
+ match fvrf IWAN-TRANSPORT-2
+ match certificate CERT-MAP-IWAN-TRANSPORT-2
+ authentication remote rsa-sig
+ authentication local rsa-sig
+ pki trustpoint sdn-network-infra-iwan
+!
+crypto ikev2 profile FVRF-IKEv2-IWAN-TRANSPORT-1
+ match fvrf IWAN-TRANSPORT-1
+ match certificate CERT-MAP-IWAN-TRANSPORT-1
+ authentication remote rsa-sig
+ authentication local rsa-sig
+ pki trustpoint sdn-network-infra-iwan
+!
+crypto ikev2 dpd 40 5 on-demand
+crypto ikev2 disconnect-revoked-peers
+!
+!
+vlan internal allocation policy ascending
+!
+track 73 ip sla 118 reachability
+!
+track 74 ip sla 119 reachability
+!
+track 100 list boolean or
+ object 73
+ object 74
+!
+!
+class-map match-any prm-iwan8#NET-CTRL-MGMT
+ match dscp cs2 
+ match dscp cs6 
+class-map match-any prm-iwan8#SCAVENGER
+ match dscp cs1 
+class-map match-any prm-iwan8#VOICE
+ match dscp ef 
+class-map match-any business-critical-and-default
+ match protocol attribute category inter-process-rpc
+ match protocol attribute category industrial-protocols
+ match protocol attribute category net-admin
+ match protocol attribute category voice-and-video
+ match protocol attribute category email
+ match protocol attribute category layer3-over-ip
+ match protocol attribute category backup-and-storage
+ match protocol attribute category epayement
+ match protocol attribute category anonymizers
+ match protocol attribute category browsing
+ match protocol attribute category software-updates
+ match protocol attribute category other
+ match protocol attribute category business-and-productivity-tools
+ match protocol attribute category trojan
+ match protocol attribute category file-sharing
+ match protocol attribute category database
+class-map match-any prm-biz-relevant-cats
+ match protocol attribute category file-sharing
+ match protocol attribute category browsing
+ match protocol attribute category email
+ match protocol attribute category net-admin
+ match protocol attribute category business-and-productivity-tools
+ match protocol attribute category database
+ match protocol attribute category voice-and-video
+class-map match-any prm-iwan8#CALL-SIGNALING
+ match dscp cs3 
+class-map match-any prm-biz-irrelevant-cats
+ match protocol attribute category instant-messaging
+ match protocol attribute category social-networking
+ match protocol attribute category consumer-file-sharing
+ match protocol attribute category consumer-messaging
+ match protocol attribute category consumer-internet
+ match protocol attribute category consumer-streaming
+ match protocol attribute category gaming
+class-map match-any Scavenger
+ match protocol attribute category social-networking
+ match protocol attribute category gaming
+ match protocol attribute category consumer-internet
+ match protocol attribute category consumer-messaging
+ match protocol attribute category consumer-streaming
+ match protocol attribute category consumer-file-sharing
+ match protocol attribute category instant-messaging
+class-map match-any prm-iwan8#STREAMING-VIDEO
+ match dscp af31 
+ match dscp af32 
+ match dscp af33 
+ match dscp cs5 
+class-map match-any Http-class
+ match protocol http
+class-map match-any prm-iwan8#INTERACTIVE-VIDEO
+ match dscp af41 
+ match dscp af42 
+ match dscp af43 
+ match dscp cs4 
+class-map match-any prm-iwan8#CRITICAL-DATA
+ match dscp af11 
+ match dscp af13 
+ match dscp af21 
+ match dscp af23 
+ match protocol attribute traffic-class broadcast-video
+ match class-map prm-biz-relevant-cats
+ match protocol attribute traffic-class bulk-data
+ match class-map prm-biz-relevant-cats
+ match protocol attribute traffic-class real-time-interactive
+ match class-map prm-biz-relevant-cats
+ match protocol attribute traffic-class network-control
+ match class-map prm-biz-relevant-cats
+ match protocol attribute traffic-class multimedia-conferencing
+ match class-map prm-biz-relevant-cats
+class-map match-all Business-Critical-and-default-tcp-only
+ match class-map business-critical-and-default
+ match access-group name business-critical-and-default-tcp-only
+class-map match-all Business-Critical-and-default-udp-only
+ match class-map business-critical-and-default
+ match access-group name business-critical-and-default-udp-only
+ match protocol attribute traffic-class voip-telephony
+ match class-map prm-biz-relevant-cats
+ match class-map prm-biz-irrelevant-cats
+ match protocol attribute traffic-class signaling
+ match class-map prm-biz-relevant-cats
+ match protocol attribute traffic-class ops-admin-mgmt
+ match class-map prm-biz-relevant-cats
+ match protocol attribute traffic-class transactional-data
+ match class-map prm-biz-relevant-cats
+ match protocol attribute traffic-class multimedia-streaming
+ match class-map prm-biz-relevant-cats
+!
+policy-map prm-dscp#iwan-8-id1
+ class prm-iwan8#VOICE
+  priority level 1
+  police cir percent 10
+ class prm-iwan8#STREAMING-VIDEO
+  bandwidth remaining percent 10 
+  random-detect dscp-based
+ class prm-iwan8#CALL-SIGNALING
+  bandwidth remaining percent 4 
+ class prm-iwan8#NET-CTRL-MGMT
+  bandwidth remaining percent 5 
+ class prm-iwan8#INTERACTIVE-VIDEO
+  bandwidth remaining percent 30 
+  random-detect dscp-based
+ class prm-iwan8#CRITICAL-DATA
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+ class prm-iwan8#SCAVENGER
+  bandwidth remaining percent 1 
+ class class-default
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+policy-map prm-dscp#iwan-8-id1#shape#1.0
+ class class-default
+  shape average 1000000   
+   service-policy prm-dscp#iwan-8-id1
+policy-map prm-dscp#iwan-8-id0
+ class prm-iwan8#VOICE
+  priority level 1
+  police cir percent 10
+ class prm-iwan8#STREAMING-VIDEO
+  bandwidth remaining percent 10 
+  random-detect dscp-based
+ class prm-iwan8#CALL-SIGNALING
+  bandwidth remaining percent 4 
+ class prm-iwan8#NET-CTRL-MGMT
+  bandwidth remaining percent 5 
+ class prm-iwan8#INTERACTIVE-VIDEO
+  bandwidth remaining percent 30 
+  random-detect dscp-based
+ class prm-iwan8#CRITICAL-DATA
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+ class prm-iwan8#SCAVENGER
+  bandwidth remaining percent 1 
+ class class-default
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+policy-map prm-dscp#iwan-8-id0#shape#15.0
+ class class-default
+  shape average 15000000   
+   service-policy prm-dscp#iwan-8-id0
+policy-map prm-nbar-12-cls
+  set dscp ef
+  set dscp cs5
+  set dscp cs4
+  set dscp af41
+  set dscp af31
+  set dscp cs3
+  set dscp cs6
+  set dscp cs2
+  set dscp af21
+  set dscp af11

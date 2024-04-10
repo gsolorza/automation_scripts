@@ -1,0 +1,10 @@
+Value INTERFACE (\S+)
+Value GROUP_NUMBER (\d+)
+Value ADDRESS_FAMILY (\S+)
+Value PRIORITY (\d+)
+Value STATE (\w+)
+Value MASTER_IP_ADDRESS (\S+)
+Value VIRTUAL_IP_ADDRESS (\S+)
+
+Start
+  ^(\s+)?${INTERFACE}\s+${GROUP_NUMBER}\s+${ADDRESS_FAMILY}\s+${PRIORITY}\s+\d+\s+\S+\s+\S+\s+${STATE}\s+${MASTER_IP_ADDRESS}\s+${VIRTUAL_IP_ADDRESS} -> Record

@@ -1,0 +1,4 @@
+class-map type waas match-any DNS
+ match tcp destination port 53 
+ class DNS
+  passthrough application Name-Services 

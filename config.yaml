@@ -1,0 +1,29 @@
+---
+- name: Network Getting Started
+  connection: network_cli
+  gather_facts: false
+  hosts: IOS
+  tasks:
+    
+    - name: Create User
+      ios_config:
+        lines:
+          - username tpadmin privilege 15 secret 5 $1$7zGs$zHBFXXzYm6D/t4ImF7n9C/
+        # parents: line vty 0 4
+    
+    # - name: configure interface settings
+    #   ios_config:
+    #     lines:
+    #       - no login authentication LOGIN-AUTH-VTY
+    #       - login local
+    #     parents: line vty 0 4
+    
+    - name: save running config to startup
+      ios_config:
+        save_when: always
+
+    #   register: output
+    # - name: Display command output if any output
+    #   debug:
+    #     var: output.stdout_lines
+    #   when: output.stdout_lines[0][0]

@@ -1,0 +1,1760 @@
+
+PLAY [Network Getting Started] *************************************************
+
+TASK [Send a command] **********************************************************
+ok: [CP-Atlanta-RT1]
+ok: [CP-Minnesota-RT1]
+ok: [CP-Seattle-RT1]
+ok: [CP-Rancho-RT1]
+ok: [CP-Tucson-RT1]
+ok: [CP-Portland-RT1]
+ok: [EMP-Toronto-RT1]
+ok: [CP-Charlotte-RT1]
+ok: [EMP-Calgary-RT1]
+ok: [EMP-Dartmouth-RT1]
+ok: [EMP-Edmonton-RT1]
+ok: [EMP-Montreal-RT1]
+ok: [EMP-London-RT1]
+ok: [EMP-StJohn-RT1]
+ok: [EMP-Winnipeg-RT1]
+ok: [EMP-Vancouver-RT1]
+ok: [EP-SanDiego-RT1]
+ok: [FP-Clearwater-RT1]
+fatal: [FP-FtLauderdale-RT1]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9"}, "changed": false, "msg": "Failed to authenticate: Authentication failed."}
+ok: [EP-Coppell-RT1]
+ok: [FP-Jacksonville-RT1]
+ok: [FP-Memphis-RT1]
+ok: [FP-Montgomery-RT1]
+ok: [FP-Orlando-RT1]
+ok: [HS-Hingham-RT1]
+ok: [LP-Dallas-RT1]
+ok: [LP-Atlanta-RT1]
+ok: [LP-Austin-RT1]
+ok: [LP-Baltimore-RT1]
+ok: [LP-BatonRouge-RT1]
+ok: [LP-Boston-RT1]
+ok: [LP-Calgary-RT1]
+ok: [LP-Dayton-RT1]
+ok: [LP-Columbus-RT1]
+ok: [LP-Denver-RT1]
+ok: [LP-Detroit-RT1]
+ok: [LP-Hartford-RT1]
+ok: [LP-Houston-RT1]
+ok: [LP-Indianapolis-RT1]
+ok: [LP-GrandRapids-RT1]
+ok: [LP-KansasCity-RT1]
+ok: [LP-LasVegas-RT1]
+ok: [LP-LosAngeles-RT1]
+ok: [LP-Louisville-RT1]
+ok: [LP-Madison-RT1]
+ok: [LP-Miami-RT1]
+ok: [LP-Moncton-RT1]
+ok: [LP-Minneapolis-RT1]
+ok: [LP-Montreal-RT1]
+ok: [LP-NewYork-RT1]
+ok: [LP-Ottawa-RT1]
+ok: [LP-Orlando-RT1]
+ok: [LP-Philadelphia-RT1]
+ok: [LP-Phoenix-RT1]
+ok: [LP-Pittsburgh-RT1]
+ok: [LP-Portland-RT1]
+ok: [LP-QuebecCity-RT1]
+ok: [LP-Rochester-RT1]
+ok: [LP-SanAntonio-RT1]
+ok: [LP-SaltLakeCity-RT1]
+ok: [LP-St-Louis-RT1]
+ok: [LP-Spokane-RT1]
+ok: [LP-Seattle-RT1]
+ok: [LP-Tampa-RT1]
+ok: [LP-Stow-RT1]
+ok: [LP-Transportation-RT1]
+ok: [LP-Toronto-RT1]
+ok: [LP-Warwick-RT1]
+ok: [LP-Vancouver-RT1]
+ok: [LP-Winnipeg-RT1]
+ok: [LP-Chicago2-RT1]
+ok: [LVP-Bethlehem-RT1]
+ok: [MP-Shelton-RT1]
+ok: [PS-Apodaca-RT1]
+ok: [PS-Austell-RT1]
+ok: [PS-Brampton-RT1]
+ok: [PS-Brighton-RT1]
+ok: [PS-Bridgeton-RT1]
+ok: [PS-BrooklynPark-RT1]
+ok: [PS-BrokenArrow-RT1]
+ok: [PS-BrooklynH-RT1]
+ok: [PS-Cedar-RT1]
+ok: [PS-Calgary-RT1]
+ok: [PS-Charlotte-RT1]
+ok: [PS-CharlotteSC-RT1]
+ok: [PS-Celaya-RT1]
+ok: [PS-Chihuahua-RT1]
+ok: [PS-Columbia-RT1]
+ok: [PS-Copell-RT1]
+ok: [PS-Dartmouth-RT1]
+ok: [PS-Denver-RT1]
+ok: [PS-Concepcion-RT1]
+ok: [PS-Coquitlam-RT1]
+ok: [PS-Dorval-RT1]
+ok: [PS-Elkhart-RT1]
+ok: [PS-Freedom-RT1]
+ok: [PS-Edmonton-RT1]
+ok: [PS-Fresno-RT1]
+ok: [PS-Indianapolis-RT1]
+ok: [PS-Hicksville-RT1]
+ok: [PS-Irapuato-RT1]
+ok: [PS-Jessup-RT1]
+ok: [PS-Iztacalco-RT1]
+ok: [PS-Largo-RT1]
+ok: [PS-Kalamazoo-RT1]
+ok: [PS-Knoxville-RT1]
+ok: [PS-LasVegas-RT1]
+ok: [PS-London-RT1]
+ok: [PS-MadisonHeights-RT1]
+ok: [PS-Manchester-RT1]
+ok: [PS-Maumee-RT1]
+ok: [PS-Miramar-RT1]
+ok: [PS-Menomonee-RT1]
+ok: [PS-Naucalpan-RT1]
+ok: [PS-Naperville-RT1]
+ok: [PS-MexicoCity-RT1]
+ok: [PS-NewOrleans-RT1]
+ok: [PS-NorthKingstown-RT1]
+ok: [PS-NorthCharleston-RT1]
+ok: [PS-Orlando-RT1]
+ok: [PS-Queretaro-RT1]
+ok: [PS-Phoenix-RT1]
+ok: [PS-Riverside-RT1]
+ok: [PS-Richmond-RT1]
+ok: [PS-SanDiego-RT1]
+ok: [PS-SaltLakeCity-RT1]
+ok: [PS-SanFrancisco-RT1]
+ok: [PS-Rochester-RT1]
+ok: [PS-SantaFe-RT1]
+ok: [PS-Sharonville-RT1]
+ok: [PS-Stafford-RT1]
+ok: [PS-Seattle-RT1]
+ok: [PS-Santiago-RT1]
+ok: [PS-Syracuse-RT1]
+ok: [PS-Trevose-RT1]
+ok: [PS-Tyngsboro-RT1]
+ok: [PS-Troje-RT1]
+ok: [PS-Winnipeg-RT1]
+ok: [PS-Winchester-RT1]
+ok: [PP-Chesapeake-RT1]
+ok: [PS-Zapopan-RT1]
+ok: [PP-Albuquerque-RT1]
+ok: [PP-CityofInd-RT1]
+ok: [PP-Denver-RT1]
+ok: [PP-Phoenix-RT1]
+ok: [PP-San-Jose-RT1]
+ok: [PP-Dallas-RT1]
+ok: [PP-Seattle-RT1]
+ok: [PP-Portland-RT1]
+ok: [PP-Dayton-RT1]
+ok: [PVC-Compton-RT1]
+ok: [PS-Raleigh-RT1]
+ok: [PS-Birmingham-RT1]
+ok: [PS-RoundRock-RT1]
+ok: [PP-SanDiego-RT1]
+ok: [USC-Memphis-RT1]
+ok: [PS-TippCity-RT1]
+ok: [USC-Tukwila-RT1]
+ok: [PA-Montreal-RT1]
+ok: [PA-Quebec-RT1]
+ok: [TP-Kalamazoo-RT1]
+ok: [TP-FortWayne-RT1]
+ok: [TP-Knoxville-RT1]
+ok: [TP-Tampa-RT1]
+ok: [TP-PMC-RT1]
+ok: [TP-Pittsburgh-RT1]
+ok: [TP-RhodeIsland-RT1]
+ok: [TP-Cleveland-RT1]
+ok: [TP-Harrisburg-RT1]
+ok: [TP-Indianapolis-RT1]
+ok: [TP-GrandRapids-RT1]
+ok: [TP-Chicago-RT1]
+ok: [TP-NewYork-RT1]
+ok: [TP-Baltimore-RT1]
+ok: [TP-Bensalem-RT1]
+ok: [TP-Detroit-RT1]
+ok: [TP-EP-RT1]
+ok: [PS-Film-RT1]
+
+TASK [Display command output if any output] ************************************
+ok: [CP-Atlanta-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:36:50 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [CP-Minnesota-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:23:05 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [CP-Rancho-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:53:35 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [CP-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 02:14:50 UTC Oct 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [CP-Tucson-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:35:16 UTC Jan 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [CP-Portland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:58:19 UTC Nov 15 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [CP-Charlotte-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 18:51:21 UTC Jul 18 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EMP-Toronto-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:37:30 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EMP-Calgary-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:57:10 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EMP-Dartmouth-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:27:51 UTC Nov 16 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EMP-Edmonton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:27:31 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EMP-London-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:30:55 UTC Oct 22 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EMP-Montreal-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 10:50:56 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EMP-StJohn-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:33:24 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EMP-Vancouver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:44:30 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EMP-Winnipeg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 23:41:10 UTC Sep 9 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EP-Coppell-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:49:36 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [EP-SanDiego-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:47:32 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [FP-Clearwater-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:50:17 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [FP-Jacksonville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:52:29 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [FP-Memphis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 23:16:52 UTC Feb 23 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [FP-Montgomery-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:57:10 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [FP-Orlando-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:58:44 UTC Oct 31 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [HS-Hingham-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:55:19 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Dallas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:23:32 UTC Aug 1 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Atlanta-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:32:03 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Austin-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 19:26:41 UTC Oct 8 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Baltimore-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 18:04:07 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-BatonRouge-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 23:03:18 UTC May 25 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Boston-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 18:06:03 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Calgary-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 04:59:25 UTC Oct 23 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Columbus-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 18:13:19 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Dayton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 11:15:59 UTC Oct 20 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Denver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:14:13 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Detroit-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 18:34:47 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+skipping: [LP-KansasCity-RT1]
+ok: [LP-GrandRapids-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 19:16:28 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Hartford-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:30:21 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Houston-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:30:59 UTC Jan 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Indianapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 09:07:52 UTC Oct 18 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-LasVegas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 09:42:27 UTC Oct 18 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-LosAngeles-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 18:18:22 UTC Oct 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Louisville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 11:45:46 UTC Oct 20 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Madison-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 06:58:28 UTC Oct 26 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Miami-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:06:57 UTC Oct 26 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Minneapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 03:03:32 UTC Oct 20 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Moncton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:44:36 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Montreal-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:06:19 UTC Jan 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-NewYork-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:19:55 UTC Jan 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Orlando-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:12:03 UTC Oct 26 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Ottawa-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:31:49 UTC Sep 30 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Philadelphia-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 00:32:25 UTC Sep 10 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Phoenix-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:16:24 UTC Oct 21 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Pittsburgh-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:04:26 UTC Oct 26 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Portland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:18:07 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-QuebecCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:34:53 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Rochester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:40:13 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-SaltLakeCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:14:30 UTC Oct 18 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-SanAntonio-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:29:38 UTC Oct 18 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:32:20 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Spokane-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 19:01:08 UTC Nov 5 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-St-Louis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 01:27:14 UTC Oct 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Stow-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:01:14 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Tampa-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 10:53:57 UTC Oct 18 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Toronto-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 02:04:59 UTC Oct 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Transportation-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:02:22 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Vancouver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:59:56 UTC Oct 22 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Warwick-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:02:30 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Winnipeg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:59:22 UTC Oct 6 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LP-Chicago2-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 01:41:59 UTC Oct 28 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [LVP-Bethlehem-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 05:51:17 UTC Jan 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [MP-Shelton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 00:46:37 UTC Oct 20 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Apodaca-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 08:00:59 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Austell-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 01:30:47 UTC Oct 20 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Brampton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 09:20:23 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Bridgeton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 00:47:27 UTC Oct 4 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Brighton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:22:15 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-BrokenArrow-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:35:17 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-BrooklynH-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:36:08 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-BrooklynPark-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:24:08 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Calgary-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 05:59:09 UTC Oct 23 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Cedar-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:32:20 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Celaya-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:14:19 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Charlotte-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 06:16:40 UTC Oct 24 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-CharlotteSC-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:01:24 UTC Oct 20 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Chihuahua-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:45:55 UTC Sep 9 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Columbia-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:07:55 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Concepcion-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:38:34 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Copell-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 11:51:24 UTC Oct 22 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Coquitlam-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 04:19:56 UTC Oct 20 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Dartmouth-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 09:10:36 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Denver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:39:53 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Dorval-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:10:59 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Edmonton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:59:19 UTC Oct 28 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Elkhart-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:54:13 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Freedom-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:01:25 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Fresno-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 08:59:15 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Hicksville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:48:38 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Indianapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 08:42:40 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Irapuato-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:05:07 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Iztacalco-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:35:00 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Jessup-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 08:09:40 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Kalamazoo-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:23:41 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Knoxville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 23:55:39 UTC Oct 14 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Largo-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:37:03 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-LasVegas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 00:06:12 UTC Sep 10 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-London-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:32:32 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-MadisonHeights-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:43:35 UTC Oct 21 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Manchester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:46:33 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Maumee-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:24:56 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Menomonee-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:55:49 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-MexicoCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:48:29 UTC Oct 29 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Miramar-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 18:31:52 UTC Aug 31 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Naperville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 00:11:49 UTC Oct 4 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Naucalpan-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:59:47 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-NewOrleans-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:02:58 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-NorthCharleston-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:13:15 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-NorthKingstown-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 01:02:14 UTC Nov 4 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Orlando-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:09:45 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Phoenix-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:33:11 UTC Sep 22 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Queretaro-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:54:49 EST Nov 7 2023",
+            "    end   date: 23:13:46 EST Jan 17 2027"
+        ]
+    ]
+}
+ok: [PS-Richmond-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:16:23 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Riverside-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:52:04 UTC Nov 1 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Rochester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:31:22 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-SaltLakeCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:22:45 UTC Nov 16 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-SanDiego-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:46:29 UTC Jan 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-SanFrancisco-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:19:57 UTC Oct 11 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-SantaFe-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 00:00:11 UTC May 11 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Santiago-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:52:47 UTC Jan 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:20:08 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Sharonville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:27:15 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Stafford-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:27:34 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Syracuse-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:18:57 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Trevose-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:42:23 UTC Sep 9 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Troje-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:40:08 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Tyngsboro-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 08:17:05 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Winchester-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 08:29:53 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Winnipeg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:11:15 UTC Sep 22 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Zapopan-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:41:23 UTC Nov 1 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-Albuquerque-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 11:25:17 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-Chesapeake-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 09:45:26 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-CityofInd-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:31:25 UTC Jan 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-Denver-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 11:40:13 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-Phoenix-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:31:09 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-Portland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 11:10:49 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-San-Jose-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 13:23:51 UTC Nov 2 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-Seattle-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:35:46 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-Dallas-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:32:37 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-Dayton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:39:09 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PVC-Compton-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 06:14:38 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Birmingham-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:38:50 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Raleigh-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 22:15:24 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-RoundRock-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:08:07 UTC Jan 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-TippCity-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 09:37:28 UTC Oct 20 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PP-SanDiego-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:02:20 UTC Nov 7 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [USC-Memphis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 23:52:14 UTC Oct 14 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+skipping: [TP-GrandRapids-RT1]
+ok: [USC-Tukwila-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 07:07:48 UTC Nov 6 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PA-Quebec-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 21:00:17 UTC Jun 15 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PA-Montreal-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:39:07 UTC Jun 8 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-Kalamazoo-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:30:09 UTC May 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-FortWayne-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 23:14:28 UTC Nov 3 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-Knoxville-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:52:53 UTC Sep 23 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-Tampa-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 19:26:41 UTC Oct 8 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-PMC-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 20:02:04 UTC Oct 8 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-Pittsburgh-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 00:10:36 UTC Oct 8 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-RhodeIsland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:31:32 UTC Oct 11 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-Cleveland-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 14:46:41 UTC Oct 12 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+skipping: [TP-Baltimore-RT1]
+ok: [TP-Harrisburg-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:24:45 UTC Oct 13 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-Indianapolis-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:37:59 UTC Oct 26 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-Chicago-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:00:15 UTC Oct 14 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-NewYork-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 16:58:08 UTC Oct 17 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-Detroit-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 18:01:49 UTC Oct 19 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-Bensalem-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 12:06:24 UTC Oct 31 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [TP-EP-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 15:51:17 UTC Nov 3 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+ok: [PS-Film-RT1] => {
+    "output.stdout_lines": [
+        [
+            "end   date: 17:42:34 UTC Nov 29 2023",
+            "    end   date: 04:13:46 UTC Jan 18 2027"
+        ]
+    ]
+}
+
+PLAY RECAP *********************************************************************
+CP-Atlanta-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Charlotte-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Minnesota-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Portland-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Rancho-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+CP-Tucson-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Calgary-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Dartmouth-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Edmonton-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-London-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Montreal-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-StJohn-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Toronto-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Vancouver-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EMP-Winnipeg-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EP-Coppell-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+EP-SanDiego-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Clearwater-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-FtLauderdale-RT1        : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+FP-Jacksonville-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Memphis-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Montgomery-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+FP-Orlando-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+HS-Hingham-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Atlanta-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Austin-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Baltimore-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-BatonRouge-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Boston-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Calgary-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Chicago2-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Columbus-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Dallas-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Dayton-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Denver-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Detroit-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-GrandRapids-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Hartford-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Houston-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Indianapolis-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-KansasCity-RT1          : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+LP-LasVegas-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-LosAngeles-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Louisville-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Madison-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Miami-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Minneapolis-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Moncton-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Montreal-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-NewYork-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Orlando-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Ottawa-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Philadelphia-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Phoenix-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Pittsburgh-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Portland-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-QuebecCity-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Rochester-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-SaltLakeCity-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-SanAntonio-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Spokane-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-St-Louis-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Stow-RT1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Tampa-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Toronto-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Transportation-RT1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Vancouver-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Warwick-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LP-Winnipeg-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+LVP-Bethlehem-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+MP-Shelton-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PA-Montreal-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PA-Quebec-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Albuquerque-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Chesapeake-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-CityofInd-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Dallas-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Dayton-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Denver-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Phoenix-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Portland-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-San-Jose-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-SanDiego-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PP-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Apodaca-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Austell-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Birmingham-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Brampton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Bridgeton-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Brighton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-BrokenArrow-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-BrooklynH-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-BrooklynPark-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Calgary-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Cedar-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Celaya-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Charlotte-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-CharlotteSC-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Chihuahua-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Columbia-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Concepcion-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Copell-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Coquitlam-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Dartmouth-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Denver-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Dorval-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Edmonton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Elkhart-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Film-RT1                : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Freedom-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Fresno-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Hicksville-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Indianapolis-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Irapuato-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Iztacalco-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Jessup-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Kalamazoo-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Knoxville-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Largo-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-LasVegas-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-London-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-MadisonHeights-RT1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Manchester-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Maumee-RT1              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Menomonee-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-MexicoCity-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Miramar-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Naperville-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Naucalpan-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-NewOrleans-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-NorthCharleston-RT1     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-NorthKingstown-RT1      : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Orlando-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Phoenix-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Queretaro-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Raleigh-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Richmond-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Riverside-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Rochester-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-RoundRock-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SaltLakeCity-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SanDiego-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SanFrancisco-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-SantaFe-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Santiago-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Seattle-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Sharonville-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Stafford-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Syracuse-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-TippCity-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Trevose-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Troje-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Tyngsboro-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Winchester-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Winnipeg-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PS-Zapopan-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+PVC-Compton-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Baltimore-RT1           : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+TP-Bensalem-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Chicago-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Cleveland-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Detroit-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-EP-RT1                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-FortWayne-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-GrandRapids-RT1         : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+TP-Harrisburg-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Indianapolis-RT1        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Kalamazoo-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Knoxville-RT1           : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-NewYork-RT1             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-PMC-RT1                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Pittsburgh-RT1          : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-RhodeIsland-RT1         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+TP-Tampa-RT1               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+USC-Memphis-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+USC-Tukwila-RT1            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

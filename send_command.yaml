@@ -1,0 +1,35 @@
+---
+- name: Network Getting Started
+  connection: network_cli
+  gather_facts: false
+  hosts: IOS
+  tasks:
+    - name: Send a command
+      ios_command:
+        commands:
+          # # - show run | sec radius
+          # # - show run | in ip name
+          # # - show run | in ntp ser
+          # # - show vlan | in 1504|1505|1510|1520|1523|1525|1527|1529|1531|1532|1533
+          # # - show etherchannel summary
+          # # - show int des | in [cC]ore
+          # # - show mac address | in f38d|b5da|2d8b|0286|99c4|0353|035c|017b|02bb|0340|bf15|c045
+          # # - show run | sec ACL-VTY-IN
+          # # - show authentication sessions
+          # - show mac address-table | in .*Gi|.*Fi
+          # - show version | in FOC2517L6Q8
+          # - show dmvpn | ex UP
+          - show crypto pki certificates sdn-network-infra-iwan | in end
+          # - show cdp neighbo | in AP3-149|149|AP3
+          # - show run | sec radius
+          # - show run | in login authentication LOGIN-AUTH-VTY|line vty
+          # -  show platform software trace message smd sw 1 R0 reverse | i 1812/|RADIUS.*EAP-Message
+          # -  show platform software trace message smd sw 1 R0 reverse | i 1812/
+          # - show tech-support | redirect ftp://10.111.98.79/tech/{{inventory_hostname}}-show-tech
+
+      register: output
+
+    - name: Display command output if any output
+      debug:
+        var: output.stdout_lines
+      when: output.stdout_lines[0][0]

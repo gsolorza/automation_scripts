@@ -1,0 +1,583 @@
+Building configuration...
+
+Current configuration : 22008 bytes
+!
+! Last configuration change at 02:53:49 UTC Sun Mar 13 2022 by lairdadmin
+! NVRAM config last updated at 22:44:13 UTC Mon Mar 14 2022 by lairdadmin
+!
+version 16.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform console virtual
+!
+hostname DC-iWAN-CTR
+!
+boot-start-marker
+boot system bootflash:csr1000v-universalk9.16.06.02.SPA.bin
+boot-end-marker
+!
+!
+enable password 7 1420153E5C1E24056C393B2D24
+!
+aaa new-model
+!
+!
+aaa authentication login default local
+!
+!
+!
+!
+!
+aaa session-id common
+!
+!
+ip nbar protocol-pack bootflash:pp-adv-csr1000v-163.2-27-31.0.0.pack force
+!
+!
+!
+!
+ip nbar attribute-map C9009_SC8026
+ attribute sub-category tunneling-protocols
+ attribute category other
+ip nbar attribute-map C9009_SC8022
+ attribute sub-category enterprise-rich-media-content
+ attribute category other
+ip nbar attribute-map C9015_SC8023
+ attribute sub-category file-transfer
+ attribute category backup-and-storage
+ip nbar attribute-map C9009_SC8008
+ attribute sub-category other
+ attribute category other
+ip nbar attribute-map C9013_SC8011
+ attribute category business-and-productivity-tools
+ attribute sub-category authentication-services
+ip nbar attribute-map C9009_SC8018
+ attribute sub-category enterprise-cloud-data-storage
+ attribute category other
+ip nbar attribute-map C9009_SC8012
+ attribute category other
+ attribute sub-category enterprise-transactional-apps
+ip nbar attribute-map C9013_SC8012_T08
+ attribute category business-and-productivity-tools
+ attribute sub-category enterprise-transactional-apps
+ attribute traffic-class transactional-data
+ip nbar attribute-map C9009_SC8028
+ attribute category other
+ attribute sub-category enterprise-voice-collaboration
+ip nbar attribute-map C9013_SC8012
+ attribute sub-category enterprise-transactional-apps
+ attribute category business-and-productivity-tools
+ip nbar attribute-map C9009_SC8013
+ attribute category other
+ attribute sub-category enterprise-media-conferencing
+ip nbar attribute-map C9013_SC8021_T03
+ attribute category business-and-productivity-tools
+ attribute traffic-class multimedia-streaming
+ attribute sub-category desktop-virtualization
+!
+ip nbar custom E1Web http url "http://e1web.nap.local:7777" id 5385 
+ip nbar custom E1WebPort transport tcp id 6875
+ port 7777 
+ direction any
+
+
+ip nbar custom PShapes-Pkgp327 transport tcp id 58029
+ port 1551 
+ direction any
+
+
+ip nbar custom PShapes11i transport tcp id 22430
+ port 8030 
+ direction any
+
+
+ip nbar custom Remote-Desktop transport tcp id 26219
+ port 3389 
+ direction any
+
+
+!
+ip nbar attribute-set gtp-user C9009_SC8026
+ip nbar attribute-set wifi-calling C9009_SC8026
+ip nbar attribute-set flash-video C9009_SC8022
+ip nbar attribute-set audio-over-http C9009_SC8022
+ip nbar attribute-set shockwave C9009_SC8022
+ip nbar attribute-set video-over-http C9009_SC8022
+ip nbar attribute-set microsoftds C9015_SC8023
+ip nbar attribute-set cifs C9015_SC8023
+ip nbar attribute-set tftp C9015_SC8023
+ip nbar attribute-set nfs C9015_SC8023
+ip nbar attribute-set gsiftp C9015_SC8023
+ip nbar attribute-set gridftp C9015_SC8023
+ip nbar attribute-set wikipedia C9009_SC8008
+ip nbar attribute-set gss-http C9013_SC8011
+ip nbar attribute-set amazon-web-services C9009_SC8018
+ip nbar attribute-set windows-azure C9009_SC8018
+ip nbar attribute-set spdy C9009_SC8012
+ip nbar attribute-set web-rtc-video C9009_SC8028
+ip nbar attribute-set google-services-media C9009_SC8028
+ip nbar attribute-set web-rtc-audio C9009_SC8028
+ip nbar attribute-set web-rtc C9009_SC8028
+ip nbar attribute-set google-services-video C9009_SC8028
+ip nbar attribute-set itunes-media C9009_SC8028
+ip nbar attribute-set https C9009_SC8012
+ip nbar attribute-set quic C9009_SC8012
+ip nbar attribute-set jabber C9013_SC8012
+ip nbar attribute-set ssl C9013_SC8012
+ip nbar attribute-set http C9013_SC8012
+ip nbar attribute-set ssl-local-net C9013_SC8012
+ip nbar attribute-set http-local-net C9013_SC8012
+ip nbar attribute-set google-services-audio C9009_SC8013
+ip nbar attribute-set E1Web C9013_SC8012_T08
+ip nbar attribute-set E1WebPort C9013_SC8012_T08
+ip nbar attribute-set PShapes11i C9013_SC8012_T08
+ip nbar attribute-set PShapes-Pkgp327 C9013_SC8012_T08
+ip nbar attribute-set Remote-Desktop C9013_SC8021_T03
+!
+ip name-server 172.20.10.41 172.21.10.40
+ip domain name NAP.local
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+! 
+! 
+! 
+! 
+!
+!
+multilink bundle-name authenticated
+!
+domain ONE
+ vrf default
+  master hub
+   source-interface Loopback47233
+   site-prefixes prefix-list DC-PREFIX
+   load-balance
+   enterprise-prefix  prefix-list ENTERPRISE-PREFIXES
+   collector 172.23.1.15 port 9991
+   class net-admin sequence 10
+    match application ssh policy low-latency-data
+    match application kerberos policy low-latency-data
+    match application ping policy low-latency-data
+    match application cisco-rtmt policy low-latency-data
+    match application ospf policy low-latency-data
+    match application snmp policy low-latency-data
+    match application ldap policy low-latency-data
+    match application ms-win-dns policy best-effort
+    match application bgp policy low-latency-data
+    match application telnet policy low-latency-data
+    match application ipfix policy scavenger
+    match application netflow policy scavenger
+    match application netbios-ns policy best-effort
+    match application dhcp policy low-latency-data
+    match application ms-netlogon policy low-latency-data
+    match application ipv6-icmp policy scavenger
+    match application dns policy best-effort
+    match application ntp policy low-latency-data
+    match application active-directory policy low-latency-data
+    match application auth-service policy low-latency-data
+    path-preference DC fallback DR 
+   class business-and-productivity-tools sequence 20
+    match application salesforce policy low-latency-data
+    match application vmware-vsphere policy low-latency-data
+    match application ipass policy scavenger
+    match application vnc policy low-latency-data
+    match application ms-dynamics-crm-online policy low-latency-data
+    match application avast-antivirus policy scavenger
+    match application PShapes-Pkgp327 policy low-latency-data
+    match application oracle-ebsuite-unsecured policy low-latency-data
+    match application apple-remote-desktop policy low-latency-data
+    match application sap policy low-latency-data
+    match application vnc-http policy low-latency-data
+    match application citrix policy low-latency-data
+    match application vmware-view policy low-latency-data
+    match application vmware-vmotion policy low-latency-data
+    match application PShapes11i policy low-latency-data
+    match application Remote-Desktop policy low-latency-data
+    match application E1Web policy low-latency-data
+    match application ms-office-web-apps policy low-latency-data
+    match application ms-wbt policy low-latency-data
+    match application citrix-audio policy low-latency-data
+    match application ms-office-365 policy low-latency-data
+    match application E1WebPort policy low-latency-data
+    match application hp-pdl-datastr policy low-latency-data
+    match application mcafee-antivirus policy scavenger
+    match application http policy low-latency-data
+    match application http-local-net policy low-latency-data
+    match application ssl-local-net policy low-latency-data
+    match application box policy bulk-data
+    match application jabber policy low-latency-data
+    match application ssl policy low-latency-data
+    match application pcoip policy low-latency-data
+    match application share-point policy low-latency-data
+    match application clearcase policy low-latency-data
+    path-preference DC fallback DR next-fallback MPLS 
+   class backup-and-storage sequence 30
+    match application cifs policy bulk-data
+    match application crashplan policy bulk-data
+    match application backup-service policy bulk-data
+    match application nfs policy bulk-data
+    match application tftp policy bulk-data
+    path-preference DC fallback DR 
+   class voice-and-video sequence 40
+    match application cisco-spark-video policy voice
+    match application cisco-phone-control policy low-latency-data
+    match application cisco-collab-video policy real-time-video
+    match application sip-tls policy low-latency-data
+    match application ms-lync-control policy low-latency-data
+    match application telepresence-control policy low-latency-data
+    match application cisco-phone policy voice
+    match application cisco-collab-control policy low-latency-data
+    match application cisco-jabber-im policy real-time-video
+    match application sip policy low-latency-data
+    match application isakmp policy low-latency-data
+    match application cisco-collaboration policy real-time-video
+    match application cisco-phone-media policy voice
+    match application cisco-jabber-video policy real-time-video
+    match application cisco-jabber-audio policy voice
+    match application rtp policy voice
+    match application cisco-spark-audio policy real-time-video
+    match application telepresence-media policy real-time-video
+    match application rtcp policy low-latency-data
+    match application webex-media policy real-time-video
+    match application ms-lync policy real-time-video
+    match application rtp-video policy voice
+    match application telepresence-audio policy real-time-video
+    match application dmp policy real-time-video
+    match application ms-lync-video policy real-time-video
+    match application cisco-collab-audio policy voice
+    match application skinny policy low-latency-data
+    match application cisco-phone-video policy real-time-video
+    match application cisco-media-audio policy voice
+    match application cisco-ip-camera policy real-time-video
+    match application cisco-jabber-control policy low-latency-data
+    match application cisco-spark-media policy voice
+    match application rtp-audio policy real-time-video
+    match application cisco-spark policy real-time-video
+    match application ms-lync-audio policy voice
+    match application h323 policy low-latency-data
+    match application cisco-phone-audio policy voice
+    match application jabber-audio policy voice
+    match application cisco-media-video policy voice
+    match application jabber-video policy real-time-video
+    match application conference-server policy real-time-video
+    match application webex-meeting policy real-time-video
+    match application rtsp policy low-latency-data
+    match application conferencing policy voice
+    match application webex-app-sharing policy real-time-video
+    path-preference DC fallback DR next-fallback MPLS 
+   class software-updates sequence 50
+    match application android-updates policy bulk-data
+    match application windows-store policy scavenger
+    match application apple-ios-updates policy bulk-data
+    match application ms-sms policy low-latency-data
+    match application mac-os-x-updates policy bulk-data
+    match application apple-app-store policy scavenger
+    match application apple-tv-updates policy bulk-data
+    match application google-play policy scavenger
+    match application ms-update policy bulk-data
+    path-preference DC fallback DR 
+   class file-sharing sequence 60
+    match application ftps-data policy bulk-data
+    match application ftp policy bulk-data
+    match application binary-over-http policy bulk-data
+    match application ftp-data policy bulk-data
+    path-preference DC fallback DR next-fallback MPLS 
+   class browsing sequence 70
+    match application htc-services policy scavenger
+    path-preference DC fallback DR next-fallback MPLS 
+   class database sequence 80
+    match application cassandra policy low-latency-data
+    match application mysql policy low-latency-data
+    match application oracle-sqlnet policy low-latency-data
+    match application db-service policy low-latency-data
+    match application sqlserver policy low-latency-data
+    match application mongo policy low-latency-data
+    path-preference DC fallback DR next-fallback MPLS 
+   class email sequence 90
+    match application imap policy low-latency-data
+    match application exchange policy low-latency-data
+    match application pop3 policy low-latency-data
+    match application mapi policy low-latency-data
+    match application mail-service policy low-latency-data
+    match application outlook-web-service policy low-latency-data
+    match application smtp policy low-latency-data
+    match application lotus-notes policy scavenger
+    match application secure-imap policy low-latency-data
+    path-preference DC fallback DR next-fallback MPLS 
+!
+!
+!
+!
+crypto pki trustpoint sdn-network-infra-iwan
+ enrollment url http://172.23.1.10:80/ejbca/publicweb/apply/scep/sdnscep
+ fqdn DC-iWAN-CTR.NAP.local
+ subject-name CN=CSR1000V_9VEL25720K0_sdn-network-infra-iwan
+ revocation-check crl
+ rsakeypair sdn-network-infra-iwan
+ auto-enroll 80 regenerate
+!
+!
+crypto pki certificate chain sdn-network-infra-iwan
+ certificate 550EB1F21F60C91F
+  30820372 3082025A A0030201 02020855 0EB1F21F 60C91F30 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39303532 3331365A 170D3233 30313139 
+  30353233 31365A30 52311A30 1806092A 864886F7 0D010902 0C0B4443 2D695741 
+  4E2D4354 52313430 32060355 04030C2B 43535231 30303056 5F395645 4C323537 
+  32304B30 5F73646E 2D6E6574 776F726B 2D696E66 72612D69 77616E30 82012230 
+  0D06092A 864886F7 0D010101 05000382 010F0030 82010A02 82010100 BE902636 
+  C7D68059 9C3DE770 11EABB1C DB537213 E4050853 F32914B2 2C498BB6 73649AA0 
+  C9E30CD3 4204C44E 3E6E1ED3 9245D695 A6A293D7 3B911119 D6D08622 50B0CB77 
+  ACE5DEEB AE56741A A5AEB232 2982BC8C 6D3A4F31 454BB352 9FDCE1A2 757D22C3 
+  AF4B3EE3 AD2FB7D9 9AD222DD 2FA5F103 A0FF310F 4C06CCD4 986D08DC 25A2510D 
+  1064BB3A D3FC8B44 8B9EE64B 72C6D44A D9EB1995 E53B9CD9 02B65716 C040ED11 
+  2E55F45B 8D720B6A ABBB4664 7AB3FF33 5119E2B7 4AB57FF0 87AF1219 7504E4AF 
+  119BD3FE 0E114B46 54139C1E 29723264 5B8E76A8 F12F59D8 7941C3B6 09CBA54A 
+  C4A2F156 0AE6D420 BC5C0AF5 6165B95F 94A3CD3E D0E8E3A4 3ED5CB8D 02030100 
+  01A37F30 7D301D06 03551D0E 04160414 05E5AD23 A2147EC5 889525B2 3A62F2B9 
+  EA5B36DE 300C0603 551D1301 01FF0402 3000301F 0603551D 23041830 1680149B 
+  FB730D46 03ECD8FC C891F6E9 5BA4F3EB F3A5FB30 0E060355 1D0F0101 FF040403 
+  0205E030 1D060355 1D250416 30140608 2B060105 05070302 06082B06 01050507 
+  0304300D 06092A86 4886F70D 01010D05 00038201 0100495B 36CAD799 3F7CCE03 
+  06DCC3CC FE5E4B6A ECA041AE 7B682ED5 7CF22D86 E48B96CC 0695A7AF D0408D70 
+  3C107E34 2BBF7B69 B298A89E 819AC75A 2F9A0F52 76A547D5 EBCD37CF 0140990F 
+  EE5E63FA 8175B42C 4A0D66F7 835E9B36 ADC65C0E AC1BD2F1 141EC3D6 B6E1458E 
+  9CBCC931 41F3C67B 5C2157B2 E937A645 09E48405 EC5C8514 7F4C6192 705792BD 
+  9CDC4555 08B7E7D7 4A36DC21 8A91C0AB 39F069F3 7EEB65B8 D0E86D76 73A7F8FA 
+  92F1BC07 AC85E86C D5F88E41 C0E149CA F194561D 069965B4 E621D0E3 49C9BFA5 
+  D3C76B76 3912C6FA 8104230F 0FB9F9D3 3F814369 ADE5EB8D B38F128F 922D645A 
+  8B5313C3 4F0B1199 383B3BA0 B0DFCB6D 1A416D78 59E3
+  	quit
+ certificate ca 1E5166B43300756F
+  30820323 3082020B A0030201 0202081E 5166B433 00756F30 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39303431 3334365A 170D3237 30313138 
+  30343133 34365A30 1F311D30 1B060355 04030C14 73646E2D 6E657477 6F726B2D 
+  696E6672 612D6361 30820122 300D0609 2A864886 F70D0101 01050003 82010F00 
+  3082010A 02820101 00ABCE5E 7E70CA54 D22275FF AC8E65C7 D753B989 339735EE 
+  06AA463D 0B9A2F25 0D701BCA 0FDAA947 2A5E0DD8 03F8DF0F 74CF0267 1B2BB29E 
+  9876D007 7CB7EBE1 CED74372 A666AA2F 392155BB 8DAAED4B A16DF600 29523716 
+  3A2D1602 E9DA77BD A89BE46D A685EC18 FE00A893 B4CD0409 F0723C17 7DDDF8D2 
+  32A906AE 47879ED6 7A511039 82BC21D3 C4B88B35 DC2D44A9 6C189D12 BDE7A285 
+  2F69FCDF FDF165B5 C46BFAF1 9B5A7160 459C9D1D 75C89150 03E607AC C60404AB 
+  DC6F3C63 5288233C 39116C32 F98EA05D 09C169EC 1C69F79B A56114DE D94A42C0 
+  65D95334 A9A17C2B 675178DD 13CBC094 24B5584F F519B6C2 71363218 79B13B1D 
+  946DCD77 1BA20ED4 DD020301 0001A363 3061301D 0603551D 0E041604 149BFB73 
+  0D4603EC D8FCC891 F6E95BA4 F3EBF3A5 FB300F06 03551D13 0101FF04 05300301 
+  01FF301F 0603551D 23041830 1680149B FB730D46 03ECD8FC C891F6E9 5BA4F3EB 
+  F3A5FB30 0E060355 1D0F0101 FF040403 02018630 0D06092A 864886F7 0D01010D 
+  05000382 010100A3 29F5F1CC C81F796D C6DFD558 43133CB7 183F3FE5 5F28BECE 
+  BC10B7CC 3FFE19B1 5A8B13B6 442A1FD8 4BF380A7 9AFAAFAC E5632DFF E7601197 
+  03CF97A8 232311FE DF7DD8D4 D417AA40 C4F1C7A8 A2F2CEBB D37783EA 386FA6DA 
+  9C1A09BB 8DDA0ED6 AD47032C EBEEF89A 4DB2FB80 C87A4401 2847EEE6 B4DA3CB7 
+  C5C2D0F2 90EC2A2A B17A8D53 D54172F2 D71BFE68 A10A97DB 6194CCCA 76980850 
+  7D6A665C A3F7A2F4 49E120B3 635CA67A 63365D6D 23676EF5 E2BC3449 040CAEEE 
+  63CDA1BC FA07D68B 2C425BD6 5162B572 5F8D5C05 DC70D275 44FEC7E0 F3F5CFBE 
+  08EC56D1 C1E8ACFF 34E60DD4 ABE080BD D0C75384 904C4D74 C9B72EF1 098C6065 
+  55FBC666 677A5D
+  	quit
+!
+crypto pki certificate pool
+ cabundle nvram:Trustpool15.cer
+!
+crypto pki crl download schedule prepublish 2760
+crypto pki crl download schedule retries 15
+crypto pki crl download schedule retries interval 180
+!
+!
+!
+!
+!
+!
+!
+!
+license udi pid CSR1000V sn 9VEL25720K0
+license accept end user agreement
+license boot level appx
+diagnostic bootup level minimal
+spanning-tree extend system-id
+archive
+ log config
+  logging enable
+  logging size 500
+  notify syslog contenttype plaintext
+  hidekeys
+!
+!
+!
+username lairdadmin privilege 15 password 7 0231036E5B1C010F045F010103
+username napadmin privilege 15 secret 5 $1$BTLD$qJSCN59GFZPlsUNaW/NsX.
+!
+redundancy
+!
+!
+!
+!
+!
+!
+! 
+! 
+!
+!
+interface Loopback47233
+ ip address 10.253.4.3 255.255.255.255
+ ip pim sparse-mode
+!
+interface GigabitEthernet1
+ ip address 172.23.1.20 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+!
+router eigrp LAN-EIGRP
+ !
+ address-family ipv4 unicast autonomous-system 400
+  !
+  af-interface default
+   passive-interface
+  exit-af-interface
+  !
+  af-interface GigabitEthernet1
+   hello-interval 20
+   hold-time 60
+   no passive-interface
+  exit-af-interface
+  !
+  topology base
+  exit-af-topology
+  network 10.253.4.3 0.0.0.0
+  network 172.23.1.0 0.0.0.255
+  eigrp router-id 10.253.4.3
+ exit-address-family
+!
+!
+virtual-service csr_mgmt
+!
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+ip tftp source-interface GigabitEthernet1
+ip route 0.0.0.0 0.0.0.0 172.23.1.1
+ip pim register-source Loopback47233
+!
+ip ssh source-interface Loopback47233
+ip ssh version 2
+!
+!
+ip prefix-list DC-PREFIX seq 5 permit 172.22.2.0/30
+ip prefix-list DC-PREFIX seq 10 permit 172.22.1.8/29
+ip prefix-list DC-PREFIX seq 15 permit 10.254.99.0/24
+ip prefix-list DC-PREFIX seq 20 permit 172.17.1.0/24
+ip prefix-list DC-PREFIX seq 25 permit 172.22.2.4/30
+ip prefix-list DC-PREFIX seq 30 permit 10.254.98.0/24
+ip prefix-list DC-PREFIX seq 35 permit 172.22.1.0/30
+ip prefix-list DC-PREFIX seq 40 permit 172.22.2.8/29
+ip prefix-list DC-PREFIX seq 45 permit 172.22.1.4/30
+ip prefix-list DC-PREFIX seq 50 permit 172.17.2.0/24
+ip prefix-list DC-PREFIX seq 55 permit 172.23.1.0/24
+ip prefix-list DC-PREFIX seq 60 permit 172.21.99.0/24
+ip prefix-list DC-PREFIX seq 65 permit 172.21.0.0/16
+ip prefix-list DC-PREFIX seq 70 permit 172.20.0.0/16
+ip prefix-list DC-PREFIX seq 75 permit 172.23.52.0/23
+ip prefix-list DC-PREFIX seq 80 permit 172.23.50.0/23
+ip prefix-list DC-PREFIX seq 85 permit 10.252.0.0/16
+ip prefix-list DC-PREFIX seq 90 permit 10.77.0.0/16
+ip prefix-list DC-PREFIX seq 95 permit 10.79.0.0/16
+ip prefix-list DC-PREFIX seq 100 permit 10.197.0.0/16
+ip prefix-list DC-PREFIX seq 105 permit 192.168.10.84/32
+!
+ip prefix-list ENTERPRISE-PREFIXES seq 5 permit 172.16.0.0/12
+ip prefix-list ENTERPRISE-PREFIXES seq 10 permit 192.168.0.0/16
+ip prefix-list ENTERPRISE-PREFIXES seq 15 permit 10.0.0.0/8
+ip prefix-list ENTERPRISE-PREFIXES seq 20 permit 172.21.0.0/16
+!
+ip access-list standard SNMP_ACL
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+no service-routing capabilities-manager
+logging host 172.23.1.15
+logging host 172.23.1.17
+logging host 172.23.1.16
+!
+!
+snmp-server community lppbisnmp-ro RO SNMP_ACL
+snmp-server community lppbisnmp-rw RW SNMP_ACL
+snmp-server trap-source Loopback47233
+snmp-server enable traps pki
+snmp-server host 172.23.1.15 lppbisnmp-ro 
+snmp-server host 172.23.1.16 lppbisnmp-ro 
+snmp-server host 172.23.1.17 lppbisnmp-ro 
+snmp-server host 172.23.1.15 lppbisnmp-rw 
+snmp ifmib ifindex persist
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+banner login ^C
+
+           *       This is a controlled access system with login        *
+           *  restricted to those with proper authorization. Authorized *
+           *  parties are limited to those functions which have been    *
+           *  assigned to perform work related duties. Any unauthorized *
+           *  access attempt will be investigated and prosecuted to the *
+           *  full extent of the law.                                   *
+           *  --------------------------------------------------------  *
+           *            YOUR IP ADDRESS HAS BEEN CAPTURED               *
+           *  --------------------------------------------------------  *
+           *    If you are not an authorized user, disconnect now.      *
+		   
+^C
+!
+line con 0
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+line vty 5 50
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+!
+ntp source Loopback47233
+ntp server 172.23.1.10
+ntp server 172.23.1.11
+ntp server 172.23.1.12
+wsma agent exec
+!
+wsma agent config
+!
+wsma agent filesys
+!
+wsma agent notify
+!
+!
+end

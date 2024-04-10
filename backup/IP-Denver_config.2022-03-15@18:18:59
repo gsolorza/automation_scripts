@@ -1,0 +1,1257 @@
+Building configuration...
+
+
+Current configuration : 40253 bytes
+!
+! Last configuration change at 04:23:44 UTC Mon Mar 14 2022
+! NVRAM config last updated at 15:42:40 UTC Sat Mar 12 2022 by lairdadmin
+!
+version 16.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform hardware throughput level 100000
+!
+hostname IP-Denver
+!
+boot-start-marker
+boot system bootflash:isr4300-universalk9.16.06.05.SPA.bin
+boot-end-marker
+!
+!
+vrf definition Mgmt-intf
+ !
+ address-family ipv4
+ exit-address-family
+ !
+ address-family ipv6
+ exit-address-family
+!
+enable password 7 012401310B110821695D46111F
+!
+ethernet lmi ce
+aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+aaa session-id common
+!
+ip vrf IWAN-TRANSPORT-1
+ rd 65511:101
+!
+ip vrf IWAN-TRANSPORT-2
+ rd 65511:102
+!
+!
+!
+!
+ip nbar attribute-map C9009_SC8026
+ attribute sub-category tunneling-protocols
+ attribute category other
+ip nbar attribute-map C9009_SC8022
+ attribute sub-category enterprise-rich-media-content
+ attribute category other
+ip nbar attribute-map C9015_SC8023
+ attribute sub-category file-transfer
+ attribute category backup-and-storage
+ip nbar attribute-map C9013_SC8012
+ attribute category business-and-productivity-tools
+ attribute sub-category enterprise-transactional-apps
+ip nbar attribute-map C9009_SC8008
+ attribute sub-category other
+ attribute category other
+ip nbar attribute-map C9013_SC8011
+ attribute category business-and-productivity-tools
+ attribute sub-category authentication-services
+ip nbar attribute-map C9009_SC8018
+ attribute sub-category enterprise-cloud-data-storage
+ attribute category other
+ip nbar attribute-map C9009_SC8012
+ attribute category other
+ attribute sub-category enterprise-transactional-apps
+ip nbar attribute-map C9013_SC8012_T08
+ attribute category business-and-productivity-tools
+ attribute sub-category enterprise-transactional-apps
+ attribute traffic-class transactional-data
+ip nbar attribute-map C9009_SC8028
+ attribute category other
+ attribute sub-category enterprise-voice-collaboration
+ip nbar attribute-map C9009_SC8013
+ attribute category other
+ attribute sub-category enterprise-media-conferencing
+ip nbar attribute-map C9013_SC8021_T03
+ attribute category business-and-productivity-tools
+ attribute traffic-class multimedia-streaming
+ attribute sub-category desktop-virtualization
+!
+ip nbar custom E1Web http url "http://e1web.nap.local:7777" id 5385 
+ip nbar custom E1WebPort transport tcp id 6875
+ port 7777 
+ direction any
+
+
+ip nbar custom PShapes-Pkgp327 transport tcp id 58029
+ port 1551 
+ direction any
+
+
+ip nbar custom PShapes11i transport tcp id 22430
+ port 8030 
+ direction any
+
+
+ip nbar custom Remote-Desktop transport tcp id 26219
+ port 3389 
+ direction any
+
+
+!
+ip nbar attribute-set gtp-user C9009_SC8026
+ip nbar attribute-set flash-video C9009_SC8022
+ip nbar attribute-set audio-over-http C9009_SC8022
+ip nbar attribute-set shockwave C9009_SC8022
+ip nbar attribute-set video-over-http C9009_SC8022
+ip nbar attribute-set microsoftds C9015_SC8023
+ip nbar attribute-set cifs C9015_SC8023
+ip nbar attribute-set tftp C9015_SC8023
+ip nbar attribute-set nfs C9015_SC8023
+ip nbar attribute-set gsiftp C9015_SC8023
+ip nbar attribute-set gridftp C9015_SC8023
+ip nbar attribute-set wikipedia C9009_SC8008
+ip nbar attribute-set gss-http C9013_SC8011
+ip nbar attribute-set amazon-web-services C9009_SC8018
+ip nbar attribute-set windows-azure C9009_SC8018
+ip nbar attribute-set spdy C9009_SC8012
+ip nbar attribute-set web-rtc-video C9009_SC8028
+ip nbar attribute-set google-services-media C9009_SC8028
+ip nbar attribute-set web-rtc-audio C9009_SC8028
+ip nbar attribute-set web-rtc C9009_SC8028
+ip nbar attribute-set google-services-video C9009_SC8028
+ip nbar attribute-set itunes-media C9009_SC8028
+ip nbar attribute-set wifi-calling C9009_SC8026
+ip nbar attribute-set https C9009_SC8012
+ip nbar attribute-set quic C9009_SC8012
+ip nbar attribute-set jabber C9013_SC8012
+ip nbar attribute-set ssl C9013_SC8012
+ip nbar attribute-set http C9013_SC8012
+ip nbar attribute-set ssl-local-net C9013_SC8012
+ip nbar attribute-set http-local-net C9013_SC8012
+ip nbar attribute-set google-services-audio C9009_SC8013
+ip nbar attribute-set E1Web C9013_SC8012_T08
+ip nbar attribute-set E1WebPort C9013_SC8012_T08
+ip nbar attribute-set PShapes11i C9013_SC8012_T08
+ip nbar attribute-set PShapes-Pkgp327 C9013_SC8012_T08
+ip nbar attribute-set Remote-Desktop C9013_SC8021_T03
+!
+ip name-server 172.20.10.40 172.21.10.40
+ip domain name NAP.local
+ip multicast-routing distributed
+ip dhcp excluded-address 192.168.145.1
+ip dhcp excluded-address 192.168.145.1 192.168.145.99
+ip dhcp excluded-address 192.168.145.201 192.168.145.254
+ip dhcp excluded-address 192.168.146.1 192.168.146.19
+!
+ip dhcp pool Data
+ network 192.168.145.0 255.255.255.0
+ default-router 192.168.145.1 
+ domain-name NAP.local
+ option 130 ascii "MITEL IP PHONE"
+ option 132 hex 02
+ option 133 hex 01
+ dns-server 172.20.10.40 172.21.10.40 
+!
+ip dhcp pool Voice & Video
+ network 192.168.146.0 255.255.255.0
+ default-router 192.168.146.1 
+ option 130 ascii "MITEL IP PHONE"
+ option 132 hex 02
+ option 133 hex 01
+ domain-name NAP.local
+ dns-server 172.20.10.40 172.21.10.40 8.8.8.8 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+! 
+! 
+! 
+! 
+!
+!
+!
+parameter-map type regex iwan-cws-local-domain-regex
+ pattern NAP.local
+ pattern insideplastics.com
+ pattern northamericanplastics.com
+ pattern lairdplastics.com
+ pattern polymershapes.com
+!
+parameter-map type regex umbrella-local-domain-regex
+ pattern nap.local
+ pattern .*nap.*
+ pattern wap.insideplastics.com
+ pattern calsakplasticsDV.com
+ pattern calsakplasticsPY.com
+ pattern emplasticPY.com
+ pattern emplasticDV.com
+!
+multilink bundle-name authenticated
+!
+flow record LIVEACTION-FLOWRECORD
+ description DO NOT MODIFY. USED BY LIVEACTION.
+ match flow direction
+ match interface input
+ match ipv4 destination address
+ match ipv4 protocol
+ match ipv4 source address
+ match ipv4 tos
+ match transport destination-port
+ match transport source-port
+ collect application name
+ collect counter bytes
+ collect counter packets
+ collect flow sampler
+ collect interface output
+ collect ipv4 destination mask
+ collect ipv4 dscp
+ collect ipv4 id
+ collect ipv4 source mask
+ collect ipv4 source prefix
+ collect routing destination as
+ collect routing next-hop address ipv4
+ collect routing source as
+ collect timestamp sys-uptime first
+ collect timestamp sys-uptime last
+ collect transport tcp flags
+!
+!
+flow record type performance-monitor LIVEACTION-FLOWRECORD-AVC
+ description DO NOT MODIFY. USED BY LIVEACTION.
+ match application name account-on-resolution
+ match connection client ipv4 address
+ match connection server ipv4 address
+ match connection server transport port
+ match ipv4 protocol
+ match routing vrf input
+ collect application http host
+ collect connection client counter bytes long
+ collect connection client counter bytes network long
+ collect connection client counter packets long
+ collect connection client counter packets retransmitted
+ collect connection delay application sum
+ collect connection delay network client-to-server sum
+ collect connection delay network to-client sum
+ collect connection delay network to-server sum
+ collect connection delay response client-to-server sum
+ collect connection delay response to-server histogram late
+ collect connection delay response to-server sum
+ collect connection initiator
+ collect connection new-connections
+ collect connection server counter bytes long
+ collect connection server counter bytes network long
+ collect connection server counter packets long
+ collect connection server counter responses
+ collect connection sum-duration
+ collect connection transaction counter complete
+ collect connection transaction duration max
+ collect connection transaction duration min
+ collect connection transaction duration sum
+ collect interface input
+ collect interface output
+ collect ipv4 destination address
+ collect ipv4 dscp
+ collect ipv4 source address
+ collect ipv4 ttl
+!
+!
+flow record type performance-monitor LIVEACTION-FLOWRECORD-MEDIANET
+ description DO NOT MODIFY. USED BY LIVEACTION.
+ match flow direction
+ match ipv4 destination address
+ match ipv4 protocol
+ match ipv4 source address
+ match transport destination-port
+ match transport rtp ssrc
+ match transport source-port
+ collect application media bytes counter
+ collect application media bytes rate
+ collect application media event
+ collect application media packets counter
+ collect application media packets rate
+ collect application name
+ collect counter bytes
+ collect counter bytes rate
+ collect counter packets
+ collect interface input
+ collect interface output
+ collect ipv4 dscp
+ collect ipv4 ttl
+ collect monitor event
+ collect routing forwarding-status
+ collect timestamp interval
+ collect transport event packet-loss counter
+ collect transport packets expected counter
+ collect transport packets lost counter
+ collect transport packets lost rate
+ collect transport rtp jitter maximum
+ collect transport rtp jitter mean
+ collect transport rtp jitter minimum
+!
+!
+flow exporter LIVEACTION-FLOWEXPORTER-IPFIX
+ description DO NOT MODIFY. USED BY LIVEACTION.
+ destination 172.23.1.90
+ source Loopback47233
+ transport udp 2055
+ export-protocol ipfix
+ template data timeout 60
+ option interface-table
+ option vrf-table
+ option sampler-table
+ option application-table
+ option application-attributes
+ option c3pl-class-table
+ option c3pl-policy-table
+!
+!
+flow monitor type performance-monitor LIVEACTION-FLOWMONITOR-AVC
+ description DO NOT MODIFY. USED BY LIVEACTION.
+ record LIVEACTION-FLOWRECORD-AVC
+ exporter LIVEACTION-FLOWEXPORTER-IPFIX
+ cache entries 6500
+!
+!
+flow monitor type performance-monitor LIVEACTION-FLOWMONITOR-MEDIANET
+ description DO NOT MODIFY. USED BY LIVEACTION.
+ record LIVEACTION-FLOWRECORD-MEDIANET
+ exporter LIVEACTION-FLOWEXPORTER-IPFIX
+!
+!
+flow monitor LIVEACTION-FLOWMONITOR
+ description DO NOT MODIFY. USED BY LIVEACTION.
+ exporter LIVEACTION-FLOWEXPORTER-IPFIX
+ cache timeout inactive 10
+ cache timeout active 60
+ record LIVEACTION-FLOWRECORD
+!
+!
+!
+!
+domain ONE
+ vrf default
+  border
+   source-interface Loopback47233
+   master local
+  master branch
+   source-interface Loopback47233
+   site-prefixes prefix-list SITE-PREFIXES
+   hub 10.253.4.3
+!
+!
+key chain WAN-KEY
+ key 1
+  key-string 7 070C705F4D06485744
+!
+!
+crypto pki trustpoint pnplabel
+ enrollment pkcs12
+ revocation-check none
+!
+crypto pki trustpoint sdn-network-infra-iwan
+ enrollment url http://173.252.189.173:80/ejbca/publicweb/apply/scep/sdnscep
+ fqdn IP-Denver
+ subject-name CN=ISR4321/K9_FLM2118V1AN_sdn-network-infra-iwan
+ vrf IWAN-TRANSPORT-1
+ revocation-check crl
+ rsakeypair sdn-network-infra-iwan
+ auto-enroll 80 regenerate
+!
+!
+!
+crypto pki certificate map CERT-MAP-IWAN-TRANSPORT-1 10
+ issuer-name eq cn = sdn-network-infra-ca
+ name co sdn-network-infra-iwan
+!
+crypto pki certificate map CERT-MAP-IWAN-TRANSPORT-2 10
+ issuer-name eq cn = sdn-network-infra-ca
+ name co sdn-network-infra-iwan
+!
+crypto pki certificate chain pnplabel
+ certificate ca 2106285026503811047963066320740604492773
+  308203BE 308202A6 A0030201 02021421 06285026 50381104 79630663 20740604 
+  49277330 0D06092A 864886F7 0D01010B 05003081 88312D30 2B060355 04031324 
+  35623931 33306166 2D633637 382D3466 62642D62 3632332D 61336430 35316562 
+  34653732 310B3009 06035504 06130255 53311330 11060355 0408130A 43616C69 
+  666F726E 69613110 300E0603 55040713 0753616E 4A6F7365 31133011 06035504 
+  0B130A41 50494345 4D2D5344 4E310E30 0C060355 040A1305 43697363 6F301E17 
+  0D313730 31313630 33323134 355A170D 32323031 31353033 32313435 5A305D31 
+  14301206 03550403 130B3137 322E3233 2E312E31 30311330 11060355 0408130A 
+  43616C69 666F726E 6961310B 30090603 55040613 02555331 0E300C06 0355040A 
+  13054369 73636F31 13301106 0355040B 130A4150 4943454D 2D53444E 30820122 
+  300D0609 2A864886 F70D0101 01050003 82010F00 3082010A 02820101 00E7AD8E 
+  B9CB8811 6DD51EC8 5E2AF7EB FF5CA5C6 5AFE5929 B77A71E6 F33E9B52 26E63DA1 
+  CD19E365 A81B5A91 98B69EFB 3151235A 1AA22A7F F3B8A1A0 E74079EA 39DE1FE5 
+  1233AF1C B8373851 1C74E25D 1821AF6C D22761AB E612729E 0E6846B6 976F3369 
+  3E964533 598DF21C FA3B591E 8D57636B CA130865 851A842D 8D635961 58141574 
+  15BDE691 4EB02104 A5A84D6C E1622D79 64BDFCBA 3FCEA290 BFC4D3B0 2B17341E 
+  7CAE3DB3 F520C2D8 7AC7864B 8D510CE9 F20749EA 01AC1222 64156DFC ECF216C0 
+  125B8893 49D5CD78 CA3EDE07 D1871E41 BC289FA3 5EB02842 4EA7AB10 84AB1C69 
+  492442FB D9BF9023 468088C7 A43EDCDD 7BE49C8C 6E6A2886 1C3EDC90 3D020301 
+  0001A34A 30483009 0603551D 13040230 00300B06 03551D0F 04040302 05A0301D 
+  0603551D 25041630 1406082B 06010505 07030106 082B0601 05050703 02300F06 
+  03551D11 04083006 8704AC17 010A300D 06092A86 4886F70D 01010B05 00038201 
+  01001B64 C2740A40 6A95D43E A46303FE A264BBF4 0ACD2F57 38ECA73E D37D7EF7 
+  EA29D84C 4079301D EE971F2B D14F25DD 132B2878 78F7BE65 B6F620C4 0505E4DD 
+  2256F247 E89F237B 96071B74 9BDC8934 64D35FF0 622EC3D7 53CBE3E2 CB1432EA 
+  0F1F7A31 602980B0 DCA32D64 AB4CDB65 76CC15EF 80727650 37D3E220 175EED3F 
+  F7F53E89 53EF81C2 94079987 B4A81BAF EB8CED6C FF28817E D2E6C555 B218B850 
+  06DD68D7 577BA6C2 959DF94F D97B6C01 014C1417 BE3722D6 AB958847 0E161D02 
+  21867681 B3C2CBFB 56EB7BEF CDF2DBEC 47B007EF 0D940C37 681C4FC3 B3DA7D62 
+  CA8F6830 FD4DB9BB 48F5A3B4 EA0F57CF 5155FCCA 89EED17A 8D47F3E4 FF857D54 
+  A5BE
+  	quit
+crypto pki certificate chain sdn-network-infra-iwan
+ certificate 584CDE6DF065E73F
+  30820372 3082025A A0030201 02020858 4CDE6DF0 65E73F30 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39313332 3431335A 170D3233 30313139 
+  31333234 31335A30 52311830 1606092A 864886F7 0D010902 0C094950 2D44656E 
+  76657231 36303406 03550403 0C2D4953 52343332 312F4B39 5F464C4D 32313138 
+  5631414E 5F73646E 2D6E6574 776F726B 2D696E66 72612D69 77616E30 82012230 
+  0D06092A 864886F7 0D010101 05000382 010F0030 82010A02 82010100 ACEE46F7 
+  9BAF8786 24DA998E BD85F654 69D12393 B4A02705 31515321 1035AA7E 54DD91F8 
+  F0BBC2DB 7C729549 87A4E9E4 669A8E7B 8B349CC2 EEE38369 FEB8A08F EA44A389 
+  DE554768 E5153C33 10A452D7 B31D4617 B9B44C47 0E4F5413 85D101AA 4DB01DDD 
+  79F6E92A D257AC38 C2B3CEE3 CC5623BE 65C9314C 9474459A 9D184EE4 0F8DF33F 
+  BFF2F2FD 24488E6D C056F90D 108BBBCE C3632F40 86B42BCB 5BC7801A B81347BB 
+  598D08D4 4471EF9E AABE8D2A BF9D9B1F 231AB110 9356C818 0976DE16 6CE18D05 
+  5F0F258C D0C687C5 7371802C 87E9F135 4E0735F9 6A7A3B42 D4023901 A70F6860 
+  8DA4C09B E89BF920 F5507AD1 40A5AAF4 51BA0120 653E01E9 388ECF67 02030100 
+  01A37F30 7D301D06 03551D0E 04160414 FB301307 61703D98 3F1D0989 670EE2EA 
+  725CF532 300C0603 551D1301 01FF0402 3000301F 0603551D 23041830 1680149B 
+  FB730D46 03ECD8FC C891F6E9 5BA4F3EB F3A5FB30 0E060355 1D0F0101 FF040403 
+  0205E030 1D060355 1D250416 30140608 2B060105 05070302 06082B06 01050507 
+  0304300D 06092A86 4886F70D 01010D05 00038201 0100919F DDB2DBF9 FD273D86 
+  4554201C 776F5ADF 65CFF002 2A3B2C5B F0D4EB7A 4F95F568 206CF894 616FA95E 
+  76029FDD F478F547 E346A36B 827618F8 2E91D477 1E1C121F 648EB320 66F28C01 
+  78964C75 498B2CA8 4CBFA6E8 FF846CB6 3CC57A1D 44C59ACE 3942E79D 06F8C78B 
+  9D2C52BA 84209516 A30193EF 76815CA8 D9587732 F6FD81A3 32EFD9DD 2BB3E856 
+  36B6D252 819B74C0 292FE32C 5EB41D2D B10F00AF 4C98196B 4321D0EE EB342EF1 
+  2F00F6AE B2FA9640 BE416C12 889D718A 33A4AC57 9BCA2ADB 762C5950 A22544C6 
+  F4C76796 C8C1F4FC 1299D7EF 7F4AFAC9 CD47733E 92E3CF68 CD8FACD6 451B084B 
+  59221F2E 784CBC4E F496DA30 C04FB198 1FCE5B65 8800
+  	quit
+ certificate ca 1E5166B43300756F
+  30820323 3082020B A0030201 0202081E 5166B433 00756F30 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39303431 3334365A 170D3237 30313138 
+  30343133 34365A30 1F311D30 1B060355 04030C14 73646E2D 6E657477 6F726B2D 
+  696E6672 612D6361 30820122 300D0609 2A864886 F70D0101 01050003 82010F00 
+  3082010A 02820101 00ABCE5E 7E70CA54 D22275FF AC8E65C7 D753B989 339735EE 
+  06AA463D 0B9A2F25 0D701BCA 0FDAA947 2A5E0DD8 03F8DF0F 74CF0267 1B2BB29E 
+  9876D007 7CB7EBE1 CED74372 A666AA2F 392155BB 8DAAED4B A16DF600 29523716 
+  3A2D1602 E9DA77BD A89BE46D A685EC18 FE00A893 B4CD0409 F0723C17 7DDDF8D2 
+  32A906AE 47879ED6 7A511039 82BC21D3 C4B88B35 DC2D44A9 6C189D12 BDE7A285 
+  2F69FCDF FDF165B5 C46BFAF1 9B5A7160 459C9D1D 75C89150 03E607AC C60404AB 
+  DC6F3C63 5288233C 39116C32 F98EA05D 09C169EC 1C69F79B A56114DE D94A42C0 
+  65D95334 A9A17C2B 675178DD 13CBC094 24B5584F F519B6C2 71363218 79B13B1D 
+  946DCD77 1BA20ED4 DD020301 0001A363 3061301D 0603551D 0E041604 149BFB73 
+  0D4603EC D8FCC891 F6E95BA4 F3EBF3A5 FB300F06 03551D13 0101FF04 05300301 
+  01FF301F 0603551D 23041830 1680149B FB730D46 03ECD8FC C891F6E9 5BA4F3EB 
+  F3A5FB30 0E060355 1D0F0101 FF040403 02018630 0D06092A 864886F7 0D01010D 
+  05000382 010100A3 29F5F1CC C81F796D C6DFD558 43133CB7 183F3FE5 5F28BECE 
+  BC10B7CC 3FFE19B1 5A8B13B6 442A1FD8 4BF380A7 9AFAAFAC E5632DFF E7601197 
+  03CF97A8 232311FE DF7DD8D4 D417AA40 C4F1C7A8 A2F2CEBB D37783EA 386FA6DA 
+  9C1A09BB 8DDA0ED6 AD47032C EBEEF89A 4DB2FB80 C87A4401 2847EEE6 B4DA3CB7 
+  C5C2D0F2 90EC2A2A B17A8D53 D54172F2 D71BFE68 A10A97DB 6194CCCA 76980850 
+  7D6A665C A3F7A2F4 49E120B3 635CA67A 63365D6D 23676EF5 E2BC3449 040CAEEE 
+  63CDA1BC FA07D68B 2C425BD6 5162B572 5F8D5C05 DC70D275 44FEC7E0 F3F5CFBE 
+  08EC56D1 C1E8ACFF 34E60DD4 ABE080BD D0C75384 904C4D74 C9B72EF1 098C6065 
+  55FBC666 677A5D
+  	quit
+!
+!
+performance monitor context IWAN-Context profile application-experience
+ exporter destination 172.23.1.15 source Loopback47233 transport udp port 9991 
+ traffic-monitor application-response-time class-replace Business-Critical-and-default-tcp-only
+ traffic-monitor media class-replace Business-Critical-and-default-udp-only
+ traffic-monitor url class-replace Http-class
+ traffic-monitor conversation-traffic-stats class-replace Scavenger
+!
+!
+license udi pid ISR4321/K9 sn FDO21110QM1
+license accept end user agreement
+license boot suite FoundationSuiteK9
+diagnostic bootup level minimal
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+!
+!
+username netvoix privilege 15 secret 5 $1$6nxD$1sq589msWXChGoz6FOTK7/
+username waascm privilege 15 secret 5 $1$R1ix$K2j8avJWfqJj009GIMnoy/
+username lairdadmin privilege 15 secret 5 $1$1vX.$VG1K.pkuvDSYT5zuMZ3Rb.
+username napadmin privilege 15 secret 5 $1$deC.$uNU9MQ6NpFPOgOMmoRcaB1
+!
+redundancy
+ mode none
+!
+crypto ikev2 proposal AES/CBC/256 
+ encryption aes-cbc-256
+ integrity sha512
+ group 14
+!
+crypto ikev2 policy IKEv2-Policy-1 
+ match fvrf any
+ proposal AES/CBC/256
+ proposal default
+!
+!
+crypto ikev2 profile FVRF-IKEv2-IWAN-TRANSPORT-1
+ match fvrf IWAN-TRANSPORT-1
+ match certificate CERT-MAP-IWAN-TRANSPORT-1
+ authentication remote rsa-sig
+ authentication local rsa-sig
+ pki trustpoint sdn-network-infra-iwan
+!
+crypto ikev2 profile FVRF-IKEv2-IWAN-TRANSPORT-2
+ match fvrf IWAN-TRANSPORT-2
+ match certificate CERT-MAP-IWAN-TRANSPORT-2
+ authentication remote rsa-sig
+ authentication local rsa-sig
+ pki trustpoint sdn-network-infra-iwan
+!
+crypto ikev2 dpd 40 5 on-demand
+crypto ikev2 disconnect-revoked-peers
+!
+!
+vlan internal allocation policy ascending
+!
+track 73 ip sla 118 reachability
+!
+track 74 ip sla 119 reachability
+!
+track 100 list boolean or
+ object 73
+ object 74
+!
+lldp run
+!
+!
+class-map type appnav match-any RTSP
+ match access-group name RTSP
+class-map type appnav match-any AUTOWAAS
+ match access-group name AUTOWAAS
+class-map match-any prm-iwan8#NET-CTRL-MGMT
+ match dscp cs2 
+ match dscp cs6 
+class-map match-any LIVEACTION-CLASS-AVC
+ match access-group name LIVEACTION-ACL-AVC
+class-map match-any prm-iwan8#SCAVENGER
+ match dscp cs1 
+class-map type appnav match-any MAPI
+ match protocol mapi
+class-map type appnav match-any HTTP
+ match access-group name HTTP
+class-map match-any prm-iwan8#VOICE
+ match dscp ef 
+class-map type appnav match-any CIFS
+ match access-group name CIFS
+class-map match-any business-critical-and-default
+ match protocol attribute category inter-process-rpc
+ match protocol attribute category industrial-protocols
+ match protocol attribute category net-admin
+ match protocol attribute category voice-and-video
+ match protocol attribute category email
+ match protocol attribute category layer3-over-ip
+ match protocol attribute category backup-and-storage
+ match protocol attribute category epayement
+ match protocol attribute category anonymizers
+ match protocol attribute category browsing
+ match protocol attribute category software-updates
+ match protocol attribute category other
+ match protocol attribute category business-and-productivity-tools
+ match protocol attribute category trojan
+ match protocol attribute category file-sharing
+ match protocol attribute category database
+class-map match-any prm-biz-relevant-cats
+ match protocol attribute category file-sharing
+ match protocol attribute category browsing
+ match protocol attribute category email
+ match protocol attribute category business-and-productivity-tools
+ match protocol attribute category database
+ match protocol attribute category voice-and-video
+ match protocol attribute category net-admin
+class-map match-any prm-iwan8#CALL-SIGNALING
+ match dscp cs3 
+class-map match-any prm-biz-irrelevant-cats
+ match protocol attribute category instant-messaging
+ match protocol attribute category social-networking
+ match protocol attribute category consumer-file-sharing
+ match protocol attribute category consumer-messaging
+ match protocol attribute category consumer-internet
+ match protocol attribute category consumer-streaming
+ match protocol attribute category gaming
+class-map type appnav match-any Citrix-CGP
+ match access-group name Citrix-CGP
+class-map type appnav match-any EPMAP
+ match access-group name EPMAP
+class-map type appnav match-any HTTPS
+ match access-group name HTTPS
+class-map type appnav match-any SN_OR_WCM
+ match access-group name SN_OR_WCM
+class-map type appnav match-any NFS
+ match access-group name NFS
+class-map type appnav match-any Citrix-ICA
+ match access-group name Citrix-ICA
+class-map match-any Scavenger
+ match protocol attribute category social-networking
+ match protocol attribute category gaming
+ match protocol attribute category consumer-internet
+ match protocol attribute category consumer-messaging
+ match protocol attribute category consumer-streaming
+ match protocol attribute category consumer-file-sharing
+ match protocol attribute category instant-messaging
+class-map match-any LIVEACTION-CLASS-MEDIANET
+ match protocol telepresence-media
+ match protocol rtp
+class-map match-any prm-iwan8#STREAMING-VIDEO
+ match dscp af31 
+ match dscp af32 
+ match dscp af33 
+ match dscp cs5 
+class-map match-any Http-class
+ match protocol http
+class-map match-any prm-iwan8#INTERACTIVE-VIDEO
+ match dscp af41 
+ match dscp af42 
+ match dscp af43 
+ match dscp cs4 
+class-map match-any prm-iwan8#CRITICAL-DATA
+ match dscp af11 
+ match dscp af13 
+ match dscp af21 
+ match dscp af23 
+class-map match-all prm-nbar-12-cls#BROADCAST-VIDEO
+ match protocol attribute traffic-class broadcast-video
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#BULK-DATA
+ match protocol attribute traffic-class bulk-data
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#INTERACTIVE-VIDEO
+ match protocol attribute traffic-class real-time-interactive
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#NETWORK-CONTROL
+ match protocol attribute traffic-class network-control
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#MULTIMEDIA-CONFERENCING
+ match protocol attribute traffic-class multimedia-conferencing
+ match class-map prm-biz-relevant-cats
+class-map match-all Business-Critical-and-default-tcp-only
+ match class-map business-critical-and-default
+ match access-group name business-critical-and-default-tcp-only
+class-map match-all Business-Critical-and-default-udp-only
+ match class-map business-critical-and-default
+ match access-group name business-critical-and-default-udp-only
+class-map match-all prm-nbar-12-cls#VOICE
+ match protocol attribute traffic-class voip-telephony
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#SCAVENGER
+ match class-map prm-biz-irrelevant-cats
+class-map match-all prm-nbar-12-cls#SIGNALING
+ match protocol attribute traffic-class signaling
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#NETWORK-MANAGEMENT
+ match protocol attribute traffic-class ops-admin-mgmt
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#TRANSACTIONAL-DATA
+ match protocol attribute traffic-class transactional-data
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#MULTIMEDIA-STREAMING
+ match protocol attribute traffic-class multimedia-streaming
+ match class-map prm-biz-relevant-cats
+!
+policy-map prm-dscp#iwan-8-id0
+ class prm-iwan8#VOICE
+  priority level 1
+  police cir percent 10
+ class prm-iwan8#STREAMING-VIDEO
+  bandwidth remaining percent 10 
+  random-detect dscp-based
+ class prm-iwan8#CALL-SIGNALING
+  bandwidth remaining percent 4 
+ class prm-iwan8#NET-CTRL-MGMT
+  bandwidth remaining percent 5 
+ class prm-iwan8#INTERACTIVE-VIDEO
+  bandwidth remaining percent 30 
+  random-detect dscp-based
+ class prm-iwan8#CRITICAL-DATA
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+ class prm-iwan8#SCAVENGER
+  bandwidth remaining percent 1 
+ class class-default
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+policy-map prm-dscp#iwan-8-id0#shape#100.0
+ class class-default
+  shape average 100000000   
+   service-policy prm-dscp#iwan-8-id0
+policy-map type appnav AUTOWAAS
+ description AUTOWAAS global policy
+ class SN_OR_WCM
+  pass-through
+ class HTTP
+  distribute service-node-group AUTOWAAS-SNG
+  monitor-load http
+ class MAPI
+  distribute service-node-group AUTOWAAS-SNG
+  monitor-load mapi
+ class HTTPS
+  distribute service-node-group AUTOWAAS-SNG
+  monitor-load ssl
+ class CIFS
+  distribute service-node-group AUTOWAAS-SNG
+  monitor-load cifs
+ class Citrix-ICA
+  distribute service-node-group AUTOWAAS-SNG
+  monitor-load ica
+ class Citrix-CGP
+  distribute service-node-group AUTOWAAS-SNG
+  monitor-load ica
+ class EPMAP
+  distribute service-node-group AUTOWAAS-SNG
+  monitor-load MS-port-mapper
+ class NFS
+  distribute service-node-group AUTOWAAS-SNG
+  monitor-load nfs
+ class AUTOWAAS
+  distribute service-node-group AUTOWAAS-SNG
+policy-map type performance-monitor LIVEACTION-POLICY-UNIFIED
+ class LIVEACTION-CLASS-MEDIANET
+  flow monitor LIVEACTION-FLOWMONITOR-MEDIANET
+ class LIVEACTION-CLASS-AVC
+  flow monitor LIVEACTION-FLOWMONITOR-AVC
+policy-map prm-dscp#iwan-8-id1
+ class prm-iwan8#VOICE
+  priority level 1
+  police cir percent 10
+ class prm-iwan8#STREAMING-VIDEO
+  bandwidth remaining percent 10 
+  random-detect dscp-based
+ class prm-iwan8#CALL-SIGNALING
+  bandwidth remaining percent 4 
+ class prm-iwan8#NET-CTRL-MGMT
+  bandwidth remaining percent 5 
+ class prm-iwan8#INTERACTIVE-VIDEO
+  bandwidth remaining percent 30 
+  random-detect dscp-based
+ class prm-iwan8#CRITICAL-DATA
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+ class prm-iwan8#SCAVENGER
+  bandwidth remaining percent 1 
+ class class-default
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+policy-map prm-dscp#iwan-8-id1#shape#10.0
+ class class-default
+  shape average 10000000   
+   service-policy prm-dscp#iwan-8-id1
+policy-map prm-nbar-12-cls
+ class prm-nbar-12-cls#VOICE
+  set dscp ef
+ class prm-nbar-12-cls#BROADCAST-VIDEO
+  set dscp cs5
+ class prm-nbar-12-cls#INTERACTIVE-VIDEO
+  set dscp cs4
+ class prm-nbar-12-cls#MULTIMEDIA-CONFERENCING
+  set dscp af41
+ class prm-nbar-12-cls#MULTIMEDIA-STREAMING
+  set dscp af31
+ class prm-nbar-12-cls#SIGNALING
+  set dscp cs3
+ class prm-nbar-12-cls#NETWORK-CONTROL
+  set dscp cs6
+ class prm-nbar-12-cls#NETWORK-MANAGEMENT
+  set dscp cs2
+ class prm-nbar-12-cls#TRANSACTIONAL-DATA
+  set dscp af21
+ class prm-nbar-12-cls#BULK-DATA
+  set dscp af11
+ class prm-nbar-12-cls#SCAVENGER
+  set dscp cs1
+ class class-default
+!
+! 
+!
+!
+!
+!
+!
+crypto isakmp keepalive 30 5
+!
+crypto ipsec security-association replay window-size 1024
+!
+crypto ipsec transform-set AES256/SHA/TRANSPORT esp-aes 256 esp-sha-hmac 
+ mode transport
+!
+crypto ipsec profile DMVPN-PROFILE-TRANSPORT-1
+ set transform-set AES256/SHA/TRANSPORT 
+ set ikev2-profile FVRF-IKEv2-IWAN-TRANSPORT-1
+!
+crypto ipsec profile DMVPN-PROFILE-TRANSPORT-2
+ set transform-set AES256/SHA/TRANSPORT 
+ set ikev2-profile FVRF-IKEv2-IWAN-TRANSPORT-2
+!
+!
+!
+!
+!
+!
+!
+service-insertion service-node-group AUTOWAAS-SNG
+  description "AUTOWAAS"
+  service-node 192.168.145.2
+! 
+service-insertion appnav-controller-group AUTOWAAS-SCG
+  description "AUTOWAAS"
+  appnav-controller 192.168.145.1
+! 
+service-insertion service-context waas/1
+  appnav-controller-group AUTOWAAS-SCG
+  service-node-group AUTOWAAS-SNG
+  service-policy AUTOWAAS
+  vrf default
+  enable
+! 
+! 
+!
+!
+interface Loopback47233
+ ip address 10.253.8.52 255.255.255.255
+ ip pim sparse-mode
+ hold-queue 1024 in
+ hold-queue 1024 out
+!
+interface Tunnel10
+ bandwidth 10000
+ ip flow monitor LIVEACTION-FLOWMONITOR input
+ ip flow monitor LIVEACTION-FLOWMONITOR output
+ ip address 10.253.0.52 255.255.254.0
+ no ip redirects
+ ip mtu 1400
+ ip pim dr-priority 0
+ ip pim nbma-mode
+ ip pim sparse-mode
+ ip nhrp authentication cisco123
+ ip nhrp network-id 102
+ ip nhrp nhs 10.253.0.1 nbma 74.205.252.81 multicast
+ ip nhrp nhs 10.253.0.46 nbma 207.243.253.44 multicast
+ ip tcp adjust-mss 1360
+ delay 1000
+ nhrp group prm-10Mbps
+ no nhrp route-watch
+ tunnel source GigabitEthernet0/0/1
+ tunnel mode gre multipoint
+ tunnel key 102
+ tunnel vrf IWAN-TRANSPORT-2
+ tunnel protection ipsec profile DMVPN-PROFILE-TRANSPORT-2
+ service-insertion waas
+ service-policy type performance-monitor input LIVEACTION-POLICY-UNIFIED
+ service-policy type performance-monitor output LIVEACTION-POLICY-UNIFIED
+!
+interface Tunnel11
+ bandwidth 100000
+ ip flow monitor LIVEACTION-FLOWMONITOR input
+ ip flow monitor LIVEACTION-FLOWMONITOR output
+ ip address 10.253.2.53 255.255.254.0
+ no ip redirects
+ ip mtu 1400
+ ip pim dr-priority 0
+ ip pim nbma-mode
+ ip pim sparse-mode
+ ip nhrp authentication cisco123
+ ip nhrp network-id 101
+ ip nhrp nhs 10.253.2.1 nbma 173.252.189.171 multicast
+ ip nhrp nhs 10.253.2.127 nbma 173.95.8.22 multicast
+ ip tcp adjust-mss 1360
+ delay 2000
+ nhrp group prm-20Mbps
+ no nhrp route-watch
+ tunnel source GigabitEthernet0/0/0
+ tunnel mode gre multipoint
+ tunnel key 101
+ tunnel vrf IWAN-TRANSPORT-1
+ tunnel protection ipsec profile DMVPN-PROFILE-TRANSPORT-1
+ service-insertion waas
+ service-policy type performance-monitor input LIVEACTION-POLICY-UNIFIED
+ service-policy type performance-monitor output LIVEACTION-POLICY-UNIFIED
+!
+interface VirtualPortGroup31
+ ip unnumbered Vlan1
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet0/0/0
+ bandwidth 100000
+ ip vrf forwarding IWAN-TRANSPORT-1
+ ip address 96.79.211.65 255.255.255.248
+ ip nat outside
+ ip policy route-map INET-INTERNAL
+ negotiation auto
+ no cdp enable
+ service-insertion waas
+ service-policy output prm-dscp#iwan-8-id0#shape#100.0
+!
+interface GigabitEthernet0/0/1
+ bandwidth 10000
+ ip vrf forwarding IWAN-TRANSPORT-2
+ ip address 207.173.30.92 255.255.255.248
+ ip nat outside
+ ip policy route-map INET-INTERNAL
+ negotiation auto
+ no cdp enable
+ service-insertion waas
+ service-policy output prm-dscp#iwan-8-id1#shape#10.0
+!
+interface GigabitEthernet0/1/0
+ switchport mode trunk
+!
+interface GigabitEthernet0/1/1
+ switchport mode trunk
+!
+interface GigabitEthernet0/1/2
+ switchport mode trunk
+!
+interface GigabitEthernet0/1/3
+ switchport mode trunk
+!
+interface GigabitEthernet0
+ vrf forwarding Mgmt-intf
+ no ip address
+ shutdown
+ negotiation auto
+!
+interface Vlan1
+ description Data
+ ip flow monitor LIVEACTION-FLOWMONITOR input
+ ip flow monitor LIVEACTION-FLOWMONITOR output
+ ip address 192.168.145.1 255.255.255.0
+ ip nat inside
+ ip pim sparse-mode
+ performance monitor context IWAN-Context 
+ service-policy input prm-nbar-12-cls
+!
+interface Vlan2
+ description Voice & Video
+ ip flow monitor LIVEACTION-FLOWMONITOR input
+ ip flow monitor LIVEACTION-FLOWMONITOR output
+ ip address 192.168.146.1 255.255.255.0
+ ip nat inside
+ ip pim sparse-mode
+ performance monitor context IWAN-Context 
+ service-policy input prm-nbar-12-cls
+!
+interface AppNav-Compress1
+ ip unnumbered Vlan1
+ no keepalive
+!
+interface AppNav-UnCompress1
+ ip unnumbered Vlan1
+ no keepalive
+!
+!
+router eigrp IWAN-EIGRP
+ !
+ address-family ipv4 unicast autonomous-system 400
+  !
+  af-interface default
+   passive-interface
+  exit-af-interface
+  !
+  af-interface Tunnel10
+   authentication mode md5
+   authentication key-chain WAN-KEY
+   hello-interval 20
+   hold-time 60
+   no passive-interface
+   stub-site wan-interface
+  exit-af-interface
+  !
+  af-interface Tunnel11
+   authentication mode md5
+   authentication key-chain WAN-KEY
+   hello-interval 20
+   hold-time 60
+   no passive-interface
+   stub-site wan-interface
+  exit-af-interface
+  !
+  topology base
+   maximum-secondary-paths 20
+   distribute-list route-map DMVPN1-BR-IN in Tunnel11
+   distribute-list route-map DMVPN2-BR-IN in Tunnel10
+  exit-af-topology
+  network 10.253.0.0 0.0.1.255
+  network 10.253.2.0 0.0.1.255
+  network 10.253.8.52 0.0.0.0
+  network 192.168.145.0
+  network 192.168.146.0
+  eigrp router-id 10.253.8.52
+  eigrp stub-site 1:5
+ exit-address-family
+!
+!
+virtual-service AUTOWAAS
+ profile ISR-WAAS-200
+ vnic gateway VirtualPortGroup31
+  guest ip address 192.168.145.2
+ activate
+!
+ip nat inside source static tcp 192.168.145.50 80 interface GigabitEthernet0/0/0 80
+ip nat inside source static tcp 192.168.145.50 8000 interface GigabitEthernet0/0/0 8000
+ip nat inside source static tcp 192.168.145.50 10554 interface GigabitEthernet0/0/0 10554
+ip nat inside source route-map ISP-A interface GigabitEthernet0/0/0 overload
+ip nat inside source route-map ISP-B interface GigabitEthernet0/0/1 overload
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+ip http client source-interface GigabitEthernet0/0/0
+ip tftp source-interface GigabitEthernet0
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet0/0/0 96.79.211.70 10
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet0/0/1 207.173.30.89 15
+ip route 192.168.145.2 255.255.255.255 VirtualPortGroup31
+ip route vrf IWAN-TRANSPORT-1 0.0.0.0 0.0.0.0 96.79.211.70
+ip route vrf IWAN-TRANSPORT-2 0.0.0.0 0.0.0.0 207.173.30.89
+ip pim autorp listener
+ip pim register-source Loopback47233
+!
+ip ssh source-interface Loopback47233
+ip ssh version 2
+!
+!
+ip prefix-list SITE-PREFIXES seq 5 permit 192.168.145.0/24
+ip prefix-list SITE-PREFIXES seq 10 permit 192.168.146.0/24
+!
+ip access-list standard SNMP_ACL
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+ip access-list standard SSH_IN
+ permit 12.35.51.5
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+ permit 192.168.0.0 0.0.255.255
+ permit 172.26.0.0 0.0.255.255
+ permit 10.254.88.0 0.0.3.255
+ permit 10.254.92.0 0.0.3.254
+!
+ip access-list extended ACL-INET-PUBLIC
+ permit udp any any eq non500-isakmp
+ permit udp any any eq isakmp
+ permit esp any any
+ permit udp any any eq bootpc
+ permit icmp any any echo
+ permit icmp any any echo-reply
+ permit ip host 173.252.189.173 any
+ permit ip host 172.23.1.10 any
+ip access-list extended ACL-RTR-OUT
+ permit udp any any eq domain
+ip access-list extended AUTOWAAS
+ permit tcp any any
+ip access-list extended CIFS
+ permit tcp any any eq 139
+ permit tcp any any eq 445
+ip access-list extended Citrix-CGP
+ permit tcp any any eq 2598
+ip access-list extended Citrix-ICA
+ permit tcp any any eq 1494
+ip access-list extended EPMAP
+ permit tcp any any eq msrpc
+ip access-list extended HTTP
+ permit tcp any any eq www
+ permit tcp any any eq 3218
+ permit tcp any any eq 8000
+ permit tcp any any eq 8080
+ permit tcp any any eq 8088
+ip access-list extended HTTPS
+ permit tcp any any eq 443
+ip access-list extended INTERNAL-NETS
+ permit ip any 192.168.145.0 0.0.0.255
+ permit ip any 192.168.146.0 0.0.0.255
+ip access-list extended LIVEACTION-ACL-AVC
+ permit tcp any any
+ip access-list extended NAT
+ permit ip 192.168.145.0 0.0.0.255 any
+ permit ip 192.168.146.0 0.0.0.255 any
+ip access-list extended NAT_RULES
+ permit ip host 192.168.145.50 any
+ip access-list extended NFS
+ permit tcp any any eq 2049
+ip access-list extended PHONES
+ permit ip 192.168.146.0 0.0.0.255 any
+ip access-list extended RTSP
+ permit tcp any any eq 554
+ permit tcp any any eq 8554
+ip access-list extended SN_OR_WCM
+ permit tcp host 192.168.145.2 any
+ permit tcp any host 192.168.145.2
+ permit tcp host 172.23.1.18 any
+ permit tcp any host 172.23.1.18
+ip access-list extended business-critical-and-default-tcp-only
+ permit tcp any any
+ip access-list extended business-critical-and-default-udp-only
+ permit udp any any
+ip access-list extended cws_whitelist
+ permit ip any 10.0.0.0 0.255.255.255
+ permit ip any 172.16.0.0 0.15.255.255
+ permit ip any 192.168.0.0 0.0.255.255
+ip sla 118
+ dns d.root-servers.net name-server 199.7.91.13
+ vrf IWAN-TRANSPORT-1
+ threshold 1000
+ timeout 3000
+ frequency 15
+ip sla schedule 118 life forever start-time now
+ip sla 119
+ dns b.root-servers.net name-server 192.228.79.201
+ vrf IWAN-TRANSPORT-1
+ threshold 1000
+ timeout 3000
+ frequency 15
+ip sla schedule 119 life forever start-time now
+no service-routing capabilities-manager
+logging host 172.23.1.15
+logging host 172.23.1.17
+logging host 172.23.1.16
+access-list 80 permit 192.168.145.0 0.0.0.255
+access-list 80 permit 192.168.146.0 0.0.0.255
+!
+!
+route-map INSIDE_PBR deny 5 
+ match ip address ENTERPRISE-PREFIXES_HUB_ACL
+!
+route-map INSIDE_PBR permit 10 
+ match ip address NAT_RULES
+ set vrf IWAN-TRANSPORT-1
+!
+route-map ISP-B permit 10 
+ match ip address NAT
+ match interface GigabitEthernet0/0/1
+!
+route-map ISP-A permit 10 
+ match ip address NAT
+ match interface GigabitEthernet0/0/0
+!
+route-map INET-INTERNAL permit 10 
+ description Return routing for Local Internet Access
+ match ip address INTERNAL-NETS
+ set global
+!
+route-map DMVPN2-BR-IN permit 5 
+ match tag 201
+ set metric +4000000000
+!
+route-map DMVPN2-BR-IN permit 10 
+!
+route-map DMVPN1-BR-IN permit 5 
+ match tag 101
+ set metric +4000000000
+!
+route-map DMVPN1-BR-IN permit 10 
+!
+snmp-server community lppbisnmp-ro RO SNMP_ACL
+snmp-server community lppbisnmp-rw RW SNMP_ACL
+snmp-server community lppbisnmp RO
+snmp-server trap-source Loopback47233
+snmp-server enable traps pki
+snmp-server host 172.23.1.15 lppbisnmp-ro 
+snmp-server host 172.23.1.16 lppbisnmp-ro 
+snmp-server host 172.23.1.17 lppbisnmp-ro 
+snmp-server host 172.23.1.15 lppbisnmp-rw 
+snmp ifmib ifindex persist
+!
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ transport input none
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ access-class SSH_IN in vrf-also
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+ transport input ssh
+ transport output ssh
+line vty 5 15
+ access-class SSH_IN in vrf-also
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+ transport input ssh
+ transport output ssh
+!
+ntp source Loopback47233
+ntp server 172.23.1.10
+ntp server 172.23.1.11
+ntp server 172.23.1.12
+ntp server 173.252.189.173
+!
+!
+!
+!
+event manager applet DISABLE-IWAN-DIA-DEFAULT
+ description ISP Black hole Detection - IPSLA DNS
+ event track 100 state down
+ action 1  cli command "enable"
+ action 2  cli command "configure terminal"
+ action 3  cli command "no ip route 0.0.0.0 0.0.0.0 GigabitEthernet0/0/0 96.79.211.70 10"
+ action 4  cli command "end"
+ action 99 syslog msg "IWAN DIA DEFAULT IP ROUTE via GIG0/0/0 DISABLED"
+event manager applet ENABLE-IWAN-DIA-DEFAULT
+ description ISP Black hole Detection - IPSLA DNS
+ event track 100 state up
+ action 1  cli command "enable"
+ action 2  cli command "configure terminal"
+ action 3  cli command "ip route 0.0.0.0 0.0.0.0 GigabitEthernet0/0/0 96.79.211.70 10"
+ action 4  cli command "end"
+ action 99 syslog msg "IWAN DIA DEFAULT IP ROUTE via GIG0/0/0 ENABLED"
+!
+!
+!
+pnp profile IWAN-PNP-PROFILE
+ transport https ipv4 173.252.189.173 port 443
+end

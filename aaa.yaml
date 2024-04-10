@@ -1,0 +1,103 @@
+---
+- name: Network Getting Started
+  connection: network_cli
+  gather_facts: false
+  hosts: IOS
+  tasks:
+    
+    - name: Enable AAA
+      ios_config:
+        lines:
+          - aaa new-model
+          - aaa session-id common
+
+    - name: Cleanup config
+      ios_config:
+        lines:
+          - no radius server MS-NPS1
+          - no radius server MS-NPS2
+          - no aaa group server radius Microsoft-NPSs
+          - no aaa authentication login LOGIN-AUTH-VTY group Microsoft-NPSs local
+          - no aaa authentication login LOGIN-AUTH-NONE none
+          - no aaa authentication enable default enable
+          - no aaa authentication dot1x default group Microsoft-NPSs
+          - no aaa authorization exec default group Microsoft-NPSs local 
+          - no aaa authorization network default group Microsoft-NPSs 
+          - no aaa accounting update newinfo periodic 2880
+          - no aaa accounting dot1x default start-stop group Microsoft-NPSs
+          - no aaa accounting exec default start-stop
+          - no aaa accounting system default
+          - no aaa server radius dynamic-author
+
+    - name: Create DUO Proxy DC
+      ios_config:
+        lines:
+          - address ipv4 172.20.10.219 auth-port 1812 acct-port 1813
+          - timeout 10 
+          - retransmit 3
+          - automate-tester username checkIfAlive ignore-acct-port probe-on
+          - key 7 050416361361640A3D52415613
+        parents: radius server DUO-PROXY1
+      tags: 
+       - Create DUO Proxy DC
+       
+    - name: Create DUO Proxy DR
+      ios_config:
+        lines:
+          - address ipv4 172.21.10.219 auth-port 1812 acct-port 1813
+          - timeout 10 
+          - retransmit 3
+          - automate-tester username checkIfAlive ignore-acct-port probe-on
+          - key 7 050416361361640A3D52415613
+        parents: radius server DUO-PROXY2
+
+    - name: Create Radius Group
+      ios_config:
+        lines:
+          - server name DUO-PROXY1
+          - server name DUO-PROXY2 
+          - ip radius source-interface Loopback47233
+        parents: aaa group server radius DUO-PROXIES
+        
+    - name: Configure Radius and AAA Settings
+      ios_config:
+        lines:
+          - ip radius source-interface Loopback47233
+          - radius-server attribute 6 on-for-login-auth
+          - radius-server attribute 6 support-multiple
+          - radius-server attribute 8 include-in-access-req
+          - radius-server attribute 25 access-request include
+          - radius-server attribute 31 mac format ietf upper-case
+          - radius-server attribute 31 send nas-port-detail mac-only
+          - radius-server dead-criteria time 5 tries 3
+          - radius-server deadtime 5
+          - aaa authentication login LOGIN-AUTH-VTY group DUO-PROXIES local
+          - aaa authentication enable default enable
+          - aaa authorization exec default group DUO-PROXIES local 
+          - aaa authorization network default group DUO-PROXIES local
+          - logging snmp-authfail
+          - logging buffered 64000
+          - login on-success log
+          - login on-failure log
+    
+    - name: Apply new authentication group to Line VTY 0-4
+      ios_config:
+        lines:
+          - login authentication LOGIN-AUTH-VTY
+        parents: line vty 0 4
+
+    - name: Apply new authentication group to Line VTY 5-15
+      ios_config:
+        lines:
+          - login authentication LOGIN-AUTH-VTY
+        parents: line vty 5 15
+
+    - name: save running config to startup
+      ios_config:
+        save_when: always
+
+    #   register: output
+    # - name: Display command output if any output
+    #   debug:
+    #     var: output.stdout_lines
+    #   when: output.stdout_lines[0][0]

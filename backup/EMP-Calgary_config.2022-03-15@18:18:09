@@ -1,0 +1,1966 @@
+Building configuration...
+
+  
+  
+  
+Current configuration : 64635 bytes
+!
+! Last configuration change at 15:42:18 UTC Sat Mar 12 2022 by lairdadmin
+! NVRAM config last updated at 15:42:13 UTC Sat Mar 12 2022 by lairdadmin
+!
+version 15.7
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname EMP-Calgary
+!
+boot-start-marker
+boot system flash:c800-universalk9-mz.SPA.157-3.M3.bin
+boot-end-marker
+!
+!
+enable password 7 1420153E5C1E24056C393B2D24
+!
+aaa new-model
+!
+!
+aaa group server radius Microsoft-NPSs
+ server name MS-NPS1
+ server name MS-NPS2
+ ip radius source-interface Loopback47233
+!
+aaa authentication login LOGIN-AUTH-VTY group Microsoft-NPSs enable
+aaa authentication login LOGIN-AUTH-NONE none
+aaa authentication enable default enable
+aaa authentication dot1x default group Microsoft-NPSs
+aaa authorization exec default group Microsoft-NPSs local 
+aaa authorization network default group Microsoft-NPSs 
+aaa accounting update newinfo periodic 2880
+aaa accounting dot1x default start-stop group Microsoft-NPSs
+aaa accounting exec default start-stop group radius
+aaa accounting system default start-stop group Microsoft-NPSs
+!
+!
+!
+!
+!
+aaa server radius dynamic-author
+ client 172.20.10.42 server-key 7 151D1B35360701270C6463660B
+ client 172.21.10.41 server-key 7 1106093C253F210F207D7D6030
+!
+aaa session-id common
+!
+crypto pki trustpoint pnplabel
+ enrollment pkcs12
+ revocation-check none
+!
+crypto pki trustpoint device_self_signed
+ enrollment selfsigned
+ serial-number
+ ip-address 192.168.161.3
+ subject-alt-name EMP-Calgary.NAP.local
+ revocation-check crl
+!
+crypto pki trustpoint sdn-network-infra-iwan
+ enrollment url http://173.252.189.173:80/ejbca/publicweb/apply/scep/sdnscep
+ fqdn EMP-Calgary
+ subject-name CN=C892FSP-K9_FJC2120L0UT_sdn-network-infra-iwan
+ vrf IWAN-TRANSPORT-1
+ revocation-check crl
+ rsakeypair sdn-network-infra-iwan
+ auto-enroll 80 regenerate
+!
+!
+!
+crypto pki certificate map CERT-MAP-IWAN-TRANSPORT-2 10
+ issuer-name eq cn = sdn-network-infra-ca
+ name co sdn-network-infra-iwan
+!
+crypto pki certificate map CERT-MAP-IWAN-TRANSPORT-1 10
+ issuer-name eq cn = sdn-network-infra-ca
+ name co sdn-network-infra-iwan
+!
+crypto pki certificate chain pnplabel
+ certificate ca 2106285026503811047963066320740604492773
+  308203BE 308202A6 A0030201 02021421 06285026 50381104 79630663 20740604 
+  49277330 0D06092A 864886F7 0D01010B 05003081 88312D30 2B060355 04031324 
+  35623931 33306166 2D633637 382D3466 62642D62 3632332D 61336430 35316562 
+  34653732 310B3009 06035504 06130255 53311330 11060355 0408130A 43616C69 
+  666F726E 69613110 300E0603 55040713 0753616E 4A6F7365 31133011 06035504 
+  0B130A41 50494345 4D2D5344 4E310E30 0C060355 040A1305 43697363 6F301E17 
+  0D313730 31313630 33323134 355A170D 32323031 31353033 32313435 5A305D31 
+  14301206 03550403 130B3137 322E3233 2E312E31 30311330 11060355 0408130A 
+  43616C69 666F726E 6961310B 30090603 55040613 02555331 0E300C06 0355040A 
+  13054369 73636F31 13301106 0355040B 130A4150 4943454D 2D53444E 30820122 
+  300D0609 2A864886 F70D0101 01050003 82010F00 3082010A 02820101 00E7AD8E 
+  B9CB8811 6DD51EC8 5E2AF7EB FF5CA5C6 5AFE5929 B77A71E6 F33E9B52 26E63DA1 
+  CD19E365 A81B5A91 98B69EFB 3151235A 1AA22A7F F3B8A1A0 E74079EA 39DE1FE5 
+  1233AF1C B8373851 1C74E25D 1821AF6C D22761AB E612729E 0E6846B6 976F3369 
+  3E964533 598DF21C FA3B591E 8D57636B CA130865 851A842D 8D635961 58141574 
+  15BDE691 4EB02104 A5A84D6C E1622D79 64BDFCBA 3FCEA290 BFC4D3B0 2B17341E 
+  7CAE3DB3 F520C2D8 7AC7864B 8D510CE9 F20749EA 01AC1222 64156DFC ECF216C0 
+  125B8893 49D5CD78 CA3EDE07 D1871E41 BC289FA3 5EB02842 4EA7AB10 84AB1C69 
+  492442FB D9BF9023 468088C7 A43EDCDD 7BE49C8C 6E6A2886 1C3EDC90 3D020301 
+  0001A34A 30483009 0603551D 13040230 00300B06 03551D0F 04040302 05A0301D 
+  0603551D 25041630 1406082B 06010505 07030106 082B0601 05050703 02300F06 
+  03551D11 04083006 8704AC17 010A300D 06092A86 4886F70D 01010B05 00038201 
+  01001B64 C2740A40 6A95D43E A46303FE A264BBF4 0ACD2F57 38ECA73E D37D7EF7 
+  EA29D84C 4079301D EE971F2B D14F25DD 132B2878 78F7BE65 B6F620C4 0505E4DD 
+  2256F247 E89F237B 96071B74 9BDC8934 64D35FF0 622EC3D7 53CBE3E2 CB1432EA 
+  0F1F7A31 602980B0 DCA32D64 AB4CDB65 76CC15EF 80727650 37D3E220 175EED3F 
+  F7F53E89 53EF81C2 94079987 B4A81BAF EB8CED6C FF28817E D2E6C555 B218B850 
+  06DD68D7 577BA6C2 959DF94F D97B6C01 014C1417 BE3722D6 AB958847 0E161D02 
+  21867681 B3C2CBFB 56EB7BEF CDF2DBEC 47B007EF 0D940C37 681C4FC3 B3DA7D62 
+  CA8F6830 FD4DB9BB 48F5A3B4 EA0F57CF 5155FCCA 89EED17A 8D47F3E4 FF857D54 
+  A5BE
+  	quit
+crypto pki certificate chain device_self_signed
+ certificate self-signed 0C
+  3082039C 30820284 A0030201 0202010C 300D0609 2A864886 F70D0101 05050030 
+  56315430 12060355 0405130B 464A4332 3132304C 30555430 1A06092A 864886F7 
+  0D010908 130D3139 322E3136 382E3136 312E3330 2206092A 864886F7 0D010902 
+  1615454D 502D4361 6C676172 792E4E41 502E6C6F 63616C30 1E170D31 37303933 
+  30323334 3634345A 170D3230 30313031 30303030 30305A30 56315430 12060355 
+  0405130B 464A4332 3132304C 30555430 1A06092A 864886F7 0D010908 130D3139 
+  322E3136 382E3136 312E3330 2206092A 864886F7 0D010902 1615454D 502D4361 
+  6C676172 792E4E41 502E6C6F 63616C30 82012230 0D06092A 864886F7 0D010101 
+  05000382 010F0030 82010A02 82010100 B314EA4A BFF32D51 339153DF D966345F 
+  EBB52695 41D45D64 F5DE480B 03EB3430 F8768E7F DBC86279 34D529D6 5F882FDE 
+  8DE41AA3 7068169F AB137BAE 72C529CF D9618D79 5B49D96E 82289946 707466F9 
+  144F4911 16D8283F 28577F5E 8FCDD33E 0A3256D4 22382863 7F8C4042 1F883371 
+  25E6B000 AF09C17E EECAD711 A506AE23 38E2D5B5 0B754360 829D4FE7 88E77628 
+  5170C659 2C4DCB16 D701A6AD F8402E65 559AB360 9021A2AB A8CD4CD3 14943548 
+  0F166662 9B006B14 A93C9227 16A4C3B8 4457F6BD 2130CEE7 BCC35F93 1BE72787 
+  B6579928 9022519F C70C883F 4DEECC02 F04E13AF F9DC6256 CF448317 72BCC793 
+  CDB3CF47 5C30E815 5C295185 D79901EB 02030100 01A37530 73300F06 03551D13 
+  0101FF04 05300301 01FF3020 0603551D 11041930 17821545 4D502D43 616C6761 
+  72792E4E 41502E6C 6F63616C 301F0603 551D2304 18301680 141EBA82 1171D7FF 
+  F26C235B C12D985F 96D4F104 59301D06 03551D0E 04160414 1EBA8211 71D7FFF2 
+  6C235BC1 2D985F96 D4F10459 300D0609 2A864886 F70D0101 05050003 82010100 
+  3AF65007 BE325BEF 6D08ABD7 BBA8B229 53763DDD 947D22D4 076F73B9 ECAEB408 
+  988F7C50 9E0EAD96 53FF62AF 602157FD DED2ED9E 13C71EF1 6F29EBCA D9E34142 
+  1E6A9400 84D201AB 74249F9C B27F0DCC 861025EF 7863D778 DDBA0A7E 9FEC661F 
+  AE8E5BE8 D6352A62 64C6EA28 3D91A18F A903F220 B23BC8A8 BBDD7EC0 C88CA0C5 
+  DCC7EFE0 E931EDEF 563A2A24 339812C5 7C50BD0C 94EDE031 7006F65C 6DDB7ABB 
+  16644CAF 1152AAA2 0D11FED5 37527544 328F11DA 1375C4E1 C90313AD 16D0EBB0 
+  5815E5BE 20F8B620 77FD2DE5 295423C1 C282D1F7 D0465C86 740E414A 68D50A66 
+  C4E346F8 C127914C 2CCEB235 6C4D5488 4A8079F4 53743EDA D2BD6579 EDC79A01
+  	quit
+crypto pki certificate chain sdn-network-infra-iwan
+ certificate 6FDB9CE828E867F8
+  30820374 3082025C A0030201 0202086F DB9CE828 E867F830 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39313730 3730395A 170D3233 30313139 
+  31373037 30395A30 54311A30 1806092A 864886F7 0D010902 0C0B454D 502D4361 
+  6C676172 79313630 34060355 04030C2D 43383932 4653502D 4B395F46 4A433231 
+  32304C30 55545F73 646E2D6E 6574776F 726B2D69 6E667261 2D697761 6E308201 
+  22300D06 092A8648 86F70D01 01010500 0382010F 00308201 0A028201 0100BAE8 
+  AC8D6ED8 13E7F729 3E96B13F FB22E306 B64C14E4 A4974281 28F27E07 E76A1E90 
+  0BBA88E2 429CB70D 78C44DB0 640040DD 29727D4E B598E9E7 1F7B1F56 FA2F439D 
+  752FF5E6 6DEF19E0 0D1A9825 B553FB23 B93D2C5C 60350F46 9245B3A4 46154308 
+  4434BD42 3C3FB189 D4B5CCFD 6778A778 CB91C24E 628F1ED8 F75612CE CDD56AF1 
+  E4619DB3 1518973A DE224244 09C00D06 15FB5999 3F441C7B FCD5EF56 79B3C859 
+  AB0190EB 0E1AEA38 DC25A601 DDEB1CCF D7336F11 C273517C 88A67E8C 9EFE4A22 
+  7DBE6568 382B69F4 62575698 857885A8 8CD334D4 F74AE6A0 8374ACF2 4B52EDBC 
+  3EACA944 A9AF9404 2FF1834E 61E0F98E EF261AC8 C1A73763 D1F5CEA2 AA3D0203 
+  010001A3 7F307D30 1D060355 1D0E0416 041483E6 D6DB943D 94EDCA82 8ECC1812 
+  36427334 EF24300C 0603551D 130101FF 04023000 301F0603 551D2304 18301680 
+  149BFB73 0D4603EC D8FCC891 F6E95BA4 F3EBF3A5 FB300E06 03551D0F 0101FF04 
+  04030205 E0301D06 03551D25 04163014 06082B06 01050507 03020608 2B060105 
+  05070304 300D0609 2A864886 F70D0101 0D050003 82010100 9DC7D434 6F167929 
+  F815F259 E44F6558 923D1FEF 4A286137 7C25A2DD 169C0CBD C4E53D33 5E2E421D 
+  2EDCB8ED 569E471B 673E396E 5DF6D200 3FE63435 6EE04CEE 3ED0B244 896009F3 
+  6719162E 16A45AA0 7F5CB9F5 02304AF6 566B7E47 B83BAC58 15F7E532 DD1689A4 
+  15F33978 73CEEF81 DDBA0E75 1C44A0F5 010C1C88 1A14473A B40F1AB6 5A0600E7 
+  A1F2AC26 446EE993 F473C80E 91720BA0 BB6BF213 7561EF23 F8FB4E34 26277FD6 
+  3499B9DE 90B375FF 33B9E354 885D2515 BCF0188B 3BAFA41D 0EA64660 BC1CE57C 
+  1312C031 112AB72B C856D003 618E450E 0EB344A5 AE9D89B8 38B88B81 190D8E8D 
+  C57E9541 4CAC6BEC 40C140C3 2547DBBD 34154123 7AD7E3F2
+  	quit
+ certificate ca 1E5166B43300756F
+  30820323 3082020B A0030201 0202081E 5166B433 00756F30 0D06092A 864886F7 
+  0D01010D 0500301F 311D301B 06035504 030C1473 646E2D6E 6574776F 726B2D69 
+  6E667261 2D636130 1E170D32 32303131 39303431 3334365A 170D3237 30313138 
+  30343133 34365A30 1F311D30 1B060355 04030C14 73646E2D 6E657477 6F726B2D 
+  696E6672 612D6361 30820122 300D0609 2A864886 F70D0101 01050003 82010F00 
+  3082010A 02820101 00ABCE5E 7E70CA54 D22275FF AC8E65C7 D753B989 339735EE 
+  06AA463D 0B9A2F25 0D701BCA 0FDAA947 2A5E0DD8 03F8DF0F 74CF0267 1B2BB29E 
+  9876D007 7CB7EBE1 CED74372 A666AA2F 392155BB 8DAAED4B A16DF600 29523716 
+  3A2D1602 E9DA77BD A89BE46D A685EC18 FE00A893 B4CD0409 F0723C17 7DDDF8D2 
+  32A906AE 47879ED6 7A511039 82BC21D3 C4B88B35 DC2D44A9 6C189D12 BDE7A285 
+  2F69FCDF FDF165B5 C46BFAF1 9B5A7160 459C9D1D 75C89150 03E607AC C60404AB 
+  DC6F3C63 5288233C 39116C32 F98EA05D 09C169EC 1C69F79B A56114DE D94A42C0 
+  65D95334 A9A17C2B 675178DD 13CBC094 24B5584F F519B6C2 71363218 79B13B1D 
+  946DCD77 1BA20ED4 DD020301 0001A363 3061301D 0603551D 0E041604 149BFB73 
+  0D4603EC D8FCC891 F6E95BA4 F3EBF3A5 FB300F06 03551D13 0101FF04 05300301 
+  01FF301F 0603551D 23041830 1680149B FB730D46 03ECD8FC C891F6E9 5BA4F3EB 
+  F3A5FB30 0E060355 1D0F0101 FF040403 02018630 0D06092A 864886F7 0D01010D 
+  05000382 010100A3 29F5F1CC C81F796D C6DFD558 43133CB7 183F3FE5 5F28BECE 
+  BC10B7CC 3FFE19B1 5A8B13B6 442A1FD8 4BF380A7 9AFAAFAC E5632DFF E7601197 
+  03CF97A8 232311FE DF7DD8D4 D417AA40 C4F1C7A8 A2F2CEBB D37783EA 386FA6DA 
+  9C1A09BB 8DDA0ED6 AD47032C EBEEF89A 4DB2FB80 C87A4401 2847EEE6 B4DA3CB7 
+  C5C2D0F2 90EC2A2A B17A8D53 D54172F2 D71BFE68 A10A97DB 6194CCCA 76980850 
+  7D6A665C A3F7A2F4 49E120B3 635CA67A 63365D6D 23676EF5 E2BC3449 040CAEEE 
+  63CDA1BC FA07D68B 2C425BD6 5162B572 5F8D5C05 DC70D275 44FEC7E0 F3F5CFBE 
+  08EC56D1 C1E8ACFF 34E60DD4 ABE080BD D0C75384 904C4D74 C9B72EF1 098C6065 
+  55FBC666 677A5D
+  	quit
+!
+!
+!
+!
+!
+!
+ip nbar protocol-pack flash:pp-adv-isrg2-156-3.M-23-32.1.0.pack 
+!
+!
+!
+!
+ip nbar attribute-map C9009_SC8026
+ attribute sub-category tunneling-protocols
+ attribute category other
+
+
+ip nbar attribute-map C9009_SC8022
+ attribute sub-category enterprise-rich-media-content
+ attribute category other
+
+
+ip nbar attribute-map C9014_SC8028_T02
+ attribute sub-category enterprise-voice-collaboration
+ attribute category voice-and-video
+ attribute traffic-class multimedia-conferencing
+
+
+ip nbar attribute-map C9015_SC8023
+ attribute sub-category file-transfer
+ attribute category backup-and-storage
+
+
+ip nbar attribute-map C9013_SC8012
+ attribute category business-and-productivity-tools
+ attribute sub-category enterprise-transactional-apps
+
+
+ip nbar attribute-map C9009_SC8008
+ attribute sub-category other
+ attribute category other
+
+
+ip nbar attribute-map C9013_SC8011
+ attribute category business-and-productivity-tools
+ attribute sub-category authentication-services
+
+
+ip nbar attribute-map C9009_SC8018
+ attribute sub-category enterprise-cloud-data-storage
+ attribute category other
+
+
+ip nbar attribute-map C9009_SC8012
+ attribute category other
+ attribute sub-category enterprise-transactional-apps
+
+
+ip nbar attribute-map C9013_SC8012_T08
+ attribute category business-and-productivity-tools
+ attribute sub-category enterprise-transactional-apps
+ attribute traffic-class transactional-data
+
+
+ip nbar attribute-map C9009_SC8028
+ attribute category other
+ attribute sub-category enterprise-voice-collaboration
+
+
+ip nbar attribute-map C9014_SC8028_T09
+ attribute sub-category enterprise-voice-collaboration
+ attribute category voice-and-video
+ attribute traffic-class voip-telephony
+
+
+ip nbar attribute-map C9009_SC8013
+ attribute category other
+ attribute sub-category enterprise-media-conferencing
+
+
+ip nbar attribute-map C9009_SC8012_T08
+ attribute traffic-class transactional-data
+ attribute sub-category enterprise-transactional-apps
+ attribute category other
+
+
+ip nbar attribute-map C9013_SC8021_T03
+ attribute category business-and-productivity-tools
+ attribute traffic-class multimedia-streaming
+ attribute sub-category desktop-virtualization
+
+
+!
+!
+!
+ip nbar custom E1Web http url "http://e1web.nap.local:7777" id 5385 
+ip nbar custom E1WebPort transport tcp id 6875
+ port 7777 
+ direction any
+
+
+ip nbar custom PShapes-Pkgp327 transport tcp id 58029
+ port 1551 
+ direction any
+
+
+ip nbar custom PShapes11i transport tcp id 22430
+ port 8030 
+ direction any
+
+
+ip nbar custom Remote-Desktop transport tcp id 26219
+ port 3389 
+ direction any
+
+
+!
+ip nbar attribute-set gtp-user C9009_SC8026
+ip nbar attribute-set flash-video C9009_SC8022
+ip nbar attribute-set audio-over-http C9009_SC8022
+ip nbar attribute-set shockwave C9009_SC8022
+ip nbar attribute-set video-over-http C9009_SC8022
+ip nbar attribute-set microsoftds C9015_SC8023
+ip nbar attribute-set cifs C9015_SC8023
+ip nbar attribute-set tftp C9015_SC8023
+ip nbar attribute-set nfs C9015_SC8023
+ip nbar attribute-set gsiftp C9015_SC8023
+ip nbar attribute-set gridftp C9015_SC8023
+ip nbar attribute-set wikipedia C9009_SC8008
+ip nbar attribute-set gss-http C9013_SC8011
+ip nbar attribute-set amazon-web-services C9009_SC8018
+ip nbar attribute-set windows-azure C9009_SC8018
+ip nbar attribute-set spdy C9009_SC8012
+ip nbar attribute-set web-rtc-video C9009_SC8028
+ip nbar attribute-set google-services-media C9009_SC8028
+ip nbar attribute-set web-rtc-audio C9009_SC8028
+ip nbar attribute-set web-rtc C9009_SC8028
+ip nbar attribute-set google-services-video C9009_SC8028
+ip nbar attribute-set itunes-media C9009_SC8028
+ip nbar attribute-set wifi-calling C9009_SC8026
+ip nbar attribute-set https C9009_SC8012
+ip nbar attribute-set jabber C9013_SC8012
+ip nbar attribute-set ssl C9013_SC8012
+ip nbar attribute-set http C9013_SC8012
+ip nbar attribute-set ssl-local-net C9013_SC8012
+ip nbar attribute-set http-local-net C9013_SC8012
+ip nbar attribute-set google-services-audio C9009_SC8013
+ip nbar attribute-set E1Web C9013_SC8012_T08
+ip nbar attribute-set E1WebPort C9013_SC8012_T08
+ip nbar attribute-set PShapes11i C9013_SC8012_T08
+ip nbar attribute-set PShapes-Pkgp327 C9013_SC8012_T08
+ip nbar attribute-set Remote-Desktop C9013_SC8021_T03
+!
+
+
+!
+ip vrf IWAN-TRANSPORT-1
+ rd 65511:101
+!
+ip vrf IWAN-TRANSPORT-2
+ rd 65511:102
+!
+ip dhcp excluded-address 192.168.161.1
+ip dhcp excluded-address 192.168.161.1 192.168.161.80
+ip dhcp excluded-address 192.168.161.201 192.168.161.254
+!
+ip dhcp pool Data
+ network 192.168.161.0 255.255.255.0
+ default-router 192.168.161.3 
+ domain-name NAP.local
+ dns-server 172.20.10.40 172.21.10.40 
+!
+!
+!
+ip domain name NAP.local
+ip name-server 172.20.10.41
+ip name-server 172.21.10.40
+ip multicast-routing 
+ip cef
+no ipv6 cef
+!
+
+parameter-map type waas waas_global
+ tfo optimize full 
+ lz entropy-check
+ accelerator http-express
+  enable
+ accelerator cifs-express
+  enable
+ accelerator ssl-express
+  no enable
+!
+!
+!
+!
+multilink bundle-name authenticated
+!
+domain ONE
+ vrf default
+  border
+   source-interface Loopback47233
+   master local
+  master branch
+   source-interface Loopback47233
+   site-prefixes prefix-list SITE-PREFIXES
+   hub 10.253.4.3
+!
+!
+key chain WAN-KEY
+ key 1
+  key-string 7 0508571C22431F5B4A
+!
+!
+!
+!
+!
+!
+performance monitor context IWAN-Context profile application-experience
+ exporter destination 172.23.1.15 source Loopback47233 transport udp port 9991 
+ traffic-monitor application-response-time class-replace Business-Critical-and-default-tcp-only
+ traffic-monitor media class-replace Business-Critical-and-default-udp-only
+ traffic-monitor url class-replace Http-class
+ traffic-monitor conversation-traffic-stats class-replace Scavenger
+!
+license feature MEM-8XX-512U1GB
+license udi pid C892FSP-K9 sn FJC2120L0UT
+license accept end user agreement
+!
+!
+username netvoix privilege 15 secret 5 $1$6nxD$1sq589msWXChGoz6FOTK7/
+username lairdadmin privilege 15 password 7 1420153E5C1E24056C393B2D24
+username napadmin privilege 15 secret 5 $1$RELu$DXTKpISKSUlKUlP82Wtyj.
+!
+redundancy
+!
+crypto ikev2 proposal AES/CBC/256 
+ encryption aes-cbc-256
+ integrity sha512
+ group 14
+!
+crypto ikev2 policy IKEv2-Policy-1 
+ match fvrf any
+ proposal AES/CBC/256
+!
+!
+crypto ikev2 profile FVRF-IKEv2-IWAN-TRANSPORT-2
+ match fvrf IWAN-TRANSPORT-2
+ match certificate CERT-MAP-IWAN-TRANSPORT-2
+ authentication remote rsa-sig
+ authentication local rsa-sig
+ pki trustpoint sdn-network-infra-iwan
+!
+crypto ikev2 profile FVRF-IKEv2-IWAN-TRANSPORT-1
+ match fvrf IWAN-TRANSPORT-1
+ match certificate CERT-MAP-IWAN-TRANSPORT-1
+ authentication remote rsa-sig
+ authentication local rsa-sig
+ pki trustpoint sdn-network-infra-iwan
+!
+crypto ikev2 dpd 40 5 on-demand
+crypto ikev2 disconnect-revoked-peers
+!
+!
+!
+class-map type waas match-any BFTP
+ match tcp destination port 152 
+class-map type waas match-any proshare
+ match tcp destination port 5713 5717 
+class-map type waas match-any msnp
+ match tcp destination port 1863 
+ match tcp destination port 6891 6900 
+class-map type waas match-any Laplink-surfup-HTTPS
+ match tcp destination port 1184 
+class-map type waas match-any msmq
+ match tcp destination port 1801 
+ match tcp destination port 2101 
+ match tcp destination port 2103 
+ match tcp destination port 2105 
+class-map type waas match-any rrac
+ match tcp destination port 5678 
+class-map type waas match-any nameserver
+ match tcp destination port 42 
+class-map type waas match-any ms-sql-s
+ match tcp destination port 1433 
+class-map type waas match-any WINS
+ match tcp destination port 1512 
+class-map type waas match-any NNTP
+ match tcp destination port 119 
+class-map type waas match-any PPTP
+ match tcp destination port 1723 
+class-map type waas match-any hp-pdl-datastr
+ match tcp destination port 9100 
+class-map type waas match-any RTSP
+ match tcp destination port 554 
+ match tcp destination port 8554 
+class-map type waas match-any VocalTec
+ match tcp destination port 1490 
+ match tcp destination port 6670 
+ match tcp destination port 25793 
+ match tcp destination port 22555 
+class-map type waas match-any PostgreSQL
+ match tcp destination port 5432 
+class-map type waas match-any Danware-NetOp
+ match tcp destination port 6502 
+class-map type waas match-any TACACS
+ match tcp destination port 49 
+class-map type waas match-any isns
+ match tcp destination port 3205 
+class-map type waas match-any klogin
+ match tcp destination port 543 
+class-map type waas match-any auth
+ match tcp destination port 113 
+class-map type waas match-any Cisco-CallManager
+ match tcp destination port 2748 
+ match tcp destination port 2443 
+class-map type waas match-any sunrpc
+ match tcp destination port 111 
+class-map type waas match-any ccmail
+ match tcp destination port 3264 
+class-map type waas match-any netrjs-3
+ match tcp destination port 73 
+class-map type waas match-any orasrv
+ match tcp destination port 1525 
+ match tcp destination port 1521 
+class-map type waas match-any ircs
+ match tcp destination port 994 
+class-map type waas match-any PDMWorks
+ match tcp destination port 30000 
+ match tcp destination port 40000 
+class-map type waas match-any eTrust-policy-Compliance
+ match tcp destination port 1267 
+class-map match-any prm-iwan8#NET-CTRL-MGMT
+ match dscp cs2 
+ match dscp cs6 
+class-map type waas match-any ircu
+ match tcp destination port 531 
+ match tcp destination port 6660 6665 
+ match tcp destination port 6667 6669 
+class-map type waas match-any timbuktu
+ match tcp destination port 407 
+class-map type waas match-any sshell
+ match tcp destination port 614 
+class-map type waas match-any corba-iiop-ssl
+ match tcp destination port 684 
+class-map type waas match-any sametime
+ match tcp destination port 1533 
+class-map type waas match-any Laplink-ShareDirect
+ match tcp destination port 2705 
+class-map type waas match-any EMC-SRDFA-IP
+ match tcp destination port 1748 
+class-map type waas match-any FTPS
+ match tcp source port 989 
+class-map type waas match-any ftps
+ match tcp destination port 990 
+class-map type waas match-any novadigm
+ match tcp destination port 3460 
+ match tcp destination port 3461 
+ match tcp destination port 3464 
+class-map type waas match-any tell
+ match tcp destination port 754 
+class-map type waas match-any sftp
+ match tcp destination port 115 
+class-map type waas match-any talk
+ match tcp destination port 517 
+class-map type waas match-any Veritas-NetBackup
+ match tcp destination port 13720 
+ match tcp destination port 13721 
+ match tcp destination port 13782 
+ match tcp destination port 13785 
+class-map type waas match-any Basic-TCP-services
+ match tcp destination port 1 19 
+class-map type waas match-any cvspserver
+ match tcp destination port 2401 
+class-map match-any prm-iwan8#SCAVENGER
+ match dscp cs1 
+class-map type waas match-any imap
+ match tcp destination port 143 
+class-map type waas match-any kshell
+ match tcp destination port 544 
+class-map type waas match-any ms-olap4
+ match tcp destination port 2383 
+class-map type waas match-any TFTP
+ match tcp destination port 69 
+class-map type waas match-any svrloc
+ match tcp destination port 427 
+class-map type waas match-any HTTP
+ match tcp destination port 80 
+ match tcp destination port 8080 
+ match tcp destination port 8000 
+ match tcp destination port 8088 
+ match tcp destination port 3128 
+class-map type waas match-any pcanywheredata
+ match tcp destination port 5631 5632 
+ match tcp destination port 65301 
+class-map type waas match-any QMTP
+ match tcp destination port 209 
+class-map type waas match-any LDAP
+ match tcp destination port 389 
+ match tcp destination port 8404 
+class-map type waas match-any sqlsrv
+ match tcp destination port 156 
+class-map type waas match-any smtp
+ match tcp destination port 25 
+class-map type waas match-any BitTorrent
+ match tcp destination port 6881 6889 
+ match tcp destination port 6969 
+class-map type waas match-any exec
+ match tcp destination port 512 
+class-map type waas match-any FCIP
+ match tcp destination port 3225 
+class-map type waas match-any UniSQL
+ match tcp destination port 1978 
+ match tcp destination port 1979 
+class-map type waas match-any openmail
+ match tcp destination port 5755 
+ match tcp destination port 5757 
+ match tcp destination port 5766 
+ match tcp destination port 5767 
+ match tcp destination port 5768 
+ match tcp destination port 5729 
+class-map type waas match-any ssql
+ match tcp destination port 3352 
+class-map type waas match-any SoulSeek
+ match tcp destination port 2234 
+ match tcp destination port 5534 
+class-map type waas match-any WBEM
+ match tcp destination port 5987 5990 
+class-map type waas match-any ms-sql-m
+ match tcp destination port 1434 
+class-map match-any prm-iwan8#VOICE
+ match dscp ef 
+class-map type waas match-any afpovertcp
+ match tcp destination port 548 
+class-map type waas match-any CIFS
+ match tcp destination port 139 
+ match tcp destination port 445 
+class-map match-any business-critical-and-default
+ match protocol attribute category inter-process-rpc
+ match protocol attribute category industrial-protocols
+ match protocol attribute category net-admin
+ match protocol attribute category voice-and-video
+ match protocol attribute category email
+ match protocol attribute category layer3-over-ip
+ match protocol attribute category backup-and-storage
+ match protocol attribute category epayement
+ match protocol attribute category anonymizers
+ match protocol attribute category browsing
+ match protocol attribute category software-updates
+ match protocol attribute category other
+ match protocol attribute category business-and-productivity-tools
+ match protocol attribute category trojan
+ match protocol attribute category file-sharing
+ match protocol attribute category database
+class-map type waas match-any IBM-TSM
+ match tcp destination port 1500 1502 
+class-map type waas match-any xmpp-client
+ match tcp destination port 5222 
+class-map type waas match-any pcsync-http
+ match tcp destination port 8444 
+class-map type waas match-any xprint-server
+ match tcp destination port 8100 
+class-map type waas match-any Telnet
+ match tcp destination port 23 
+ match tcp destination port 107 
+class-map type waas match-any Remote-Anything
+ match tcp destination port 3999 4000 
+class-map type waas match-any Double-Take
+ match tcp destination port 1105 
+ match tcp destination port 1100 
+class-map type waas match-any cisco-q931-backhaul
+ match tcp destination port 2428 
+class-map match-any prm-biz-relevant-cats
+ match protocol attribute category file-sharing
+ match protocol attribute category browsing
+ match protocol attribute category email
+ match protocol attribute category business-and-productivity-tools
+ match protocol attribute category database
+ match protocol attribute category voice-and-video
+ match protocol attribute category net-admin
+class-map type waas match-any msft-gc
+ match tcp destination port 3268 
+class-map type waas match-any net-assistant
+ match tcp destination port 3283 
+class-map type waas match-any imap3
+ match tcp destination port 220 
+class-map type waas match-any ms-content-repl-srv
+ match tcp destination port 560 
+ match tcp destination port 507 
+class-map type waas match-any netapp-snapmirror
+ match tcp destination port 10565 10569 
+class-map type waas match-any Amanda
+ match tcp destination port 10080 
+class-map type waas match-any gds_db
+ match tcp destination port 3050 
+class-map type waas match-any radmin-port
+ match tcp destination port 4899 
+class-map type waas match-any PSOM-MTLS
+ match tcp destination port 8057 
+class-map type waas match-any sybase-sqlany
+ match tcp destination port 1498 
+ match tcp destination port 2638 
+ match tcp destination port 2439 
+ match tcp destination port 3968 
+class-map type waas match-any print-srv
+ match tcp destination port 170 
+class-map type waas match-any EMC-Celerra-Replicator
+ match tcp destination port 8888 
+class-map type waas match-any ftps-data
+ match tcp source port 20 
+class-map type waas match-any Gnutella
+ match tcp destination port 6346 6349 
+ match tcp destination port 6355 
+ match tcp destination port 5634 
+class-map type waas match-any HP-OpenView
+ match tcp destination port 7426 7431 
+ match tcp destination port 7501 
+ match tcp destination port 7510 
+class-map type waas match-any sip-tls
+ match tcp destination port 5061 
+class-map type waas match-any Yahoo-Messenger
+ match tcp destination port 5000 5001 
+ match tcp destination port 5050 
+ match tcp destination port 5100 
+class-map type waas match-any pop3s
+ match tcp destination port 995 
+class-map type waas match-any Apple-iChat
+ match tcp destination port 5297 
+ match tcp destination port 5298 
+class-map type waas match-any Siebel
+ match tcp destination port 8448 
+ match tcp destination port 2320 
+ match tcp destination port 2321 
+class-map type waas match-any Kerberos
+ match tcp destination port 88 
+ match tcp destination port 888 
+ match tcp destination port 2053 
+class-map type waas match-any MS-GROOVE
+ match tcp destination port 2492 
+class-map type waas match-any MS-NetMeeting
+ match tcp destination port 522 
+ match tcp destination port 1503 
+ match tcp destination port 1731 
+class-map type waas match-any Oracle
+ match tcp destination port 66 
+class-map type waas match-any ssc-agent
+ match tcp destination port 2847 
+ match tcp destination port 2848 
+ match tcp destination port 2967 
+ match tcp destination port 2968 
+ match tcp destination port 38037 
+ match tcp destination port 38292 
+class-map type waas match-any soap-http
+ match tcp destination port 7627 
+class-map match-any prm-iwan8#CALL-SIGNALING
+ match dscp cs3 
+class-map type waas match-any Pervasive-SQL
+ match tcp destination port 1583 
+class-map type waas match-any iFCP
+ match tcp destination port 3420 
+class-map type waas match-any sql-net
+ match tcp destination port 150 
+class-map type waas match-any xmpp-server
+ match tcp destination port 5269 
+class-map match-any prm-biz-irrelevant-cats
+ match protocol attribute category instant-messaging
+ match protocol attribute category consumer-file-sharing
+ match protocol attribute category consumer-messaging
+ match protocol attribute category consumer-internet
+ match protocol attribute category gaming
+ match protocol attribute category consumer-streaming
+ match protocol attribute category social-networking
+class-map type waas match-any pcmail-srv
+ match tcp destination port 158 
+class-map type waas match-any AOL
+ match tcp destination port 5190 5193 
+class-map type waas match-any SAP
+ match tcp destination port 3200 3204 
+ match tcp destination port 3206 3219 
+ match tcp destination port 3390 3399 
+ match tcp destination port 3284 3305 
+ match tcp destination port 3226 3259 
+ match tcp destination port 3261 3263 
+ match tcp destination port 3265 3267 
+ match tcp destination port 3662 3699 
+ match tcp destination port 3221 3224 
+ match tcp destination port 3270 3282 
+ match tcp destination port 3307 3351 
+ match tcp destination port 3353 3388 
+ match tcp destination port 3600 3658 
+class-map type waas match-any waas-default
+ match tcp any 
+class-map type waas match-any TFTPS
+ match tcp destination port 3713 
+class-map type waas match-any WinMX
+ match tcp destination port 6699 
+class-map type waas match-any ezMeeting
+ match tcp destination port 10101 10103 
+ match tcp destination port 26260 26261 
+class-map type waas match-any afs3
+ match tcp destination port 7000 7009 
+class-map type waas match-any NetIQ
+ match tcp destination port 2220 
+ match tcp destination port 2735 
+ match tcp destination port 10113 10116 
+class-map type waas match-any Grouper
+ match tcp destination port 8038 
+class-map type waas match-any apple-sasl
+ match tcp destination port 3659 
+class-map type waas match-any SSH
+ match tcp destination port 22 
+class-map type waas match-any h323hostcallsc
+ match tcp destination port 1300 
+class-map type waas match-any IPP
+ match tcp destination port 631 
+class-map type waas match-any NTP
+ match tcp destination port 123 
+class-map type waas match-any VoIP-Control
+ match tcp destination port 1718 1719 
+ match tcp destination port 11000 11999 
+class-map type waas match-any HTTPS
+ match tcp destination port 443 
+class-map type waas match-any mgcp-gateway
+ match tcp destination port 2427 
+class-map type waas match-any Clearcase
+ match tcp destination port 371 
+class-map type waas match-any novell-zen
+ match tcp destination port 1761 1763 
+ match tcp destination port 2544 
+ match tcp destination port 8039 
+ match tcp destination port 2037 
+class-map type waas match-any iso-tsap
+ match tcp destination port 102 
+class-map type waas match-any ms-streaming
+ match tcp destination port 1755 
+class-map type waas match-any Napster
+ match tcp destination port 8875 
+ match tcp destination port 7777 
+ match tcp destination port 6700 
+ match tcp destination port 6666 
+ match tcp destination port 6677 
+ match tcp destination port 6688 
+class-map type waas match-any mgcp-callagent
+ match tcp destination port 2727 
+class-map type waas match-any Kazaa
+ match tcp destination port 1214 
+class-map type waas match-any kerberos-adm
+ match tcp destination port 749 
+class-map type waas match-any Telnets
+ match tcp destination port 992 
+class-map type waas match-any pcsync-https
+ match tcp destination port 8443 
+class-map type waas match-any WASTE
+ match tcp destination port 1337 
+class-map type waas match-any BGP
+ match tcp destination port 179 
+class-map type waas match-any BMC-Patrol
+ match tcp destination port 6161 
+ match tcp destination port 6162 
+ match tcp destination port 8160 
+ match tcp destination port 8161 
+ match tcp destination port 6767 
+ match tcp destination port 6768 
+ match tcp destination port 10128 
+class-map type waas match-any Rsync
+ match tcp destination port 873 
+class-map type waas match-any Qnext
+ match tcp destination port 44 
+ match tcp destination port 5555 
+class-map type waas match-any Liquid-Audio
+ match tcp destination port 18888 
+class-map type waas match-any timbuktu-srv
+ match tcp destination port 1417 1420 
+class-map type waas match-any eDonkey
+ match tcp destination port 4661 4662 
+class-map type waas match-any h323hostcall
+ match tcp destination port 1720 
+class-map type waas match-any DNS
+ match tcp destination port 53 
+class-map type waas match-any Filenet
+ match tcp destination port 32768 32774 
+class-map type waas match-any backup-express
+ match tcp destination port 6123 
+class-map type waas match-any ControlIT
+ match tcp destination port 799 
+class-map type waas match-any NFS
+ match tcp destination port 2049 
+class-map type waas match-any Netopia-netOctopus
+ match tcp destination port 1917 
+ match tcp destination port 1921 
+class-map type waas match-any VNC
+ match tcp destination port 5800 5809 
+ match tcp destination port 5900 5909 
+class-map type waas match-any Vmware-VMConsole
+ match tcp destination port 902 
+class-map type waas match-any cisco-sccp
+ match tcp destination port 2000 2002 
+class-map match-any Scavenger
+ match protocol attribute category social-networking
+ match protocol attribute category gaming
+ match protocol attribute category consumer-internet
+ match protocol attribute category consumer-messaging
+ match protocol attribute category consumer-streaming
+ match protocol attribute category consumer-file-sharing
+ match protocol attribute category instant-messaging
+class-map type waas match-any intersys-cache
+ match tcp destination port 1972 
+class-map type waas match-any pop3
+ match tcp destination port 110 
+class-map type waas match-any Other-Secure
+ match tcp destination port 261 
+ match tcp destination port 448 
+ match tcp destination port 695 
+ match tcp destination port 2252 
+ match tcp destination port 2478 
+ match tcp destination port 2479 
+ match tcp destination port 2482 
+ match tcp destination port 2484 
+ match tcp destination port 2679 
+ match tcp destination port 2762 
+ match tcp destination port 2998 
+ match tcp destination port 3077 
+ match tcp destination port 3078 
+ match tcp destination port 3183 
+ match tcp destination port 3191 
+ match tcp destination port 3220 
+ match tcp destination port 3410 
+ match tcp destination port 3424 
+ match tcp destination port 3471 
+ match tcp destination port 3496 
+ match tcp destination port 3509 
+ match tcp destination port 3529 
+ match tcp destination port 3539 
+ match tcp destination port 3660 
+ match tcp destination port 3661 
+ match tcp destination port 3747 
+ match tcp destination port 3864 
+ match tcp destination port 3885 
+ match tcp destination port 3896 
+ match tcp destination port 3897 
+ match tcp destination port 3995 
+ match tcp destination port 4031 
+ match tcp destination port 5007 
+ match tcp destination port 7674 
+ match tcp destination port 9802 
+ match tcp destination port 12109 
+class-map type waas match-any IBM-DB2
+ match tcp destination port 523 
+class-map type waas match-any citriximaclient
+ match tcp destination port 2598 
+class-map type waas match-any Legato-RepliStor
+ match tcp destination port 7144 
+ match tcp destination port 7145 
+class-map type waas match-any lotusnote
+ match tcp destination port 1352 
+class-map type waas match-any MDaemon
+ match tcp destination port 3000 
+ match tcp destination port 3001 
+class-map type waas match-any dmdocbroker
+ match tcp destination port 1489 
+class-map type waas match-any ftp
+ match tcp destination port 21 
+class-map type waas match-any Altiris-CarbonCopy
+ match tcp destination port 1680 
+class-map type waas match-any login
+ match tcp destination port 513 
+class-map type waas match-any iscsi
+ match tcp destination port 3260 
+class-map type waas match-any msft-gc-ssl
+ match tcp destination port 3269 
+class-map type waas match-any objcall
+ match tcp destination port 94 
+ match tcp destination port 627 
+ match tcp destination port 1965 
+ match tcp destination port 1580 
+ match tcp destination port 1581 
+class-map type waas match-any imaps
+ match tcp destination port 993 
+class-map type waas match-any printer
+ match tcp destination port 515 
+class-map match-any prm-iwan8#STREAMING-VIDEO
+ match dscp af31 
+ match dscp af32 
+ match dscp af33 
+ match dscp cs5 
+class-map type waas match-any netbios
+ match tcp destination port 137 
+class-map type waas match-any smtps
+ match tcp destination port 465 
+class-map type waas match-any kpasswd
+ match tcp destination port 464 
+class-map type waas match-any epmap
+ match tcp destination port 135 
+class-map type waas match-any ldaps
+ match tcp destination port 636 
+class-map type waas match-any cmd
+ match tcp destination port 514 
+class-map type waas match-any sip
+ match tcp destination port 5060 
+class-map type waas match-any ica
+ match tcp destination port 1494 
+class-map type waas match-any cuseeme
+ match tcp destination port 7640 
+ match tcp destination port 7642 
+ match tcp destination port 7648 
+ match tcp destination port 7649 
+class-map type waas match-any Legato-NetWorker
+ match tcp destination port 7937 
+ match tcp destination port 7938 
+ match tcp destination port 7939 
+class-map type waas match-any citrixadmin
+ match tcp destination port 2513 
+class-map type waas match-any sqlexec
+ match tcp destination port 9088 9089 
+class-map type waas match-any CommVault
+ match tcp destination port 8400 8403 
+class-map type waas match-any Veritas-BackupExec
+ match tcp destination port 6101 
+ match tcp destination port 6102 
+ match tcp destination port 6106 
+ match tcp destination port 3527 
+ match tcp destination port 1125 
+class-map type waas match-any nntps
+ match tcp destination port 563 
+class-map type waas match-any groupwise
+ match tcp destination port 1677 
+ match tcp destination port 9850 
+ match tcp destination port 7205 
+ match tcp destination port 3800 
+ match tcp destination port 7100 
+ match tcp destination port 7180 
+ match tcp destination port 7101 
+ match tcp destination port 7181 
+ match tcp destination port 2800 
+class-map type waas match-any x11
+ match tcp destination port 6000 6063 
+class-map type waas match-any citrixima
+ match tcp destination port 2512 
+class-map type waas match-any L2TP
+ match tcp destination port 1701 
+class-map type waas match-any LANDesk
+ match tcp destination port 9535 
+ match tcp destination port 9593 9595 
+class-map type waas match-any ms-wbt-server
+ match tcp destination port 3389 
+class-map type waas match-any MySQL
+ match tcp destination port 3306 
+class-map match-any Http-class
+ match protocol http
+class-map type waas match-any netviewdm
+ match tcp destination port 729 731 
+class-map match-any prm-iwan8#INTERACTIVE-VIDEO
+ match dscp af41 
+ match dscp af42 
+ match dscp af43 
+ match dscp cs4 
+class-map type waas match-any OpenVPN
+ match tcp destination port 1194 
+class-map type waas match-any sqlserv
+ match tcp destination port 118 
+class-map type waas match-any HotLine
+ match tcp destination port 5500 5503 
+class-map type waas match-any laplink
+ match tcp destination port 1547 
+class-map type waas match-any ncp
+ match tcp destination port 524 
+class-map match-any prm-iwan8#CRITICAL-DATA
+ match dscp af11 
+ match dscp af13 
+ match dscp af21 
+ match dscp af23 
+class-map type waas match-any flowmonitor
+ match tcp destination port 7878 
+class-map type waas match-any connected
+ match tcp destination port 16384 
+class-map match-all prm-nbar-12-cls#BROADCAST-VIDEO
+ match protocol attribute traffic-class broadcast-video
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#BULK-DATA
+ match protocol attribute traffic-class bulk-data
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#INTERACTIVE-VIDEO
+ match protocol attribute traffic-class real-time-interactive
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#NETWORK-CONTROL
+ match protocol attribute traffic-class network-control
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#MULTIMEDIA-CONFERENCING
+ match protocol attribute traffic-class multimedia-conferencing
+ match class-map prm-biz-relevant-cats
+class-map match-all Business-Critical-and-default-tcp-only
+ match class-map business-critical-and-default
+ match access-group name business-critical-and-default-tcp-only
+class-map match-all Business-Critical-and-default-udp-only
+ match class-map business-critical-and-default
+ match access-group name business-critical-and-default-udp-only
+class-map match-all prm-nbar-12-cls#VOICE
+ match class-map prm-biz-relevant-cats
+ match protocol attribute traffic-class voip-telephony
+class-map match-all prm-nbar-12-cls#SCAVENGER
+ match class-map prm-biz-irrelevant-cats
+class-map match-all prm-nbar-12-cls#SIGNALING
+ match protocol attribute traffic-class signaling
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#NETWORK-MANAGEMENT
+ match protocol attribute traffic-class ops-admin-mgmt
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#TRANSACTIONAL-DATA
+ match protocol attribute traffic-class transactional-data
+ match class-map prm-biz-relevant-cats
+class-map match-all prm-nbar-12-cls#MULTIMEDIA-STREAMING
+ match protocol attribute traffic-class multimedia-streaming
+ match class-map prm-biz-relevant-cats
+!
+policy-map prm-dscp#iwan-8-id1
+ class prm-iwan8#VOICE
+  priority level 1
+  police cir percent 10
+ class prm-iwan8#STREAMING-VIDEO
+  bandwidth remaining percent 10 
+  random-detect dscp-based
+ class prm-iwan8#CALL-SIGNALING
+  bandwidth remaining percent 4 
+ class prm-iwan8#NET-CTRL-MGMT
+  bandwidth remaining percent 5 
+ class prm-iwan8#INTERACTIVE-VIDEO
+  bandwidth remaining percent 30 
+  random-detect dscp-based
+ class prm-iwan8#CRITICAL-DATA
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+ class prm-iwan8#SCAVENGER
+  bandwidth remaining percent 1 
+ class class-default
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+policy-map prm-dscp#iwan-8-id1#shape#1.0
+ class class-default
+  shape average 1000000   
+   service-policy prm-dscp#iwan-8-id1
+policy-map prm-dscp#iwan-8-id0
+ class prm-iwan8#VOICE
+  priority level 1
+  police cir percent 10
+ class prm-iwan8#STREAMING-VIDEO
+  bandwidth remaining percent 10 
+  random-detect dscp-based
+ class prm-iwan8#CALL-SIGNALING
+  bandwidth remaining percent 4 
+ class prm-iwan8#NET-CTRL-MGMT
+  bandwidth remaining percent 5 
+ class prm-iwan8#INTERACTIVE-VIDEO
+  bandwidth remaining percent 30 
+  random-detect dscp-based
+ class prm-iwan8#CRITICAL-DATA
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+ class prm-iwan8#SCAVENGER
+  bandwidth remaining percent 1 
+ class class-default
+  bandwidth remaining percent 25 
+  random-detect dscp-based
+policy-map prm-dscp#iwan-8-id0#shape#10.0
+ class class-default
+  shape average 10000000   
+   service-policy prm-dscp#iwan-8-id0
+policy-map type waas waas_global
+ class afs3
+  optimize tfo dre lz application File-System 
+ class AOL
+  passthrough application Instant-Messaging 
+ class Altiris-CarbonCopy
+  passthrough application Remote-Desktop 
+ class Amanda
+  optimize tfo application Backup 
+ class hp-pdl-datastr
+  optimize tfo dre lz application Printing 
+ class afpovertcp
+  optimize tfo dre lz application File-System 
+ class net-assistant
+  passthrough application Remote-Desktop 
+ class Apple-iChat
+  passthrough application Instant-Messaging 
+ class BFTP
+  optimize tfo dre lz application File-Transfer 
+ class BGP
+  passthrough application Other 
+ class BMC-Patrol
+  passthrough application Systems-Management 
+ class backup-express
+  optimize tfo application Backup 
+ class Basic-TCP-services
+  passthrough application Other 
+ class BitTorrent
+  passthrough application P2P 
+ class gds_db
+  optimize tfo dre lz application SQL 
+ class CIFS
+  optimize tfo dre lz application CIFS accelerate cifs-express
+ class cuseeme
+  passthrough application Conferencing 
+ class cvspserver
+  optimize tfo dre lz application Version-Management 
+ class Cisco-CallManager
+  passthrough application Call-Management 
+ class ica
+  optimize tfo dre lz application Remote-Desktop 
+ class citriximaclient
+  optimize tfo dre lz application Remote-Desktop 
+ class Clearcase
+  optimize tfo dre lz application Version-Management 
+ class CommVault
+  optimize tfo application Backup 
+ class connected
+  optimize tfo application Backup 
+ class ControlIT
+  optimize tfo application Remote-Desktop 
+ class DNS
+  passthrough application Name-Services 
+ class Danware-NetOp
+  optimize tfo application Remote-Desktop 
+ class dmdocbroker
+  optimize tfo dre lz application Content-Management 
+ class Double-Take
+  optimize tfo dre lz application Replication 
+ class EMC-Celerra-Replicator
+  optimize tfo dre lz application Replication 
+ class EMC-SRDFA-IP
+  optimize tfo dre lz application Storage 
+ class FCIP
+  optimize tfo lz application Storage 
+ class ftp
+  passthrough application File-Transfer 
+ class ftps-data
+  optimize tfo dre lz application File-Transfer 
+ class FTPS
+  passthrough application File-Transfer 
+ class ftps
+  optimize tfo application File-Transfer 
+ class Filenet
+  optimize tfo dre lz application Content-Management 
+ class Gnutella
+  passthrough application P2P 
+ class Grouper
+  passthrough application P2P 
+ class openmail
+  optimize tfo dre lz application Email-and-Messaging 
+ class HP-OpenView
+  passthrough application Systems-Management 
+ class novadigm
+  optimize tfo dre lz application Systems-Management 
+ class HTTP
+  optimize tfo dre lz application Web accelerate http-express
+ class HTTPS
+  optimize tfo application SSL 
+ class HotLine
+  passthrough application P2P 
+ class IBM-DB2
+  optimize tfo dre lz application SQL 
+ class netviewdm
+  passthrough application Systems-Management 
+ class IBM-TSM
+  optimize tfo dre lz application Backup 
+ class objcall
+  optimize tfo dre lz application Systems-Management 
+ class IPP
+  optimize tfo dre lz application Printing 
+ class proshare
+  passthrough application Conferencing 
+ class intersys-cache
+  optimize tfo dre lz application SQL 
+ class imap
+  optimize tfo dre lz application Email-and-Messaging 
+ class imap3
+  optimize tfo dre lz application Email-and-Messaging 
+ class pop3
+  optimize tfo dre lz application Email-and-Messaging 
+ class smtp
+  optimize tfo dre lz application Email-and-Messaging 
+ class imaps
+  optimize tfo application Email-and-Messaging 
+ class pop3s
+  optimize tfo application Email-and-Messaging 
+ class smtps
+  optimize tfo application Email-and-Messaging 
+ class xmpp-client
+  passthrough application Instant-Messaging 
+ class xmpp-server
+  passthrough application Instant-Messaging 
+ class Kazaa
+  passthrough application P2P 
+ class Kerberos
+  passthrough application Authentication 
+ class kerberos-adm
+  passthrough application Authentication 
+ class klogin
+  passthrough application Authentication 
+ class kshell
+  passthrough application Authentication 
+ class tell
+  passthrough application Authentication 
+ class kpasswd
+  passthrough application Authentication 
+ class L2TP
+  optimize tfo application VPN 
+ class LANDesk
+  optimize tfo dre lz application Systems-Management 
+ class LDAP
+  optimize tfo dre lz application Directory-Services 
+ class msft-gc
+  optimize tfo dre lz application Directory-Services 
+ class msft-gc-ssl
+  passthrough application Directory-Services 
+ class ldaps
+  passthrough application Directory-Services 
+ class laplink
+  optimize tfo dre lz application Remote-Desktop 
+ class pcsync-http
+  optimize tfo dre lz application Replication 
+ class pcsync-https
+  optimize tfo application Replication 
+ class Laplink-ShareDirect
+  passthrough application P2P 
+ class Laplink-surfup-HTTPS
+  optimize tfo application Remote-Desktop 
+ class Legato-NetWorker
+  optimize tfo application Backup 
+ class Legato-RepliStor
+  optimize tfo application Backup 
+ class Liquid-Audio
+  optimize tfo dre lz application Streaming 
+ class lotusnote
+  optimize tfo dre lz application Email-and-Messaging 
+ class sametime
+  passthrough application Instant-Messaging 
+ class MDaemon
+  optimize tfo dre lz application Email-and-Messaging 
+ class ms-content-repl-srv
+  optimize tfo application Replication 
+ class epmap
+  optimize tfo application Other 
+ class MS-GROOVE
+  optimize tfo application Enterprise-Applications 
+ class msmq
+  optimize tfo dre lz application Other 
+ class MS-NetMeeting
+  passthrough application Conferencing 
+ class ms-streaming
+  optimize tfo dre lz application Streaming 
+ class msnp
+  passthrough application Instant-Messaging 
+ class ms-olap4
+  optimize tfo application SQL 
+ class ms-sql-s
+  optimize tfo dre lz application SQL 
+ class ms-wbt-server
+  optimize tfo application Remote-Desktop 
+ class MySQL
+  optimize tfo dre lz application SQL 
+ class NFS
+  optimize tfo dre lz application File-System 
+ class NNTP
+  optimize tfo dre lz application Email-and-Messaging 
+ class nntps
+  optimize tfo application Email-and-Messaging 
+ class NTP
+  passthrough application Other 
+ class Napster
+  passthrough application P2P 
+ class netapp-snapmirror
+  optimize tfo dre lz application Replication 
+ class NetIQ
+  passthrough application Systems-Management 
+ class timbuktu
+  optimize tfo application Remote-Desktop 
+ class timbuktu-srv
+  optimize tfo application Remote-Desktop 
+ class Netopia-netOctopus
+  passthrough application Systems-Management 
+ class groupwise
+  optimize tfo dre lz application Email-and-Messaging 
+ class ncp
+  optimize tfo dre lz application File-System 
+ class novell-zen
+  optimize tfo dre lz application Systems-Management 
+ class talk
+  passthrough application Instant-Messaging 
+ class OpenVPN
+  optimize tfo application VPN 
+ class Oracle
+  optimize tfo dre lz application SQL 
+ class orasrv
+  optimize tfo dre lz application SQL 
+ class Other-Secure
+  passthrough application Other 
+ class corba-iiop-ssl
+  passthrough application Other 
+ class ircs
+  passthrough application Other 
+ class netrjs-3
+  optimize tfo application Remote-Desktop 
+ class pcanywheredata
+  optimize tfo application Remote-Desktop 
+ class pcmail-srv
+  optimize tfo dre lz application Email-and-Messaging 
+ class PDMWorks
+  optimize tfo dre lz application CAD 
+ class PPTP
+  optimize tfo application VPN 
+ class PSOM-MTLS
+  passthrough application Conferencing 
+ class Pervasive-SQL
+  optimize tfo dre lz application SQL 
+ class PostgreSQL
+  optimize tfo dre lz application SQL 
+ class QMTP
+  optimize tfo dre lz application Email-and-Messaging 
+ class Qnext
+  passthrough application P2P 
+ class radmin-port
+  optimize tfo application Remote-Desktop 
+ class RTSP
+  optimize tfo dre lz application Streaming 
+ class Remote-Anything
+  optimize tfo application Remote-Desktop 
+ class rrac
+  optimize tfo application Replication 
+ class Rsync
+  optimize tfo dre lz application Replication 
+ class apple-sasl
+  passthrough application Authentication 
+ class sip-tls
+  passthrough application Call-Management 
+ class soap-http
+  optimize tfo dre lz application Web 
+ class sqlsrv
+  optimize tfo dre lz application SQL 
+ class SSH
+  optimize tfo application SSH 
+ class sshell
+  passthrough application Console 
+ class xprint-server
+  optimize tfo dre lz application Printing 
+ class ssql
+  optimize tfo dre lz application SQL 
+ class svrloc
+  passthrough application Name-Services 
+ class Siebel
+  optimize tfo dre lz application Enterprise-Applications 
+ class sftp
+  optimize tfo dre lz application File-Transfer 
+ class SoulSeek
+  passthrough application P2P 
+ class sunrpc
+  passthrough application File-System 
+ class sybase-sqlany
+  optimize tfo dre lz application SQL 
+ class ssc-agent
+  optimize tfo dre lz application Other 
+ class TACACS
+  passthrough application Authentication 
+ class TFTP
+  optimize tfo dre lz application File-Transfer 
+ class TFTPS
+  optimize tfo application File-Transfer 
+ class Telnet
+  passthrough application Console 
+ class login
+  passthrough application Console 
+ class Telnets
+  passthrough application Console 
+ class UniSQL
+  optimize tfo dre lz application SQL 
+ class printer
+  optimize tfo dre lz application Printing 
+ class print-srv
+  optimize tfo dre lz application Printing 
+ class cmd
+  passthrough application Console 
+ class exec
+  passthrough application Console 
+ class Veritas-BackupExec
+  optimize tfo application Backup 
+ class Veritas-NetBackup
+  optimize tfo application Backup 
+ class Vmware-VMConsole
+  optimize tfo application Remote-Desktop 
+ class VoIP-Control
+  passthrough application Call-Management 
+ class cisco-q931-backhaul
+  passthrough application Call-Management 
+ class cisco-sccp
+  passthrough application Call-Management 
+ class h323hostcall
+  passthrough application Call-Management 
+ class h323hostcallsc
+  passthrough application Call-Management 
+ class sip
+  passthrough application Call-Management 
+ class VocalTec
+  passthrough application Conferencing 
+ class flowmonitor
+  optimize tfo lz application Systems-Management 
+ class WASTE
+  passthrough application P2P 
+ class WBEM
+  passthrough application Systems-Management 
+ class WINS
+  passthrough application Name-Services 
+ class nameserver
+  passthrough application Name-Services 
+ class netbios
+  passthrough application Name-Services 
+ class WinMX
+  passthrough application P2P 
+ class iso-tsap
+  optimize tfo dre lz application Email-and-Messaging 
+ class x11
+  optimize tfo application Remote-Desktop 
+ class Yahoo-Messenger
+  passthrough application Instant-Messaging 
+ class eDonkey
+  passthrough application P2P 
+ class eTrust-policy-Compliance
+  optimize tfo application Systems-Management 
+ class ezMeeting
+  passthrough application Conferencing 
+ class iFCP
+  optimize tfo dre lz application Storage 
+ class iscsi
+  optimize tfo dre lz application Storage 
+ class isns
+  passthrough application Name-Services 
+ class ircu
+  passthrough application Instant-Messaging 
+ class SAP
+  optimize tfo dre lz application Enterprise-Applications 
+ class VNC
+  optimize tfo application Remote-Desktop 
+ class auth
+  passthrough application Authentication 
+ class citrixadmin
+  optimize tfo dre lz application Remote-Desktop 
+ class citrixima
+  optimize tfo dre lz application Remote-Desktop 
+ class mgcp-callagent
+  passthrough application Call-Management 
+ class mgcp-gateway
+  passthrough application Call-Management 
+ class ms-sql-m
+  optimize tfo dre lz application SQL 
+ class sqlexec
+  optimize tfo dre lz application SQL 
+ class sql-net
+  optimize tfo dre lz application SQL 
+ class sqlserv
+  optimize tfo dre lz application SQL 
+ class ccmail
+  optimize tfo dre lz application Email-and-Messaging 
+ class waas-default
+  optimize tfo dre lz application waas-default 
+policy-map prm-nbar-12-cls
+ class prm-nbar-12-cls#VOICE
+  set dscp ef
+ class prm-nbar-12-cls#BROADCAST-VIDEO
+  set dscp cs5
+ class prm-nbar-12-cls#INTERACTIVE-VIDEO
+  set dscp cs4
+ class prm-nbar-12-cls#MULTIMEDIA-CONFERENCING
+  set dscp af41
+ class prm-nbar-12-cls#MULTIMEDIA-STREAMING
+  set dscp af31
+ class prm-nbar-12-cls#SIGNALING
+  set dscp cs3
+ class prm-nbar-12-cls#NETWORK-CONTROL
+  set dscp cs6
+ class prm-nbar-12-cls#NETWORK-MANAGEMENT
+  set dscp cs2
+ class prm-nbar-12-cls#TRANSACTIONAL-DATA
+  set dscp af21
+ class prm-nbar-12-cls#BULK-DATA
+  set dscp af11
+ class prm-nbar-12-cls#SCAVENGER
+  set dscp cs1
+ class class-default
+!
+! 
+crypto isakmp keepalive 30 5
+!
+crypto ipsec security-association replay window-size 1024
+!
+crypto ipsec transform-set AES256/SHA/TRANSPORT esp-aes 256 esp-sha-hmac 
+ mode transport
+!
+crypto ipsec profile DMVPN-PROFILE-TRANSPORT-1
+ set transform-set AES256/SHA/TRANSPORT 
+ set ikev2-profile FVRF-IKEv2-IWAN-TRANSPORT-1
+!
+crypto ipsec profile DMVPN-PROFILE-TRANSPORT-2
+ set transform-set AES256/SHA/TRANSPORT 
+ set ikev2-profile FVRF-IKEv2-IWAN-TRANSPORT-2
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback47233
+ ip address 10.253.8.17 255.255.255.255
+ ip pim sparse-mode
+ hold-queue 1024 in
+ hold-queue 1024 out
+!
+interface Tunnel10
+ bandwidth 1000
+ ip address 10.253.0.17 255.255.254.0
+ no ip redirects
+ ip mtu 1400
+ ip pim dr-priority 0
+ ip pim nbma-mode
+ ip pim sparse-mode
+ ip nhrp authentication cisco123
+ ip nhrp network-id 102
+ ip nhrp nhs 10.253.0.1 nbma 74.205.252.81 multicast
+ ip nhrp nhs 10.253.0.46 nbma 207.243.253.44 multicast
+ ip virtual-reassembly in
+ ip virtual-reassembly out
+ ip tcp adjust-mss 1360
+ delay 1000
+ nhrp group prm-6Mbps
+ no nhrp route-watch
+ tunnel source GigabitEthernet9
+ tunnel mode gre multipoint
+ tunnel key 102
+ tunnel vrf IWAN-TRANSPORT-2
+ tunnel protection ipsec profile DMVPN-PROFILE-TRANSPORT-2
+!
+interface Tunnel11
+ bandwidth 10000
+ ip address 10.253.2.18 255.255.254.0
+ no ip redirects
+ ip mtu 1400
+ ip pim dr-priority 0
+ ip pim nbma-mode
+ ip pim sparse-mode
+ ip nhrp authentication cisco123
+ ip nhrp network-id 101
+ ip nhrp nhs 10.253.2.1 nbma 173.252.189.171 multicast
+ ip nhrp nhs 10.253.2.127 nbma 173.95.8.22 multicast
+ ip virtual-reassembly in
+ ip virtual-reassembly out
+ ip tcp adjust-mss 1360
+ delay 2000
+ nhrp group prm-50Mbps
+ no nhrp route-watch
+ tunnel source GigabitEthernet8
+ tunnel mode gre multipoint
+ tunnel key 101
+ tunnel vrf IWAN-TRANSPORT-1
+ tunnel protection ipsec profile DMVPN-PROFILE-TRANSPORT-1
+ domain ONE dynamic-path
+!
+interface Tunnel12
+ no ip address
+!
+interface GigabitEthernet0
+ switchport mode trunk
+ no ip address
+!
+interface GigabitEthernet1
+ no ip address
+!
+interface GigabitEthernet2
+ no ip address
+!
+interface GigabitEthernet3
+ no ip address
+!
+interface GigabitEthernet4
+ no ip address
+!
+interface GigabitEthernet5
+ no ip address
+!
+interface GigabitEthernet6
+ no ip address
+!
+interface GigabitEthernet7
+ no ip address
+!
+interface GigabitEthernet8
+ bandwidth 10000
+ ip vrf forwarding IWAN-TRANSPORT-1
+ ip address dhcp
+ ip nat outside
+ ip virtual-reassembly in
+ ip virtual-reassembly out
+ ip policy route-map INET-INTERNAL
+ duplex auto
+ speed auto
+ no cdp enable
+ service-policy output prm-dscp#iwan-8-id0#shape#10.0
+!
+interface GigabitEthernet9
+ bandwidth 1000
+ ip vrf forwarding IWAN-TRANSPORT-2
+ ip address dhcp
+ ip nat outside
+ ip virtual-reassembly in
+ ip policy route-map INET-INTERNAL
+ duplex auto
+ speed auto
+ no cdp enable
+ service-policy output prm-dscp#iwan-8-id1#shape#1.0
+!
+interface Vlan1
+ description Data
+ ip address 192.168.161.3 255.255.255.0
+ ip pim sparse-mode
+ ip nat inside
+ ip virtual-reassembly in
+ ip policy route-map INSIDE_PBR
+ performance monitor context IWAN-Context 
+ service-policy input prm-nbar-12-cls
+!
+!
+router eigrp IWAN-EIGRP
+ !
+ address-family ipv4 unicast autonomous-system 400
+  !
+  af-interface default
+   passive-interface
+  exit-af-interface
+  !
+  af-interface Tunnel10
+   authentication mode md5
+   authentication key-chain WAN-KEY
+   hello-interval 20
+   hold-time 60
+   no passive-interface
+   stub-site wan-interface
+  exit-af-interface
+  !
+  af-interface Tunnel11
+   authentication mode md5
+   authentication key-chain WAN-KEY
+   hello-interval 20
+   hold-time 60
+   no passive-interface
+   stub-site wan-interface
+  exit-af-interface
+  !
+  topology base
+   distribute-list route-map DMVPN2-BR-IN in Tunnel10
+   distribute-list route-map DMVPN1-BR-IN in Tunnel11
+  exit-af-topology
+  network 10.253.0.0 0.0.1.255
+  network 10.253.2.0 0.0.1.255
+  network 10.253.8.17 0.0.0.0
+  network 192.168.161.0
+  eigrp router-id 10.253.8.17
+  eigrp stub-site 1:5
+ exit-address-family
+!
+ip forward-protocol nd
+no ip http server
+ip http authentication local
+ip http secure-server
+ip http secure-trustpoint device_self_signed
+ip http client source-interface GigabitEthernet8
+ip http client secure-trustpoint device_self_signed
+!
+!
+ip pim autorp listener
+ip pim register-source Loopback47233
+ip nat inside source static tcp 192.168.161.162 8000 interface GigabitEthernet8 8000
+ip nat inside source static udp 192.168.161.162 554 interface GigabitEthernet8 554
+ip nat inside source route-map ISP-A interface GigabitEthernet8 overload
+ip nat inside source route-map ISP-B interface GigabitEthernet9 overload
+ip route vrf IWAN-TRANSPORT-2 0.0.0.0 0.0.0.0 dhcp
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet9 dhcp 15
+ip route vrf IWAN-TRANSPORT-1 0.0.0.0 0.0.0.0 dhcp
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet8 dhcp
+ip ssh source-interface Loopback47233
+ip ssh version 2
+!
+ip access-list standard SNMP_ACL
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+ip access-list standard SSH_IN
+ permit 12.35.51.5
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+ permit 192.168.0.0 0.0.255.255
+ permit 172.26.0.0 0.0.255.255
+ permit 10.254.88.0 0.0.3.255
+ permit 10.254.92.0 0.0.3.254
+!
+ip access-list extended ACL-INET-PUBLIC
+ permit udp any any eq non500-isakmp
+ permit udp any any eq isakmp
+ permit esp any any
+ permit udp any any eq bootpc
+ permit icmp any any echo
+ permit icmp any any echo-reply
+ permit ip host 173.252.189.173 any
+ip access-list extended INTERNAL-NETS
+ permit ip any 192.168.161.0 0.0.0.255
+ip access-list extended NAT
+ permit ip 192.168.161.0 0.0.0.255 any
+ip access-list extended NAT_RULES
+ permit ip host 192.168.161.162 any
+ip access-list extended business-critical-and-default-tcp-only
+ permit tcp any any
+ip access-list extended business-critical-and-default-udp-only
+ permit udp any any
+!
+!
+ip prefix-list SITE-PREFIXES seq 5 permit 192.168.161.0/24
+ip radius source-interface Loopback47233 
+no service-routing capabilities-manager
+logging host 172.23.1.15
+logging host 172.23.1.17
+logging host 172.23.1.16
+ipv6 ioam timestamp
+!
+route-map INSIDE_PBR permit 10
+ match ip address NAT_RULES
+ set vrf IWAN-TRANSPORT-1
+!
+route-map ISP-B permit 10
+ match ip address NAT
+ match interface GigabitEthernet9
+!
+route-map ISP-A permit 10
+ match ip address NAT
+ match interface GigabitEthernet8
+!
+route-map INET-INTERNAL permit 10
+ description Return routing for Local Internet Access
+ match ip address INTERNAL-NETS
+ set global
+!
+route-map DMVPN2-BR-IN permit 5
+ match tag 201
+ set metric +4000000000
+!
+route-map DMVPN2-BR-IN permit 10
+!
+route-map DMVPN1-BR-IN permit 5
+ match tag 101
+ set metric +4000000000
+!
+route-map DMVPN1-BR-IN permit 10
+!
+snmp-server community lppbisnmp-ro RO SNMP_ACL
+snmp-server community lppbisnmp-rw RW SNMP_ACL
+snmp-server community lppbisnmp RO
+snmp-server ifindex persist
+snmp-server trap-source Loopback47233
+snmp-server enable traps pki
+snmp-server host 172.23.1.15 lppbisnmp-ro 
+snmp-server host 172.23.1.16 lppbisnmp-ro 
+snmp-server host 172.23.1.17 lppbisnmp-ro 
+snmp-server host 172.23.1.15 lppbisnmp-rw 
+radius-server attribute 6 on-for-login-auth
+radius-server attribute 6 support-multiple
+radius-server attribute 8 include-in-access-req
+radius-server attribute 25 access-request include
+radius-server attribute 31 mac format ietf upper-case
+radius-server attribute 31 send nas-port-detail mac-only
+radius-server dead-criteria time 10 tries 3
+radius-server deadtime 15
+!
+radius server MS-NPS1
+ address ipv4 172.20.10.42 auth-port 1812 acct-port 1813
+ timeout 60
+ retransmit 10
+ key 7 10411920373A380828537C6F3C
+!
+radius server MS-NPS2
+ address ipv4 172.21.10.41 auth-port 1812 acct-port 1813
+ timeout 60
+ retransmit 10
+ key 7 09435E302B283D112F5B526E33
+!
+!
+!
+control-plane
+!
+!
+!
+mgcp behavior rsip-range tgcp-only
+mgcp behavior comedia-role none
+mgcp behavior comedia-check-media-src disable
+mgcp behavior comedia-sdp-force disable
+!
+mgcp profile default
+!
+!
+!
+!
+!
+!
+ vstack
+!
+line con 0
+ no modem enable
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ access-class SSH_IN in vrf-also
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+ login authentication LOGIN-AUTH-VTY
+ transport input ssh
+ transport output ssh
+line vty 5 15
+ access-class SSH_IN in vrf-also
+ exec-timeout 90 0
+ privilege level 15
+ logging synchronous
+ login authentication LOGIN-AUTH-VTY
+ transport input ssh
+ transport output ssh
+!
+scheduler allocate 20000 1000
+ntp source Loopback47233
+ntp server 172.23.1.10
+ntp server 172.23.1.11
+ntp server 172.23.1.12
+ntp server 173.252.189.173
+!
+!
+!
+!
+!
+!
+!
+!
+!
+pnp profile IWAN-PNP-PROFILE
+ transport https ipv4 173.252.189.173 port 443
+end

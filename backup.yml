@@ -1,0 +1,17 @@
+---
+- name: Network Getting Started
+  connection: network_cli
+  gather_facts: false
+  hosts: IOS
+  tasks:
+
+    - name: Save the config IOS
+      ios_config:
+        backup: yes
+      when: ansible_network_os == 'ios'
+
+    - name: Save the config nxos
+      nxos_config:
+        backup: yes
+      when: ansible_network_os == 'nxos'
+    

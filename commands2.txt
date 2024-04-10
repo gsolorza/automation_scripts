@@ -1,0 +1,14 @@
+interface vlan 1
+no ip access-group TRAFFIC-TO-DNS in
+
+interface vlan 2
+no ip access-group TRAFFIC-TO-DNS in
+
+interface vlan 3
+no ip access-group TRAFFIC-TO-DNS in
+
+interface vlan 4
+no ip access-group TRAFFIC-TO-DNS in
+exit
+
+no ip access-list extended TRAFFIC-TO-DNS

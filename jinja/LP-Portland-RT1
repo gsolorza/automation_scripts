@@ -1,0 +1,263 @@
+
+interface GigabitEthernet8
+no  ip access-group ACL-INET-PUBLIC in
+
+
+
+ip access-list extended ACL-RTR-IN
+ permit udp any any eq non500-isakmp
+ permit udp any any eq isakmp
+ permit icmp any any echo
+ permit icmp any any echo-reply
+ permit icmp any any ttl-exceeded
+ permit icmp any any port-unreachable
+ permit udp any any gt 1023 ttl eq 1
+ permit tcp 162.255.136.224 0.0.0.31 any eq 22
+ permit tcp host 162.233.248.65 any eq 22
+ permit tcp host 173.252.189.164 any eq 22
+ permit tcp host 74.205.252.70 any eq 22
+ permit tcp host 73.46.174.173 any eq 22
+ permit tcp host 173.95.8.19 any eq 22
+
+ip access-list standard SNMP_ACL
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+ permit 10.91.252.0 0.0.3.255
+ permit 10.95.252.0 0.0.3.255
+
+ip access-list standard SSH_IN
+ permit 12.35.51.5
+ permit 173.252.189.173
+ permit 173.252.189.164
+ permit 173.95.8.19
+ permit 172.20.0.0 0.0.255.255
+ permit 172.21.0.0 0.0.255.255
+ permit 172.17.0.0 0.0.255.255
+ permit 162.255.136.224 0.0.0.31
+ permit 172.23.0.0 0.0.255.255
+ permit 192.168.0.0 0.0.255.255
+ permit 172.26.0.0 0.0.255.255
+ permit 10.254.88.0 0.0.3.255
+ permit 10.254.92.0 0.0.3.254
+ permit 10.91.252.0 0.0.3.255
+ permit 10.95.252.0 0.0.3.255
+ 
+ip access-list standard ALL-EXCEPT-DEFAULT
+deny   0.0.0.0
+permit any
+Exit
+
+ip access-list extended TRAFFIC-TO-DNS
+ remark Match traffic to Umbrella Servers
+ permit udp any host 208.67.220.220 eq domain
+ permit tcp any host 208.67.220.220 eq domain
+ permit udp any host 208.67.222.222 eq domain
+ permit tcp any host 208.67.222.222 eq domain
+ permit udp any host 172.20.10.40 eq domain
+ permit tcp any host 172.20.10.40 eq domain
+ permit udp any host 172.21.10.40 eq domain
+ permit tcp any host 172.21.10.40 eq domain
+ permit udp any host 172.20.10.41 eq domain
+ permit tcp any host 172.20.10.41 eq domain
+ permit udp any host 172.21.10.41 eq domain
+ permit tcp any host 172.21.10.41 eq domain
+ deny   tcp any any eq domain log
+ deny   udp any any eq domain log
+ permit ip any any
+
+ip access-list extended ACL-RTR-OUT
+ permit udp any any eq non500-isakmp
+ permit udp any any eq isakmp
+ permit icmp any any
+ permit udp any any eq domain
+ permit ip any host 173.252.189.173
+
+ip access-list extended DHCP-IN
+permit udp any eq bootps any eq bootpc
+
+ip access-list extended DHCP-OUT
+permit udp any eq bootpc any eq bootps
+
+ip access-list extended ESP-IN
+permit esp any any
+
+ip access-list extended ESP-OUT
+permit esp any any
+
+ip access-list extended GRE-IN
+permit gre any any 
+!
+ip dhcp excluded-address 192.168.17.1 192.168.17.19
+!
+ip dhcp pool Data
+ network 192.168.17.0 255.255.255.0
+ default-router 192.168.17.1 
+ domain-name NAP.local
+ dns-server 172.20.10.40 172.21.10.40 
+exit
+
+
+!
+!
+!
+ip access-list extended INTERNAL-NETS
+ permit ip any 192.168.17.0 0.0.0.255
+
+ip access-list extended NAT
+ permit ip 192.168.17.0 0.0.0.255 any
+
+
+!
+!
+route-map ISP-A permit 10
+ match ip address NAT
+ match interface GigabitEthernet8
+!
+
+!
+route-map INET-INTERNAL permit 10
+ description Return routing for Local Internet Access
+ match ip address INTERNAL-NETS
+ set global
+!
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet8 dhcp 10
+
+ip nat inside source route-map ISP-A interface GigabitEthernet8 overload
+
+interface vlan 1
+ip nat inside
+ip access-group TRAFFIC-TO-DNS in
+
+
+
+interface GigabitEthernet8
+description Internet Connection ISP-A
+no ip redirects
+no ip unreachables
+no ip proxy-arp
+no cdp enable
+no lldp transmit
+no lldp receive
+ip nat outside
+ip policy route-map INET-INTERNAL
+
+Exit
+
+
+
+no ip nat service sip tcp port 5060
+no ip nat service sip udp port 5060
+
+interface tunnel 11
+no ip nhrp nhs 10.253.2.127 nbma 74.205.252.83 multicast
+ip nhrp nhs 10.253.2.127 nbma 173.95.8.22 multicast
+
+
+
+route-map DMVPN2-BR-IN permit 10
+match ip address ALL-EXCEPT-DEFAULT
+exit
+route-map DMVPN1-BR-IN permit 10
+match ip address ALL-EXCEPT-DEFAULT
+exit
+
+
+
+line vty 0 4
+ access-class SSH_IN in vrf-also
+
+line vty 5 15
+ access-class SSH_IN in vrf-also
+
+snmp-server community lppbisnmp-ro RO SNMP_ACL
+snmp-server community lppbisnmp-rw RW SNMP_ACL
+snmp-server community lppbisnmp RO SNMP_ACL
+
+crypto pki trustpoint sdn-network-infra-iwan
+ revocation-check none
+
+
+
+banner login #
+
+           *       This is a controlled access system with login        *
+           *  restricted to those with proper authorization. Authorized *
+           *  parties are limited to those functions which have been    *
+           *  assigned to perform work related duties. Any unauthorized *
+           *  access attempt will be investigated and prosecuted to the *
+           *  full extent of the law.                                   *
+           *  --------------------------------------------------------  *
+           *            YOUR IP ADDRESS HAS BEEN CAPTURED               *
+           *  --------------------------------------------------------  *
+           *    If you are not an authorized user, disconnect now.      *
+		   
+#
+
+aaa new-model
+aaa session-id common
+
+radius server DUO-PROXY1
+address ipv4 172.20.10.219 auth-port 1812 acct-port 1813
+timeout 10 
+retransmit 3
+automate-tester username checkIfAlive ignore-acct-port probe-on
+key 7 050416361361640A3D52415613
+
+radius server DUO-PROXY2
+address ipv4 172.21.10.219 auth-port 1812 acct-port 1813
+timeout 10
+retransmit 3
+automate-tester username checkIfAlive ignore-acct-port probe-on
+key 7 050416361361640A3D52415613
+exit
+
+aaa group server radius DUO-PROXIES
+server name DUO-PROXY1
+server name DUO-PROXY2
+ip radius source-interface Loopback47233
+exit
+
+ip radius source-interface Loopback47233
+radius-server attribute 6 on-for-login-auth
+radius-server attribute 6 support-multiple
+radius-server attribute 8 include-in-access-req
+radius-server attribute 25 access-request include
+radius-server attribute 31 mac format ietf upper-case
+radius-server attribute 31 send nas-port-detail mac-only
+radius-server dead-criteria time 5 tries 3
+radius-server deadtime 5
+
+
+aaa authentication login LOGIN-AUTH-VTY group DUO-PROXIES local
+aaa authentication enable default enable
+aaa authorization exec default group DUO-PROXIES local 
+aaa authorization network default group DUO-PROXIES local 
+
+line vty 0 4
+login authentication LOGIN-AUTH-VTY
+exit
+line vty 5 15
+login authentication LOGIN-AUTH-VTY
+exit
+
+event manager applet VTY-LINES
+ event timer watchdog time 300
+ action 1 cli command "enable"
+ action 2 cli command "configure terminal"
+ action 3 cli command "line vty 0 4"
+ action 4 cli command "login authentication LOGIN-AUTH-VTY"
+ action 5 cli command "line vty 5 15"
+ action 6 cli command "login authentication LOGIN-AUTH-VTY"
+ action 7 cli command "end"
+ action 8 cli command "wr"
+
+logging snmp-authfail
+logging buffered 64000
+login on-success log
+login on-failure log

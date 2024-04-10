@@ -1,0 +1,24 @@
+---
+- name: Network Getting Started
+  connection: network_cli
+  gather_facts: false
+  hosts: IOS
+  tasks:
+    
+    - name: FIX SSH ACL
+      ios_config:
+        lines:
+          - permit 10.91.252.0 0.0.3.255
+          - permit 10.95.252.0 0.0.3.255
+        parents: ip access-list standard SSH_IN
+      
+    - name: FIX SNMP ACL
+      ios_config:
+        lines:
+          - permit 10.91.252.0 0.0.3.255
+          - permit 10.95.252.0 0.0.3.255
+        parents: ip access-list standard SNMP_ACL
+          
+    - name: save running config to startup
+      ios_config:
+        save_when: always
